@@ -1,0 +1,240 @@
+[
+  {
+    "run": "lab/out/direct/torta",
+    "date": "2026-10-28",
+    "restaurant": "Dora Taqueria (Mexican taqueria)",
+    "dish": "Torta (birria)",
+    "title": "Birria Plancha Blitz",
+    "format": "5-cut plancha build, then hard cut to the real dish pressed",
+    "cast": "cook in black t-shirt and black nitrile gloves behind the dish"
+  },
+  {
+    "run": "lab/out/direct/chicharron",
+    "date": "2026-10-28",
+    "restaurant": "Master Pizza Tropical (Dominican restaurant and pizzeria)",
+    "dish": "Chicharron de Cerdo 1 Libra",
+    "title": "Double Fry Blitz to Lime Squeeze",
+    "format": "5-cut fryer build into the tray, then hard cut to the real tray with a lime squeeze",
+    "cast": "cook in black t-shirt and black nitrile gloves behind the dish"
+  },
+  {
+    "run": "lab/out/direct/chicharron",
+    "date": "2026-10-28",
+    "restaurant": "Master Pizza Tropical (Dominican restaurant and pizzeria)",
+    "dish": "Chicharron de Cerdo 1 Libra",
+    "title": "Fork Hang Drip",
+    "format": "stab, squeeze, drip",
+    "cast": "dinner fork + bare hand"
+  },
+  {
+    "run": "lab/out/auto/doocado-22-0",
+    "date": "2026-11-02",
+    "restaurant": "Dora Taqueria (restaurant)",
+    "dish": "Birria Tacos (3)",
+    "title": "Consomé que abraza",
+    "format": "griddle flash, taco lifted and dunked deep, torn for cheese stretch over broth",
+    "cast": "a diner's bare hand",
+    "stock": [],
+    "kind": "Se prueba lo jugoso"
+  },
+  {
+    "run": "lab/out/auto/doocado-12-w2026-11-02",
+    "date": "2026-11-02",
+    "restaurant": "Balis (Dominican)",
+    "dish": "Alitas Pincantes/Buffalo wings",
+    "title": "A La Par Picante",
+    "kind": "Comer a la par",
+    "format": "two plates side by side lifted and dunked in sync",
+    "cast": "two diners' bare hands",
+    "stock": [],
+    "verdict": {
+      "by": "Yansel",
+      "works": true,
+      "date": "2026-11-02",
+      "note": "se ven bien"
+    }
+  },
+  {
+    "run": "lab/out/auto/doocado-22-w2026-11-02",
+    "date": "2026-11-02",
+    "restaurant": "Dora Taqueria (restaurant)",
+    "dish": "Large Burrito",
+    "title": "El Burrito Que Respira",
+    "kind": "Se abre el envuelto",
+    "format": "foil ball cracked open on table, then cut half lifted to camera",
+    "cast": "a diner's bare hands",
+    "stock": [],
+    "verdict": {
+      "by": "Yansel",
+      "works": true,
+      "date": "2026-11-02",
+      "note": "se ven bien; le hubiera gustado más largo (salió el sorteo de 7 s)"
+    }
+  },
+  {
+    "run": "lab/out/auto/doocado-12-w2026-11-06",
+    "date": "2026-11-02",
+    "restaurant": "Balis (Dominican)",
+    "dish": "Pescado entero a su gusto/Red snapper/Hello from the sea",
+    "title": "Fuego de la parrilla Balis",
+    "kind": "Recorrido de platos",
+    "format": "charcoal grill flash then fast tour of grilled fish and meats",
+    "cast": "black-nitrile gloved cook hands",
+    "stock": [
+      "grill-flames"
+    ]
+  },
+  {
+    "run": "lab/out/auto/doocado-22-w2026-11-06",
+    "date": "2026-11-02",
+    "restaurant": "Dora Taqueria (restaurant)",
+    "dish": "Fajitas",
+    "title": "Se vacía la fajita",
+    "kind": "Se arma capa por capa",
+    "format": "sizzling tray emptied in pour then stacked meat peppers and sides in cuts",
+    "cast": "gloved hands",
+    "stock": [
+      "grill-flames"
+    ]
+  },
+  {
+    "run": "lab/out/auto/doocado-12-w2026-11-06b-5",
+    "date": "2026-11-02",
+    "restaurant": "Balis (Dominican)",
+    "dish": "Cazuela d Marisco Natural",
+    "title": "Cazuela que gotea caldo",
+    "kind": "Se prueba lo jugoso",
+    "format": "fork stabs and lifts seafood high over steaming broth to drip",
+    "cast": "a fork",
+    "stock": []
+  },
+  {
+    "run": "lab/out/auto/doocado-22-w2026-11-06b",
+    "date": "2026-11-02",
+    "restaurant": "Dora Taqueria (restaurant)",
+    "dish": "Street Corn",
+    "title": "El elote que se escapó",
+    "kind": "Se la lleva otro",
+    "format": "close hold almost bites then second hand snatches it",
+    "cast": "a diner's bare hand",
+    "stock": []
+  },
+  {
+    "run": "lab/out/auto/doocado-12-w2026-11-06c",
+    "date": "2026-11-02",
+    "restaurant": "Balis (Dominican)",
+    "dish": "Ceviche de marisco Natural",
+    "title": "Noche fría de ceviche y serie",
+    "kind": "Cena y serie",
+    "format": "laptop glow behind, cold bowl set down front, spoon lifts shrimp to lens",
+    "cast": "a diner's bare hand",
+    "stock": []
+  },
+  {
+    "run": "lab/out/auto/doocado-22-w2026-11-06c-8",
+    "date": "2026-11-02",
+    "restaurant": "Dora Taqueria (restaurant)",
+    "dish": "Birria Tacos (3)",
+    "title": "Birria que abraza en tres",
+    "kind": "Recorrido de platos",
+    "format": "broth-first tour, fork lifts each birria dish in turn",
+    "cast": "a fork",
+    "stock": []
+  },
+  {
+    "run": "lab/out/auto/doocado-2-w2026-11-06c-2",
+    "date": "2026-11-03",
+    "restaurant": "The Purple Bear (Bubble Tea)",
+    "dish": "COCONUT MILK TEA",
+    "title": "La funda del coco",
+    "kind": "Se abre el envuelto",
+    "format": "paper sleeve slid down sealed cup, boba and logo revealed, straw punched",
+    "cast": "a diner's bare hand",
+    "stock": []
+  },
+  {
+    "run": "lab/out/auto/doocado-6-w2026-11-06c",
+    "date": "2026-11-03",
+    "restaurant": "Master Pizza Tropical (Pizza, Dominican)",
+    "dish": "Parrillada Master",
+    "title": "Chasquido de la Parrillada",
+    "kind": "Aparece por magia",
+    "format": "empty steel counter, close snap, full tray appears by hard cut",
+    "cast": "a diner's bare hand",
+    "stock": []
+  },
+  {
+    "run": "lab/out/auto/doocado-12-w2026-11-13-1",
+    "date": "2026-11-03",
+    "restaurant": "Balis (Dominican)",
+    "dish": "Balis Fusion Picadera",
+    "title": "Piedra, papel, picadera",
+    "kind": "Aparece por magia",
+    "format": "two fists pump rock-paper-scissors over empty tray, loser pump hard cuts to piled picadera then hand grabs",
+    "cast": "two bare hands",
+    "stock": [],
+    "music": "dembow",
+    "text": "box",
+    "rhythm": "fast cut"
+  },
+  {
+    "run": "lab/out/auto/doocado-2-w2026-11-13",
+    "date": "2026-11-03",
+    "restaurant": "The Purple Bear (Bubble Tea)",
+    "dish": "COCONUT MILK TEA",
+    "title": "El coco se arma desde cero",
+    "kind": "Se arma capa por capa",
+    "format": "empty clear cup built boba first, then milky pour, then ice fall, then straw punch and lift",
+    "cast": "a diner's bare hand",
+    "stock": [],
+    "music": "kompa",
+    "text": "box",
+    "rhythm": "fast cut"
+  },
+  {
+    "run": "lab/out/auto/doocado-8-w2026-11-13",
+    "date": "2026-11-03",
+    "restaurant": "Pikalo (Empanadas, Sandwiches)",
+    "dish": "Spinach and Cheese Empanada",
+    "title": "Tres foils que se abren",
+    "kind": "Recorrido de platos",
+    "format": "three foiled empanadas unwrapped one by one in hard cuts, each pull showing hot filling, ending on a spinach stretch",
+    "cast": "a bare hand",
+    "stock": [],
+    "music": "Brazilian funk",
+    "text": "box-light",
+    "rhythm": "fast cut"
+  },
+  {
+    "run": "lab/out/auto/doocado-6-w2026-11-13",
+    "date": "2026-11-03",
+    "restaurant": "Master Pizza Tropical (Pizza, Dominican)",
+    "dish": "Pechurina Frita",
+    "title": "Se llevó mi pechurina",
+    "kind": "Se la lleva otro",
+    "format": "fork dips a crispy chicken strip in pink sauce close up, second hand snatches it, cut to the empty sauce mark",
+    "cast": "fork, two bare hands",
+    "stock": [
+      "fryer"
+    ],
+    "music": "old-school reggaeton",
+    "text": "box",
+    "rhythm": "fast cut"
+  },
+  {
+    "run": "lab/out/auto/doocado-22-w2026-11-13",
+    "date": "2026-11-03",
+    "restaurant": "Dora Taqueria (restaurant)",
+    "dish": "Large Quesadilla",
+    "title": "La plancha que derrite la quesadilla grande",
+    "kind": "Queso en plancha",
+    "format": "overhead melt stare on greasy plancha, spatula nudge, then triangle pull with long stretch",
+    "cast": "a bare hand",
+    "stock": [
+      "flat-top-plancha"
+    ],
+    "music": "afrobeats",
+    "text": "box-light",
+    "rhythm": "long takes"
+  }
+]

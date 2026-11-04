@@ -1,0 +1,25 @@
+{
+  "audio_role": "No music-driven cuts; single unbroken take carried by restaurant room tone and eating sounds. Text joke does the work a trend audio normally would.",
+  "can_make": "We can make the tabletop: real menu photo of chicken burger on plate with bowls of fries and nuggets, plus an AI-drawn model holding the burger top up in a static medium shot and a 4 s slow push-in started from that photo. We can add the same two-line price text in the edit. We cannot make the eating: our cast never eats, so no bite into the bun, no chew, no picking up and biting a nugget, no mouthful reaction.",
+  "core": "A guy spends his last dollars on a full fried spread and eats it anyway.",
+  "dish": "Crispy fried-chicken burger on glossy brioche with curly fries and chicken nuggets on the side",
+  "fits": "Big handheld fast food meant to be eaten in one bite: fried chicken burgers, smash burgers, loaded fries, nuggets, tenders, onion rings.",
+  "format": "broke-but-worth-it bite",
+  "hook": "White text over the food in second 0-1: Bank account $51.47 vs Food $50.55 while a man lifts the burger top straight to his mouth.",
+  "needs_camera": "A real person in a real busy restaurant actually biting, chewing and swallowing, shifting from burger to nugget in one continuous take, with real background diners and real food gloss and crunch.",
+  "people": "One young man in his 20s with brown hair, dark green overshirt over black t-shirt, watch on left wrist, sitting at the table facing camera; he lifts the burger top with both hands, bites it, chews looking at camera, then reaches with right hand for a nugget and eats it.",
+  "shots": [
+    {
+      "action": "man lifts burger top bun, takes a bite, chews, then picks up a nugget and bites it",
+      "camera": "static",
+      "end": 6.5,
+      "framing": "medium eye level from across table, man chest-up with full spread in foreground",
+      "speed": "real time",
+      "start": 0
+    }
+  ],
+  "text_on_screen": "Bank account: $51.47\nFood: $50.55",
+  "why_it_works": "You see a real bite and chew, glossy bun and craggy fried chicken up close, and a full table of fries and nuggets. The price text makes it a relatable splurge, so you watch him eat and imagine the crunch and salt yourself.",
+  "source": "reference reel (link removed: we study the edit, never use the footage)",
+  "studied_by": "muse-spark-1.3"
+}

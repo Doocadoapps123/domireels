@@ -1,0 +1,49 @@
+{
+  "audio_role": "hard percussive hip-hop drum loop, no voice, no sizzle. Cuts at 1.13, 2.03, 3.93 land on the beat. The long 3.93-9.3s tear plays under the same loop with no sync sound of dip or stretch.",
+  "can_make": "We can copy the structure with stills + AI motion + edit. Shot 1: start from real overhead tray photo, add 4s AI lift of one taco by a drawn hand. Shot 2-3: house-cast still of model holding taco and black cup, then 4s AI dip and lift. Shot 4: drawn frame of model holding taco with both hands, then 4s AI pull to fake cheese strands. We can do cuts, music, framing and mural background as a still. We cannot make real liquid contact, real dripping broth, real elastic cheese that holds for 5 seconds, or a real bite and chew - our cast holds and shows food and never eats, so the open-mouth reaction and eating proof will be missing and the dip/pull will look synthetic on close inspection.",
+  "core": "One hand-held taco is picked up, dipped in red consomme, then torn open to show dripping broth and stretching cheese.",
+  "dish": "crispy quesabirria tacos with shredded beef, melted cheese, chopped onion and cilantro, lime slices and a cup of red beef consomme",
+  "fits": "dishes that can be lifted with one hand, dipped, and pulled open to show filling: quesabirria and birria tacos, quesadillas with cheese, stuffed flatbread, mozzarella sticks, fried chicken tenders with dip, soup dumplings torn open, cheesy garlic bread",
+  "format": "pick-dip-pull",
+  "hook": "0-1s overhead close: a ringed hand grabs and lifts a crispy orange-edged taco loaded with beef, onion and cilantro straight off the pile.",
+  "needs_camera": "real texture only: crisp shell cracking, shredded beef falling, cheese stretching thin without breaking for seconds, broth actually coating the tip and dripping back into the cup, grease on fingers, and a real person tearing, smelling and biting. A long unbroken tear and a real dip cannot be faked with a photo start.",
+  "people": "one young woman with long dark-red hair, pink ruched sleeveless top, rings and bracelets. She lifts the taco, holds taco in one hand and consomme cup in the other toward lens, dips the tip, then holds the taco with both hands and pulls it apart while looking at it with mouth open. No bite is shown.",
+  "shots": [
+    {
+      "action": "hand lifts one taco up off the tray pile",
+      "camera": "static",
+      "end": 1.13,
+      "framing": "overhead close",
+      "speed": "real time",
+      "start": 0
+    },
+    {
+      "action": "woman holds taco above consomme cup toward camera",
+      "camera": "static",
+      "end": 2.03,
+      "framing": "medium chest-up",
+      "speed": "real time",
+      "start": 1.13
+    },
+    {
+      "action": "she dips taco tip into consomme and lifts it out dripping",
+      "camera": "static",
+      "end": 3.93,
+      "framing": "close-medium",
+      "speed": "real time",
+      "start": 2.03
+    },
+    {
+      "action": "she tears the taco apart with both hands stretching cheese",
+      "camera": "static",
+      "end": 9.3,
+      "framing": "medium",
+      "speed": "real time",
+      "start": 3.93
+    }
+  ],
+  "text_on_screen": "none - no captions; only printed TALKIN TACOS logo and skull on tray paper and cup",
+  "why_it_works": "It shows three physical proofs in 9 seconds: meat falling out on lift, red oil coating and dripping on dip, white cheese stretching long on tear. Hand scale, close oil shine, and moving strands signal fat, salt and heat without words.",
+  "source": "reference reel (link removed: we study the edit, never use the footage)",
+  "studied_by": "muse-spark-1.3"
+}

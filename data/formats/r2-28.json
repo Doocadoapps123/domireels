@@ -1,0 +1,25 @@
+{
+  "audio_role": "Upbeat trendy background track with a soft pop/click on each time a new item lands on the tray; no voice, no sizzle, music just keeps the build playful and marks each addition.",
+  "can_make": "We can make all of it in edit. Start from one real overhead photo of an empty tray on a table. Cut out real menu photos of drink, loaded fries, tenders, dip cup, burger and pop them on one by one with scale-pop animation timed to an animated cursor moving across top emojis. Add the emoji row on top in edit. If we want a model, have a house cast hand slide the full tray forward in a 4 s AI clip started from the final tray photo, but no eating, no cooking needed.",
+  "core": "You click a picture menu and the real tray builds itself item by item.",
+  "dish": "Popeyes combo tray: cola with ice, pulled-pork loaded fries, 2 breaded chicken tenders, small BBQ beans dip, chicken burger with cheese and tomato.",
+  "fits": "Fast-food combos, burger + sides sets, chicken shops, loaded fries, kids menus, any place that sells a fixed tray with 4-5 pieces.",
+  "format": "click-to-build tray",
+  "hook": "Empty tray below, five big food emojis floating above, white cursor moves to the drink in the first second and a real cola cup pops onto the tray.",
+  "needs_camera": "nothing",
+  "people": "nobody",
+  "shots": [
+    {
+      "action": "soda cup, loaded fries, chicken tenders, sauce cup and burger appear one by one on the empty tray",
+      "camera": "locked-off static, slight push in on the full tray at the end",
+      "end": 12.6,
+      "framing": "medium wide overhead on table tray",
+      "speed": "real time",
+      "start": 0
+    }
+  ],
+  "text_on_screen": "No words. Only five floating emojis on top: drink, fries, drumstick, chicken strips, burger plus a white cursor arrow that moves from one emoji to the next.",
+  "why_it_works": "You see each piece land separately so you register quantity and texture: cold soda ice, cheese and meat on fries, crust on tenders, glossy burger bun. It ends on a full, crowded tray, which looks like value and choice.",
+  "source": "reference reel (link removed: we study the edit, never use the footage)",
+  "studied_by": "muse-spark-1.3"
+}

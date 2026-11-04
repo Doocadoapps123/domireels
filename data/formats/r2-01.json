@@ -1,0 +1,25 @@
+{
+  "audio_role": "No voiceover. Foreground is live ASMR: paper crinkle, foil crackle, knife scraping wrapper. Under it a light upbeat trending track at low volume. No beat cuts because there are no cuts; the music just runs under the single take and stops hard when the hands lift the burger out to leave the empty plate.",
+  "can_make": "We can make a cover version, not the same take. From a real menu photo of a wrapped burger + a real photo of the unwrapped burger: Clip 1 (4s AI): tight close on wrapped paper ball in AI hands starting the cut. Clip 2 (4s AI): hands pulling paper/foil down to expose bun top. Clip 3 (4s AI): slow rotation of the finished burger held in foil. Edit them together with 2 hard cuts, add recorded paper-crinkle SFX and the same text overlay. It will read as unwrap-to-reveal but will not hold as one continuous hand performance: AI hands will warp, foil tear will look melted not torn, knife contact will slip, and our house cast never eats so we cannot do the final lift-away to a truly empty plate with juice on it - we would have to fake it with a cut to a clean empty plate photo.",
+  "core": "Treat a juicy wrapped burger like a piece of fruit to peel, delaying the reveal to force anticipation.",
+  "dish": "double smash burger in glossy brioche bun with melted cheddar, caramelized onions, meat juices and white sauce, served wrapped in white paper over foil",
+  "fits": "Fits only hidden, wrapped, layered hand food where peeling reveals juice: smash burgers, cheeseburgers, burritos, birria tacos, shawarma, Cubanos, stuffed arepas. Does not fit plated dishes, salads, soups, pizza slices, desserts that cannot be peeled.",
+  "format": "peel my favorite fruit",
+  "hook": "0-1s extreme close on two hands holding a white paper ball and slicing it with a small black knife while text says peeling my favorite fruit - viewer expects apple/orange, hears paper cut.",
+  "needs_camera": "A real camera in the real place for the unbroken 17.7s tactile proof: real fingers gripping and resisting, real paper and foil tearing and folding with correct physics and synced crinkle, real cheese glisten and meat juice, real table with sauce bottles out of focus, and a real hand lifting the real burger out of frame to leave an empty greasy plate as the punchline.",
+  "people": "hands only, nobody else. Adult hands, left hand with black perforated sport watch and dark sleeve holds and turns the package, right hand cuts with small black knife then tears and folds wrapper back and finally holds burger up for display.",
+  "shots": [
+    {
+      "action": "hands slit and peel back white paper and foil wrapper to expose and then lift away the burger",
+      "camera": "handheld tight close, slight push-in and micro-orbit following hands",
+      "end": 17.7,
+      "framing": "close-up to macro, eye-level over table",
+      "speed": "real time",
+      "start": 0
+    }
+  ],
+  "text_on_screen": "Pelando mi fruta favorita 🧡😳 held top-center for the whole reveal",
+  "why_it_works": "It makes people hungry because the peel delays the fat signals then pays them: shiny bun, dripping melted cheese, browned caramelized onions, meat juices and white sauce visible at 2-3 cm distance, plus paper-tear sound and hand scale that tells brain it is heavy, hot and greasy.",
+  "source": "reference reel (link removed: we study the edit, never use the footage)",
+  "studied_by": "muse-spark-1.3"
+}

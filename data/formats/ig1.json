@@ -1,0 +1,97 @@
+{
+  "audio_role": "Upbeat regional-Mexican style instrumental loop under the whole Reel, no voice, no audible sizzle or pour. Fast cuts 0.3-1.5s land on the beat during the build, then the music holds steady for the long 3.9s noodle-pull hero.",
+  "can_make": "We can remake the edit structure from stills: 9 fast 0.3-1.5s cuts for meat pile / onion / cilantro / broth scoop / pour + 1 long ~4s hero noodle-lift, same bottom text and same beat-driven music. From a real menu photo of the soup bowl we can do push-in/zoom for the dry bowl, crossfade onion/cilantro on top, and 4s AI clips started from a photo for a fake broth pour and fake chopstick lift held by house cast. What we cannot fake is wetness: real dripping meat fibers, real oily red broth flowing and soaking, steam, gloss reflections, and clean long noodle strands without warping. AI pour will look thick and static and AI noodles will stretch, stick, or melt.",
+  "core": "Dry noodles get piled with meat and toppings, drowned in red broth, then lifted in one long noodle pull.",
+  "dish": "Birria ramen: instant-style ramen noodles in a white bowl topped with shredded birria beef, diced white onion, cilantro, and red consomme broth.",
+  "fits": "Bowls assembled dry then finished with liquid where the pour changes the look: ramen, birria ramen, pho, menudo, caldo, udon, saucy noodles, loaded fries/nachos where sauce is poured on.",
+  "format": "assembly to broth pour to noodle pull",
+  "hook": "First 0.5s macro of tongs lifting glistening shredded beef dripping brown juice straight from the tray.",
+  "needs_camera": "Real macro of juicy shredded meat falling apart, real ladle scooping and pouring thin oily red consomme with steam and reflections, real soaking of noodles and meat, real long elastic noodle lift with dripping broth, real steam-table pans and black-gloved hands moving fast. Nothing else gives the wet gloss, steam, and continuous pour/pull.",
+  "people": "hands only. Black-gloved cook hands enter from top with tongs to grab meat, drop meat, drop onion, sprinkle cilantro, and with ladle to scoop and pour broth. One ungloved customer hand enters from left with chopsticks for the final noodle lift. No faces, no talking, no eating on camera.",
+  "shots": [
+    {
+      "action": "tongs lift dripping shredded birria beef from juicy tray",
+      "camera": "static",
+      "end": 0.53,
+      "framing": "macro",
+      "speed": "real time",
+      "start": 0
+    },
+    {
+      "action": "meat piled onto plain ramen noodles in white bowl",
+      "camera": "static",
+      "end": 1.13,
+      "framing": "close overhead",
+      "speed": "real time",
+      "start": 0.53
+    },
+    {
+      "action": "diced white onion dropped onto meat",
+      "camera": "static",
+      "end": 1.5,
+      "framing": "close overhead",
+      "speed": "real time",
+      "start": 1.13
+    },
+    {
+      "action": "chopped cilantro sprinkled over meat and onion",
+      "camera": "static",
+      "end": 1.87,
+      "framing": "close overhead",
+      "speed": "real time",
+      "start": 1.5
+    },
+    {
+      "action": "dry bowl with meat, onion and cilantro shown complete",
+      "camera": "static",
+      "end": 2.5,
+      "framing": "close overhead",
+      "speed": "real time",
+      "start": 1.87
+    },
+    {
+      "action": "ladle scoops red oily consomme from steam pan",
+      "camera": "push in",
+      "end": 4,
+      "framing": "macro",
+      "speed": "real time",
+      "start": 2.5
+    },
+    {
+      "action": "full ladle lifted and tipped over the bowl",
+      "camera": "static",
+      "end": 4.97,
+      "framing": "close",
+      "speed": "real time",
+      "start": 4
+    },
+    {
+      "action": "broth poured soaking meat, onion and noodles",
+      "camera": "static",
+      "end": 6.13,
+      "framing": "close overhead",
+      "speed": "real time",
+      "start": 4.97
+    },
+    {
+      "action": "full red soup bowl rests steaming",
+      "camera": "push in",
+      "end": 6.7,
+      "framing": "close overhead",
+      "speed": "real time",
+      "start": 6.13
+    },
+    {
+      "action": "chopsticks lift long noodles with meat from the soup",
+      "camera": "static",
+      "end": 10.6,
+      "framing": "medium eye level",
+      "speed": "slow motion",
+      "start": 6.7
+    }
+  ],
+  "text_on_screen": "Send this to someone who owes you BIRRIA RAMEN 🍜 bottom-center for full duration",
+  "why_it_works": "You see dry to wet: pale noodles, brown shredded meat, white onion cubes, green cilantro, then red broth covers everything. The meat looks wet and stringy, the broth looks oily and hot, the final chopstick lift proves the noodles are long and loaded with meat. Fat, salt, heat and portion size are all visible.",
+  "source": "reference reel (link removed: we study the edit, never use the footage)",
+  "studied_by": "muse-spark-1.3"
+}

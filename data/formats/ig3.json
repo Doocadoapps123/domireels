@@ -1,0 +1,49 @@
+{
+  "audio_role": "Upbeat Mexican brass instrumental plays throughout, no voice, no sizzle. It keeps energy high and the 0.9 / 3 / 5.4s cuts land on the beat while the close action stays silent.",
+  "can_make": "We can rebuild the 4-beat edit from the restaurant's real menu photo: 1) still or 4s AI push on tray to fake pick-up, 2) 4s AI clip started from the photo morphed to show dunk into consomme cup, 3) 4s AI clip for lift with drip, 4) 4s AI clip for two-hand tear with cheese stretch. Our house cast can provide hands-only holding poses, never eating, and we can add the same cuts and music. The dunk, drip stream, and long cheese strands will look softer and warp slightly and will not match true liquid and cheese physics.",
+  "core": "A beef-and-cheese quesadilla triangle is dunked in red consomme and torn open to show dripping broth and stretching cheese.",
+  "dish": "beef birria quesadilla triangles with red consomme cup and tortilla chips on a tray",
+  "fits": "Folded or stuffed dishes served with a dunking sauce and melted cheese inside: birria tacos and quesadillas, cheese-stuffed chaat, keema naan with gravy, chicken paratha with curry dip, mozzarella sticks or stuffed sandwiches with tomato soup.",
+  "format": "dunk and tear",
+  "hook": "In the first 0.9s a hand grips a browned quesadilla triangle full of shredded beef in tight close-up and lifts it off the tray.",
+  "needs_camera": "A real camera on the real tray gives the true dunk: quesadilla breaking the consomme surface, red broth soaking in and dripping in a continuous stream, and two hands tearing to form thin unbroken cheese strings around shredded meat without finger warping, steam, and grease shine.",
+  "people": "hands only, no faces. One adult right hand picks up, dunks, and lifts the triangle; then two hands hold top and bottom and pull apart. No carrying, no reacting, no talking.",
+  "shots": [
+    {
+      "action": "hand lifts one quesadilla triangle off the tray",
+      "camera": "static close",
+      "end": 0.9,
+      "framing": "close",
+      "speed": "real time",
+      "start": 0
+    },
+    {
+      "action": "hand pushes the triangle point-down into the consomme cup",
+      "camera": "static macro",
+      "end": 3,
+      "framing": "macro",
+      "speed": "real time",
+      "start": 0.9
+    },
+    {
+      "action": "hand lifts the soaked triangle out as broth drips back into the cup",
+      "camera": "static macro, slight push in",
+      "end": 5.4,
+      "framing": "macro",
+      "speed": "slow motion",
+      "start": 3
+    },
+    {
+      "action": "two hands tear the triangle apart to stretch melted cheese between beef layers",
+      "camera": "static macro",
+      "end": 10.1,
+      "framing": "macro",
+      "speed": "slow motion",
+      "start": 5.4
+    }
+  ],
+  "text_on_screen": "none",
+  "why_it_works": "You see the crust brown spots, the shredded beef edge, the red broth coating and dripping off, then white cheese strings stretching between the two halves. Each step shows wetness and interior texture in macro, which signals hot, salty, fatty food.",
+  "source": "reference reel (link removed: we study the edit, never use the footage)",
+  "studied_by": "muse-spark-1.3"
+}

@@ -1,0 +1,25 @@
+{
+  "audio_role": "Upbeat funk-pop trend audio with male vocal and driving beat, no voiceover and no food ASMR. Plays continuous under the single take and times the man's walk-up and plate grabs to the groove, giving a confident strut feeling.",
+  "can_make": "We can fake it in two 4s AI clips: 1) still table-level fisheye frame built from the real salmon menu photo cut out onto grey plates on a black table with a drawn storefront behind. 2) house-cast AI man in sunglasses and brown jacket composited behind the table reaching forward. Clip 1: right plate is lifted and carried out. Clip 2: hand takes left plate. Join with hidden cut and add same music. What will look off is the join, hands sliding on plates, sauce gloss warping, and flat fake storefront with no real glass reflection or depth when he walks.",
+  "core": "Two dishes sit big in front of the shop and a guy takes them away one by one like they are too wanted to stay.",
+  "dish": "Two cold salmon plates: left seared salmon cubes with browned cheese/sauce and microgreens, right sliced salmon with dark relish/caviar and microgreens on speckled grey plates.",
+  "fits": "Small colorful plated dishes that read in close foreground: salmon bites, nigiri, rolls, bruschetta, tartare, desserts in pairs where two versions can sit side by side.",
+  "format": "storefront steal",
+  "hook": "Two orange salmon plates fill the bottom foreground huge under the curved Dhoo sign in fisheye in the first second.",
+  "needs_camera": "Real curved wooden facade with real depth, real daylight sky, live glass door reflection of building and passerby, and a real continuous walk toward lens with true body scale shift and real plates with weight, grip and no warping as they are lifted.",
+  "people": "One man about 30, short beard, dark sunglasses, black t-shirt and tan winter jacket with dark hood. Walks in from the glass doorway behind the table to center, points at lens, leans in, picks up the right plate with his right hand and carries it out frame left, then his arm re-enters to take the left plate.",
+  "shots": [
+    {
+      "action": "Two salmon plates sit on the table then are removed one by one until the table is empty",
+      "camera": "static locked-off fisheye at table level",
+      "end": 8.3,
+      "framing": "ultra-wide fisheye, low table-level close foreground on plates with storefront wide behind",
+      "speed": "real time",
+      "start": 0
+    }
+  ],
+  "text_on_screen": "none - only physical Dhoo storefront lettering in background",
+  "why_it_works": "Salmon is large in frame, glossy orange against matte grey plates and black table, with white sear spots and dark topping plus green sprouts for contrast. A human hand gives scale and the removal of first one plate then the second shows the food is wanted and creates loss - you watch it disappear without seeing anyone eat it.",
+  "source": "reference reel (link removed: we study the edit, never use the footage)",
+  "studied_by": "muse-spark-1.3"
+}

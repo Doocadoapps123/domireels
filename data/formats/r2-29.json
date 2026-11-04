@@ -1,0 +1,25 @@
+{
+  "audio_role": "No music cut, ambient patio sound only. The joke plays in real time and the 2 seconds when the plates fill the lens act like ASMR - you see dressing, grill marks and sauce up close with no edit to break it.",
+  "can_make": "We can copy the setup from assets: start from a real menu photo of 1-2 plates, put our house AI model behind them, make one 4 s AI clip pushing the plates toward a static table POV, add the same white meme text on top. We cannot make the real 6.1 s walk: a model walking 5 meters forward carrying 4 full plates, two per hand, keeping all food stable with no warping, with deadpan eye contact and a real patio passing behind. AI hands and stacked plates will bend and the background will swim.",
+  "core": "You think the food is coming to you, it gets close enough to eat, then it walks past.",
+  "dish": "Four mixed patio plates - chopped green salad and sliced grilled meat with white and brown sauce drizzle, slaw and sides.",
+  "fits": "Big, colorful plates that read from far and still look good up close: salads, sliced chicken/pork/steak, fajitas, burgers, loaded bowls. Not small cups, soups, or dark stews.",
+  "format": "someone else's food walk-by",
+  "hook": "White text 'how waiters be walking by you with someone else's food' while a waiter in the back is already walking straight at the lens with both arms full of plates.",
+  "needs_camera": "A real person in a real crowded patio doing one unbroken walk from back to table carrying 4 real plates and staring into the lens as he passes. That depth, balance, weight, and timing is what sells the joke.",
+  "people": "One young blond man in green-white check shirt and dark pants playing the waiter. He walks from the back patio straight to camera carrying two plates per hand, leans in with a deadpan stare, fills the frame with the food, then exits left. A woman with long dark hair sits out of focus at a left table and does nothing.",
+  "shots": [
+    {
+      "action": "carries four full plates toward the table, lowers them to inches from the lens to fill frame, then carries them past and out left",
+      "camera": "static locked-off at table height",
+      "end": 6.1,
+      "framing": "medium-wide eye level that becomes close-up by subject movement",
+      "speed": "real time",
+      "start": 0
+    }
+  ],
+  "text_on_screen": "how waiters be walking by you with someone else's food",
+  "why_it_works": "Shot from your seat, the plates get bigger as they come at you and you see fresh salad, sliced meat and sauce up close. Your brain prepares to eat and then gets nothing, which leaves hunger and a relatable annoyance that makes you rewatch.",
+  "source": "reference reel (link removed: we study the edit, never use the footage)",
+  "studied_by": "muse-spark-1.3"
+}

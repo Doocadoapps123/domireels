@@ -1,0 +1,8 @@
+{
+  "restaurant": "Master Pizza Tropical (Dominican restaurant and pizzeria)",
+  "name": "Chicharron de Cerdo 1 Libra",
+  "description": "",
+  "choices": {
+    "Choose Your Side": ["Batata Frita", "French Fries", "Platano Maduro", "Tostones", "Yuca Frita"]
+  }
+}

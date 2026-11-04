@@ -1,0 +1,25 @@
+{
+  "audio_role": "No music. The track is the Friends episode playing on the laptop: women shouting 'Oh My God!', audience laugh track swelling, then Joey's 'Oh My God!' line. Audio runs continuous under a locked shot; the laughs fill the dead time while the food just sits and make people stay for the sitcom beat.",
+  "can_make": "We can fake the layout: use the restaurant's real menu photo of the tartare bowl cut out sharp in foreground, a generated booth table + glowing wall panel behind, and a fake laptop screen with a royalty-free cafe scene. From that still we can start two 4 s AI clips - 1) bowl sliding from blur to sharp center, 2) a still hand/model hand setting the tiki mug on the left - with house cast hands only, no eating. The long hold can be frozen still in edit. We cannot fake the real Friends video + laugh audio and the real lens rack from blur to tack-sharp gloss.",
+  "core": "This is cozy night-in dinner: your favorite dish served in front of your favorite comfort show.",
+  "dish": "Pink tuna tartare tower topped with crispy fried shreds and a green leaf, sitting in pale creamy sauce in a dark stone bowl, plus a white tiki-face mug with red details and black straw set beside it.",
+  "fits": "Compact good-looking bowls that sit still and read up close with no steam or cutting needed: tartare stacks, poke, ceviche, dips, mac-and-cheese, pasta bowls, small desserts, plus any signature mug cocktail or milkshake as second prop.",
+  "format": "dinner-and-a-show",
+  "hook": "First second: blurry pink tower slides in low and snaps sharp in foreground while the laptop behind is instantly recognizable as Friends with Monica and Phoebe talking.",
+  "needs_camera": "A real camera on a real table to get the true depth rack from blur to sharp, the weight of a real hand setting down a real cold bowl and heavy mug, real sauce gloss and table reflections, real laptop glow on the table, and a real licensed show playing in sync. Without it the sitcom recognition and the tactile place-and-sit feel is lost.",
+  "people": "hands only: a light-skinned hand enters low left, puts down the stone bowl and leaves, later puts down the tiki mug to the left of the laptop and leaves. No faces, no eating, no talking to camera. Monica, Phoebe and Joey appear only inside the laptop screen.",
+  "shots": [
+    {
+      "action": "hand slides stone bowl into sharp foreground center and later sets tiki mug beside laptop, then both sit still while show plays",
+      "camera": "static locked-off tripod",
+      "end": 15.1,
+      "framing": "close eye-level, shallow focus with food foreground and laptop background in same frame",
+      "speed": "real time",
+      "start": 0
+    }
+  ],
+  "text_on_screen": "No added titles or captions. Only diegetic text on the laptop screen, ending with credits: Executive Producers KEVIN S. BRIGHT MARTA KAUFFMAN DAVID CRANE.",
+  "why_it_works": "The bowl is big, pink, crunchy on top and creamy around in sharp focus, so texture reads hunger. The Friends chatter and laugh track behind tells your brain this is relaxed couch time, so you picture yourself eating it while watching.",
+  "source": "reference reel (link removed: we study the edit, never use the footage)",
+  "studied_by": "muse-spark-1.3"
+}

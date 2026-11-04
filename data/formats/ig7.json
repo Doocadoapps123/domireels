@@ -1,0 +1,33 @@
+{
+  "audio_role": "Upbeat rhythmic track with no voice, food sounds forward - tortilla slap, chop, sauce pour. The cut at ~3s lands on the beat, first half is fast piling, second half hits the fold and still hold on the cut halves.",
+  "can_make": "We can fake the outline from stills: shot 1 from a real overhead menu photo of a tortilla, 4 s AI push-in with growing pile composited in edit. Shot 2 from a real photo of the cut wrap, 4 s AI static hold with slight push-in and hands/model holding the sides. Edit can do the fast speed ramp, the hard cut at 3s on the beat, music and labels. We cannot make believable chopping of chicken, real sauce drizzle and drip, cheese melting and draping, or fingers folding the tortilla without tearing - AI hands warp and smear the food.",
+  "core": "A flat tortilla becomes an overstuffed cut-open wrap in front of you.",
+  "dish": "crispy fried chicken and seasoned french fries tortilla wrap with pale orange sauce and yellow cheese sauce and a slice of melted cheese",
+  "fits": "Wraps, burritos, shawarma, kebab rolls, quesadillas - dishes where the outside is a plain flatbread and the sale is the stacked filling hidden inside.",
+  "format": "stack, fold and cut",
+  "hook": "Flat tortilla fills the frame and a gloved hand drops a pile of orange-seasoned fries in the center in the first second.",
+  "needs_camera": "Real close hands work in the real place: cleaver chopping juicy breaded chicken, real sauce pouring and running, real cheese slice softening and draping, real fold and tight roll, real knife cut with crumbs and drip and the two halves pushed together. Also a long unbroken take of the assembly.",
+  "people": "nobody with a face. Only hands in black nitrile gloves and a red shirt/apron torso. Hands enter from top and sides to drop fries, hold a cleaver, pour sauce, lay cheese, fold the tortilla and push the two halves together.",
+  "shots": [
+    {
+      "action": "seasoned fries, chopped crispy chicken, two sauces and a cheese slice stack up on the flat tortilla",
+      "camera": "static",
+      "end": 3,
+      "framing": "overhead close",
+      "speed": "sped up",
+      "start": 0
+    },
+    {
+      "action": "the loaded tortilla is folded shut and shown split in half to expose the stuffed cross-section",
+      "camera": "static",
+      "end": 5.9,
+      "framing": "close eye level",
+      "speed": "real time",
+      "start": 3
+    }
+  ],
+  "text_on_screen": "none",
+  "why_it_works": "You see dry crunchy coating against wet running sauce and thick cheese draping down, then the final split proves the wrap is full edge to edge with fries and chicken, so you know the textures and the amount before tasting.",
+  "source": "reference reel (link removed: we study the edit, never use the footage)",
+  "studied_by": "muse-spark-1.3"
+}

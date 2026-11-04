@@ -1,0 +1,733 @@
+[
+  {
+    "name": "fryer",
+    "what": "a restaurant deep fryer: a wire basket sunk in violently boiling oil, thick foam and bubbles",
+    "url": "https://www.pexels.com/download/video/5780022/",
+    "license": "Pexels (commercial use, no attribution)",
+    "moments": [
+      {
+        "at": 2,
+        "dur": 0.6,
+        "what": "basket sunk in boiling oil"
+      },
+      {
+        "at": 4,
+        "dur": 0.5,
+        "crop": "1080:1920:700:1300",
+        "what": "punch-in: oil bursting in bubbles"
+      },
+      {
+        "at": 6,
+        "dur": 0.5,
+        "crop": "1080:1920:250:1500",
+        "what": "punch-in: oil foaming in the basket"
+      }
+    ],
+    "group": "fryer"
+  },
+  {
+    "name": "bbq-grill-flames",
+    "what": "Close-up flames under black BBQ grill bars",
+    "url": "https://assets.mixkit.co/videos/2774/2774-720.mp4",
+    "page": "https://mixkit.co/free-stock-video/steak-on-the-bbq-grill-2774/",
+    "license": "Mixkit Stock Video Free License (commercial use, no attribution)",
+    "by": "muse",
+    "query": "grill",
+    "moments": [
+      {
+        "at": 0,
+        "dur": 0.4,
+        "what": "flames rising between dark grill bars",
+        "crop": "405:720:310:0"
+      }
+    ],
+    "group": "fire"
+  },
+  {
+    "name": "grill-flames",
+    "what": "Close-up flames burning under empty BBQ grill grates",
+    "url": "https://assets.mixkit.co/videos/2780/2780-720.mp4",
+    "page": "https://mixkit.co/free-stock-video/flames-burning-inside-a-bbq-grill-2780/",
+    "license": "Mixkit Stock Video Free License (commercial use, no attribution)",
+    "by": "muse",
+    "query": "grill",
+    "moments": [
+      {
+        "at": 2,
+        "dur": 0.6,
+        "what": "flames flickering up between dark grill grates"
+      },
+      {
+        "at": 6.5,
+        "dur": 0.6,
+        "what": "tall flames rising through empty grill bars"
+      },
+      {
+        "at": 10,
+        "dur": 0.6,
+        "what": "bright flames dancing under grill grates"
+      }
+    ],
+    "group": "fire"
+  },
+  {
+    "name": "blazing-flames",
+    "what": "Tall orange flames rising over a black background",
+    "url": "https://assets.mixkit.co/videos/52284/52284-720.mp4",
+    "page": "https://mixkit.co/free-stock-video/vertical-video-of-blazing-flames-over-a-black-backdrop-52284/",
+    "license": "Mixkit Stock Video Free License (commercial use, no attribution)",
+    "by": "muse",
+    "query": "fire",
+    "moments": [
+      {
+        "at": 3.5,
+        "dur": 0.6,
+        "what": "tall flames swirling upward in center"
+      },
+      {
+        "at": 7,
+        "dur": 0.6,
+        "what": "bright flame column rising in center"
+      },
+      {
+        "at": 10,
+        "dur": 0.6,
+        "what": "flames curling up on right side"
+      }
+    ],
+    "group": "fire"
+  },
+  {
+    "name": "wood-fire-logs",
+    "what": "Closeup of stacked logs burning with bright orange flames",
+    "url": "https://assets.mixkit.co/videos/2709/2709-720.mp4",
+    "page": "https://mixkit.co/free-stock-video/closeup-view-of-a-fireplace-2709/",
+    "license": "Mixkit Stock Video Free License (commercial use, no attribution)",
+    "by": "muse",
+    "query": "fire",
+    "moments": [
+      {
+        "at": 2.5,
+        "dur": 0.6,
+        "what": "flames rising between stacked burning logs",
+        "crop": "405:720:310:0"
+      },
+      {
+        "at": 9,
+        "dur": 0.6,
+        "what": "glowing embers and flames under wood logs",
+        "crop": "405:720:374:0"
+      }
+    ],
+    "group": "fire"
+  },
+  {
+    "name": "flames-black-background",
+    "what": "Close-up orange flames flickering over a black background",
+    "url": "https://assets.mixkit.co/videos/52312/52312-720.mp4",
+    "page": "https://mixkit.co/free-stock-video/mesmerizing-close-up-of-flames-over-a-black-background-52312/",
+    "license": "Mixkit Stock Video Free License (commercial use, no attribution)",
+    "by": "muse",
+    "query": "flame",
+    "moments": [
+      {
+        "at": 2,
+        "dur": 0.6,
+        "what": "tall orange flames curling up center frame",
+        "crop": "405:720:438:0"
+      },
+      {
+        "at": 7.5,
+        "dur": 0.6,
+        "what": "twin streams of fire meeting in the middle",
+        "crop": "405:720:438:0"
+      },
+      {
+        "at": 11.5,
+        "dur": 0.6,
+        "what": "bright swirling flames filling frame",
+        "crop": "405:720:374:0"
+      }
+    ],
+    "group": "fire"
+  },
+  {
+    "name": "flame-tendrils",
+    "what": "Orange flames flowing upward on black background",
+    "url": "https://assets.mixkit.co/videos/52285/52285-720.mp4",
+    "page": "https://mixkit.co/free-stock-video/close-up-shot-of-the-vibrant-flame-tendrils-elegantly-flowing-52285/",
+    "license": "Mixkit Stock Video Free License (commercial use, no attribution)",
+    "by": "muse",
+    "query": "flame",
+    "moments": [
+      {
+        "at": 1,
+        "dur": 0.6,
+        "what": "tall flame tendril rising"
+      },
+      {
+        "at": 4,
+        "dur": 0.6,
+        "what": "broad flames flickering"
+      },
+      {
+        "at": 10,
+        "dur": 0.6,
+        "what": "thin flame curling upward"
+      }
+    ],
+    "group": "fire"
+  },
+  {
+    "name": "orange-flames-black",
+    "what": "Blazing orange flames on a black background",
+    "url": "https://assets.mixkit.co/videos/52288/52288-720.mp4",
+    "page": "https://mixkit.co/free-stock-video/blazing-orange-flames-flow-on-a-vertical-black-screen-52288/",
+    "license": "Mixkit Stock Video Free License (commercial use, no attribution)",
+    "by": "muse",
+    "query": "flame",
+    "moments": [
+      {
+        "at": 1,
+        "dur": 0.6,
+        "what": "dense orange flames twisting together"
+      },
+      {
+        "at": 7,
+        "dur": 0.6,
+        "what": "bright flames surging across frame"
+      },
+      {
+        "at": 15,
+        "dur": 0.6,
+        "what": "flames billowing up on black"
+      }
+    ],
+    "group": "fire"
+  },
+  {
+    "name": "growing-flames",
+    "what": "Isolated flames growing from small flicker to blazing fire on black",
+    "url": "https://assets.mixkit.co/videos/52292/52292-720.mp4",
+    "page": "https://mixkit.co/free-stock-video/vertical-video-of-flames-slowly-growing-into-a-blazing-fire-52292/",
+    "license": "Mixkit Stock Video Free License (commercial use, no attribution)",
+    "by": "muse",
+    "query": "flames",
+    "moments": [
+      {
+        "at": 3.2,
+        "dur": 0.6,
+        "what": "flames rising and branching"
+      },
+      {
+        "at": 5,
+        "dur": 0.6,
+        "what": "bright blazing fire filling frame"
+      },
+      {
+        "at": 12.5,
+        "dur": 0.6,
+        "what": "tall flames twisting upward"
+      }
+    ],
+    "group": "fire"
+  },
+  {
+    "name": "burning-flames",
+    "what": "Orange flames flickering on a black background",
+    "url": "https://assets.mixkit.co/videos/3759/3759-720.mp4",
+    "page": "https://mixkit.co/free-stock-video/burning-flames-on-a-black-background-3759/",
+    "license": "Mixkit Stock Video Free License (commercial use, no attribution)",
+    "by": "muse",
+    "query": "flames",
+    "moments": [
+      {
+        "at": 3,
+        "dur": 0.6,
+        "what": "tall central flame rising high",
+        "crop": "405:720:438:0"
+      },
+      {
+        "at": 7,
+        "dur": 0.6,
+        "what": "single tall flame on the right",
+        "crop": "405:720:796:0"
+      },
+      {
+        "at": 13,
+        "dur": 0.7,
+        "what": "bright flames merging in center",
+        "crop": "405:720:438:0"
+      }
+    ],
+    "group": "fire"
+  },
+  {
+    "name": "fire-flames-centre",
+    "what": "orange flames moving to the centre on black background",
+    "url": "https://assets.mixkit.co/videos/3757/3757-720.mp4",
+    "page": "https://mixkit.co/free-stock-video/fire-background-with-flames-moving-to-the-centre-3757/",
+    "license": "Mixkit Stock Video Free License (commercial use, no attribution)",
+    "by": "muse",
+    "query": "flames",
+    "moments": [
+      {
+        "at": 2.5,
+        "dur": 0.6,
+        "what": "flames curling inward from both sides",
+        "crop": "405:720:438:0"
+      },
+      {
+        "at": 5,
+        "dur": 0.6,
+        "what": "bright flames streaming across centre",
+        "crop": "405:720:438:0"
+      },
+      {
+        "at": 16,
+        "dur": 0.6,
+        "what": "intense flames meeting in the middle",
+        "crop": "405:720:438:0"
+      }
+    ],
+    "group": "fire"
+  },
+  {
+    "name": "pizza-oven-door",
+    "what": "Chef closes a deck pizza oven in a professional pizzeria",
+    "url": "https://assets.mixkit.co/videos/42480/42480-720.mp4",
+    "page": "https://mixkit.co/free-stock-video/chef-puts-the-pizza-in-the-oven-42480/",
+    "license": "Mixkit Stock Video Free License (commercial use, no attribution)",
+    "by": "muse",
+    "query": "oven",
+    "moments": [
+      {
+        "at": 8.2,
+        "dur": 0.6,
+        "what": "hand pulls shut the deck oven door",
+        "crop": "405:720:374:0"
+      }
+    ],
+    "group": "oven"
+  },
+  {
+    "name": "pro-oven-open",
+    "what": "Chef opens an empty professional preheated oven",
+    "url": "https://assets.mixkit.co/videos/50031/50031-720.mp4",
+    "page": "https://mixkit.co/free-stock-video/pastry-chef-opening-her-professional-preheated-oven-50031/",
+    "license": "Mixkit Stock Video Free License (commercial use, no attribution)",
+    "by": "muse",
+    "query": "oven",
+    "moments": [
+      {
+        "at": 2.2,
+        "dur": 0.6,
+        "what": "hand pulls open glowing empty oven door",
+        "crop": "405:720:438:0"
+      },
+      {
+        "at": 7.8,
+        "dur": 0.6,
+        "what": "empty lit professional oven interior",
+        "crop": "405:720:566:0"
+      }
+    ],
+    "group": "oven"
+  },
+  {
+    "name": "oven-molds",
+    "what": "Gloved hand pulls empty baking molds from a professional rack oven",
+    "url": "https://assets.mixkit.co/videos/50025/50025-720.mp4",
+    "page": "https://mixkit.co/free-stock-video/pastry-chef-taking-out-three-molds-from-an-oven-50025/",
+    "license": "Mixkit Stock Video Free License (commercial use, no attribution)",
+    "by": "muse",
+    "query": "oven",
+    "moments": [
+      {
+        "at": 2,
+        "dur": 0.6,
+        "what": "empty mold sitting on rack inside open industrial oven",
+        "crop": "405:720:182:0"
+      },
+      {
+        "at": 5,
+        "dur": 0.6,
+        "what": "gloved hand pulling tray with empty molds out of oven",
+        "crop": "405:720:246:0"
+      }
+    ],
+    "group": "oven"
+  },
+  {
+    "name": "espresso-steam",
+    "what": "Hands steaming milk in a steel pitcher at an espresso machine",
+    "url": "https://assets.mixkit.co/videos/3574/3574-720.mp4",
+    "page": "https://mixkit.co/free-stock-video/serving-coffee-in-a-cup-at-a-coffee-shop-3574/",
+    "license": "Mixkit Stock Video Free License (commercial use, no attribution)",
+    "by": "muse",
+    "query": "steam",
+    "moments": [
+      {
+        "at": 2,
+        "dur": 0.6,
+        "what": "hands sliding steel pitcher under espresso steam wand",
+        "crop": "405:720:438:0"
+      },
+      {
+        "at": 5,
+        "dur": 0.7,
+        "what": "steam wand frothing milk with hands holding pitcher",
+        "crop": "405:720:502:0"
+      }
+    ],
+    "group": "espresso-steam"
+  },
+  {
+    "name": "black-smoke",
+    "what": "White smoke curling and drifting over a black background",
+    "url": "https://assets.mixkit.co/videos/1968/1968-720.mp4",
+    "page": "https://mixkit.co/free-stock-video/black-background-with-smoke-foreground-1968/",
+    "license": "Mixkit Stock Video Free License (commercial use, no attribution)",
+    "by": "muse",
+    "query": "smoke",
+    "moments": [
+      {
+        "at": 0.5,
+        "dur": 0.6,
+        "what": "bright smoke curl rising on left"
+      },
+      {
+        "at": 8,
+        "dur": 0.6,
+        "what": "smoke wisps swirling across frame"
+      },
+      {
+        "at": 10.5,
+        "dur": 0.6,
+        "what": "dense smoke drifting over black"
+      }
+    ],
+    "group": "smoke"
+  },
+  {
+    "name": "white-smoke",
+    "what": "White smoke drifting over a black background",
+    "url": "https://assets.mixkit.co/videos/1960/1960-720.mp4",
+    "page": "https://mixkit.co/free-stock-video/white-smoke-with-black-background-1960/",
+    "license": "Mixkit Stock Video Free License (commercial use, no attribution)",
+    "by": "muse",
+    "query": "smoke",
+    "moments": [
+      {
+        "at": 1,
+        "dur": 0.6,
+        "what": "thin white smoke wisps rising on black",
+        "crop": "405:720:438:0"
+      },
+      {
+        "at": 3.5,
+        "dur": 0.6,
+        "what": "thicker smoke curling across dark background",
+        "crop": "405:720:438:0"
+      }
+    ],
+    "group": "smoke"
+  },
+  {
+    "name": "smoke-in-motion",
+    "what": "White smoke drifting on black background for overlay",
+    "url": "https://assets.mixkit.co/videos/1964/1964-720.mp4",
+    "page": "https://mixkit.co/free-stock-video/smoke-in-motion-1964/",
+    "license": "Mixkit Stock Video Free License (commercial use, no attribution)",
+    "by": "muse",
+    "query": "smoke",
+    "moments": [
+      {
+        "at": 1,
+        "dur": 0.6,
+        "what": "two wisps of white smoke rising",
+        "crop": "405:720:630:0"
+      },
+      {
+        "at": 12,
+        "dur": 0.6,
+        "what": "puff of white smoke rising",
+        "crop": "405:720:374:0"
+      },
+      {
+        "at": 15,
+        "dur": 0.6,
+        "what": "thick white smoke curling",
+        "crop": "405:720:246:0"
+      }
+    ],
+    "group": "smoke"
+  },
+  {
+    "name": "smoke-trail-dark",
+    "what": "white smoke trail twirling rapidly over black background",
+    "url": "https://assets.mixkit.co/videos/50951/50951-720.mp4",
+    "page": "https://mixkit.co/free-stock-video/a-trail-of-smoke-rapidly-twirls-over-a-dark-background-50951/",
+    "license": "Mixkit Stock Video Free License (commercial use, no attribution)",
+    "by": "muse",
+    "query": "smoke",
+    "moments": [
+      {
+        "at": 2.5,
+        "dur": 0.6,
+        "what": "thin smoke ribbon streaming sideways",
+        "crop": "405:720:438:0"
+      },
+      {
+        "at": 10.2,
+        "dur": 0.6,
+        "what": "smoke curls into small rings",
+        "crop": "405:720:566:0"
+      },
+      {
+        "at": 13,
+        "dur": 0.6,
+        "what": "smooth smoke trail flowing diagonally",
+        "crop": "405:720:310:0"
+      }
+    ],
+    "group": "smoke"
+  },
+  {
+    "name": "garlic-chopping",
+    "what": "Chef hands chopping garlic on a blue cutting board",
+    "url": "https://assets.mixkit.co/videos/43055/43055-720.mp4",
+    "page": "https://mixkit.co/free-stock-video/chef-skillfully-chopping-garlic-43055/",
+    "license": "Mixkit Stock Video Free License (commercial use, no attribution)",
+    "by": "muse",
+    "query": "chef",
+    "moments": [
+      {
+        "at": 2,
+        "dur": 0.6,
+        "what": "knife slicing garlic clove on blue board",
+        "crop": "405:720:438:0"
+      },
+      {
+        "at": 9.5,
+        "dur": 0.6,
+        "what": "hands mincing garlic pieces with chef knife",
+        "crop": "405:720:438:0"
+      }
+    ],
+    "group": "garlic-chopping"
+  },
+  {
+    "name": "baker-kneading-dough",
+    "what": "Close-up of hands kneading a large dough on a counter",
+    "url": "https://assets.mixkit.co/videos/42467/42467-720.mp4",
+    "page": "https://mixkit.co/free-stock-video/hands-of-a-baker-kneading-a-dough-42467/",
+    "license": "Mixkit Stock Video Free License (commercial use, no attribution)",
+    "by": "muse",
+    "query": "chef",
+    "moments": [
+      {
+        "at": 4.2,
+        "dur": 0.6,
+        "what": "fist punches into large dough",
+        "crop": "405:720:438:0"
+      },
+      {
+        "at": 9.2,
+        "dur": 0.6,
+        "what": "hands fold and press dough",
+        "crop": "405:720:438:0"
+      }
+    ],
+    "group": "dough"
+  },
+  {
+    "name": "revolving-city-view",
+    "what": "Revolving restaurant dining room with set tables overlooking city at night",
+    "url": "https://assets.mixkit.co/videos/4076/4076-720.mp4",
+    "page": "https://mixkit.co/free-stock-video/revolving-restaurant-in-a-city-4076/",
+    "license": "Mixkit Stock Video Free License (commercial use, no attribution)",
+    "by": "muse",
+    "query": "chef",
+    "moments": [
+      {
+        "at": 2.5,
+        "dur": 0.6,
+        "what": "empty set table beside tall windows overlooking city lights at night",
+        "crop": "405:720:694:0"
+      },
+      {
+        "at": 9,
+        "dur": 0.6,
+        "what": "empty set table beside tall windows as city lights pass by",
+        "crop": "405:720:758:0"
+      }
+    ],
+    "group": "city-night"
+  },
+  {
+    "name": "flour-mixing",
+    "what": "A cook mixing a mound of flour dough on a work counter",
+    "url": "https://assets.mixkit.co/videos/42464/42464-720.mp4",
+    "page": "https://mixkit.co/free-stock-video/cook-mixing-flour-for-a-dough-42464/",
+    "license": "Mixkit Stock Video Free License (commercial use, no attribution)",
+    "by": "muse",
+    "query": "chef",
+    "moments": [
+      {
+        "at": 2,
+        "dur": 0.6,
+        "what": "hands folding flour mound on counter",
+        "crop": "405:720:502:0"
+      },
+      {
+        "at": 5,
+        "dur": 0.6,
+        "what": "hands spreading flour across counter",
+        "crop": "405:720:438:0"
+      }
+    ],
+    "group": "dough"
+  },
+  {
+    "name": "night-city-street",
+    "what": "Night city towers with lit windows over a street as a car passes",
+    "url": "https://assets.mixkit.co/videos/40746/40746-720.mp4",
+    "page": "https://mixkit.co/free-stock-video/night-walk-through-the-streets-of-a-big-city-40746/",
+    "license": "Mixkit Stock Video Free License (commercial use, no attribution)",
+    "by": "muse",
+    "query": "city-night",
+    "moments": [
+      {
+        "at": 2,
+        "dur": 0.6,
+        "what": "lit tower windows over fenced night street"
+      },
+      {
+        "at": 8,
+        "dur": 0.6,
+        "what": "car passes on night road under towers"
+      }
+    ],
+    "group": "city-night"
+  },
+  {
+    "name": "city-night-aerial",
+    "what": "aerial pullback over downtown city lights at night",
+    "url": "https://assets.mixkit.co/videos/42343/42343-720.mp4",
+    "page": "https://mixkit.co/free-stock-video/movement-in-a-city-at-night-in-an-aerial-shot-42343/",
+    "license": "Mixkit Stock Video Free License (commercial use, no attribution)",
+    "by": "muse",
+    "query": "city-night",
+    "moments": [
+      {
+        "at": 4.5,
+        "dur": 0.6,
+        "what": "aerial over lit downtown towers at night",
+        "crop": "405:720:374:0"
+      },
+      {
+        "at": 18.5,
+        "dur": 0.7,
+        "what": "wide skyline with glowing towers under night sky",
+        "crop": "405:720:284:0"
+      }
+    ],
+    "group": "city-night"
+  },
+  {
+    "name": "night-avenue-dome",
+    "what": "Night avenue with car lights leading to an illuminated domed building",
+    "url": "https://assets.mixkit.co/videos/41161/41161-720.mp4",
+    "page": "https://mixkit.co/free-stock-video/night-movement-of-a-main-avenue-of-a-big-city-41161/",
+    "license": "Mixkit Stock Video Free License (commercial use, no attribution)",
+    "by": "muse",
+    "query": "city-night",
+    "moments": [
+      {
+        "at": 1,
+        "dur": 0.6,
+        "what": "cars driving away on night avenue toward lit dome",
+        "crop": "405:720:374:0"
+      },
+      {
+        "at": 6,
+        "dur": 0.6,
+        "what": "oncoming headlights on night avenue with lit dome ahead",
+        "crop": "405:720:374:0"
+      }
+    ],
+    "group": "city-night"
+  },
+  {
+    "name": "night-city-street-40747",
+    "what": "Empty night street with lit modern glass building",
+    "url": "https://assets.mixkit.co/videos/40747/40747-720.mp4",
+    "page": "https://mixkit.co/free-stock-video/night-tour-through-the-streets-of-a-big-city-40747/",
+    "license": "Mixkit Stock Video Free License (commercial use, no attribution)",
+    "by": "muse",
+    "query": "city-night",
+    "moments": [
+      {
+        "at": 7,
+        "dur": 0.6,
+        "what": "lit glass parking building glowing above empty night street"
+      },
+      {
+        "at": 8,
+        "dur": 0.6,
+        "what": "slow drift past lit fence toward building base"
+      }
+    ],
+    "group": "city-night"
+  },
+  {
+    "name": "cobbled-street-seating",
+    "what": "Empty outdoor restaurant tables along a cobbled alley",
+    "url": "https://assets.mixkit.co/videos/2597/2597-720.mp4",
+    "page": "https://mixkit.co/free-stock-video/outdoor-restaurant-seating-on-cobbled-street-2597/",
+    "license": "Mixkit Stock Video Free License (commercial use, no attribution)",
+    "by": "muse",
+    "query": "restaurant",
+    "moments": [
+      {
+        "at": 2,
+        "dur": 0.6,
+        "what": "green tables lining stone wall",
+        "crop": "405:720:156:0"
+      },
+      {
+        "at": 7.5,
+        "dur": 0.6,
+        "what": "camera glides past empty terrace down alley",
+        "crop": "405:720:207:0"
+      }
+    ],
+    "group": "cobbled-street-seating"
+  },
+  {
+    "name": "flat-top-plancha",
+    "group": "plancha",
+    "what": "a steel flat-top griddle (plancha) in a working restaurant, small cubes of chicken searing on it, a cook's forearm with a spatula now and then",
+    "url": "https://assets.mixkit.co/videos/4678/4678-720.mp4",
+    "page": "https://mixkit.co/free-stock-video/chef-cooking-on-a-large-grill-4678/",
+    "license": "Mixkit Stock Video Free License (commercial use, no attribution)",
+    "by": "claude",
+    "query": "cooking",
+    "base": true,
+    "moments": [
+      {
+        "at": 1.0,
+        "dur": 0.6,
+        "what": "steel plancha, chicken cubes searing, no hands",
+        "crop": "405:720:440:0"
+      },
+      {
+        "at": 6.5,
+        "dur": 0.6,
+        "what": "a spatula turns the chicken cubes on the plancha",
+        "crop": "405:720:440:0"
+      }
+    ]
+  }
+]

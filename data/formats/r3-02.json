@@ -1,0 +1,122 @@
+{
+  "audio_role": "Opens with shouted 1-2-3-4 into fast brass mambo. Horn hits carry the sped-up builds and land on box-close, shake and open. Around 31s music drops low under a dry American male voiceover that explains the trick. No sizzle, no chewing, no sync sound. Cuts sit on the beat: place-place-place-close-shake-open.",
+  "can_make": "We can make the structure from stills: top-down empty branded box background from a menu photo, cut-out piles of sauce-cheese-topping placed by jump cuts, big 3.3M / 1.1M view cards, closed-box front made from the restaurant logo photo held by our house cast still, and a hard cut to finished dish photo with a 4s AI push-in for the reveal. We can animate text: This Video Pulled, Then Used The Same Concept, Swap ingredients-packaging-reveal. We cannot make a believable continuous hand placing real loose flour, shredded cheese, egg yolk cracking, or a real cardboard shake with motion blur and matching shadows from stills alone. AI hands can hold a box still, they cannot do the fast precise ingredient drops or the open to steaming melted cheese without warping.",
+  "core": "Put raw ingredients where the finished dish should be, close the box, open it to the finished dish.",
+  "dish": "VICOLO pizza then THE COOKIE LAB 6-pack cookies",
+  "fits": "Assembled dishes with 4-6 separate raw parts that bake into one whole: pizza, cookie / brownie / donut boxes, burgers, burritos, sushi sets, loaded fries or pasta boxes. Does not fit soups, drinks, or single-steak plates with no visible parts.",
+  "format": "raw-in-box to finished-in-box shake reveal",
+  "hook": "Overhead first second: metal ladle drops a blob of red tomato sauce directly onto empty brown pizza-box cardboard, not onto dough.",
+  "needs_camera": "A real overhead camera in the real place for: gloved hands dropping real sauce, shredded cheese, ham, mushrooms, olives, flour, sugars, chips and cracking a real egg into the real branded box in one light; closing, shaking and reopening the same box in one move; the finished hot pizza with melted cheese and baked cookies with steam and texture. The shake-blur, the yolk break, and the hot-food look only come from that take.",
+  "people": "hands only, no faces, no eating. Shot 0-16s: dark-skinned hands in clear disposable gloves place pizza piles, close VICOLO box, shake, reopen. Shot 20-36s: light-skinned female hands with pink manicure and gold ring spoon cookie mixes, crack egg, close pink box, shake, reopen.",
+  "shots": [
+    {
+      "action": "gloved hand pours sauce then piles shredded cheese, folded ham, mushrooms, olives into open brown box then closes lid to VICOLO logo",
+      "camera": "static overhead",
+      "end": 13.37,
+      "framing": "overhead",
+      "speed": "sped up",
+      "start": 0
+    },
+    {
+      "action": "hands reopen same box to reveal whole baked sliced pizza",
+      "camera": "static overhead",
+      "end": 16.03,
+      "framing": "overhead close",
+      "speed": "real time",
+      "start": 13.37
+    },
+    {
+      "action": "dark overlay holds on pizza while This Video Pulled 3.3M card pops",
+      "camera": "static",
+      "end": 20.1,
+      "framing": "overhead with graphic",
+      "speed": "real time",
+      "start": 16.03
+    },
+    {
+      "action": "female hands spoon flour, white sugar, brown sugar, white and dark chips into open pink box",
+      "camera": "static overhead",
+      "end": 26.93,
+      "framing": "overhead",
+      "speed": "sped up",
+      "start": 20.1
+    },
+    {
+      "action": "hands crack egg open over box center letting yolk fall on piles",
+      "camera": "static overhead slight push in",
+      "end": 31.07,
+      "framing": "close",
+      "speed": "real time",
+      "start": 26.93
+    },
+    {
+      "action": "hands close pink box to THE COOKIE LAB front, shake it, reopen to six finished cookies",
+      "camera": "static overhead",
+      "end": 36.3,
+      "framing": "overhead",
+      "speed": "real time",
+      "start": 31.07
+    },
+    {
+      "action": "freeze on cookies with Then arrow and cookielabmiami profile pill appears",
+      "camera": "static graphic zoom",
+      "end": 37,
+      "framing": "medium graphic",
+      "speed": "real time",
+      "start": 36.3
+    },
+    {
+      "action": "replay flashes of closed pink box with Used The Same Concept text",
+      "camera": "static",
+      "end": 38.67,
+      "framing": "medium",
+      "speed": "real time",
+      "start": 37
+    },
+    {
+      "action": "cut to sidewalk sign MIAMI SWEETEST STOP with And Pulled Another 1.1M card",
+      "camera": "static",
+      "end": 39.63,
+      "framing": "medium",
+      "speed": "real time",
+      "start": 38.67
+    },
+    {
+      "action": "side-by-side replay of pizza and cookie builds with red circles on each pile and captions you knew transformation was coming but wanted result",
+      "camera": "static split",
+      "end": 43.23,
+      "framing": "overhead",
+      "speed": "sped up",
+      "start": 39.63
+    },
+    {
+      "action": "close box shake and satisfying open recap on pizza",
+      "camera": "static overhead",
+      "end": 45.37,
+      "framing": "overhead",
+      "speed": "real time",
+      "start": 43.23
+    },
+    {
+      "action": "montage of three other boxes 1.8M 2.3M 1.2M with voiceover: swap ingredients packaging final reveal same structure different product",
+      "camera": "handheld follow in inserts, static on boxes",
+      "end": 54.53,
+      "framing": "overhead and medium",
+      "speed": "sped up",
+      "start": 45.37
+    },
+    {
+      "action": "blurred phone comments screen holds while voiceover offers 50+ patterns to adapt organically",
+      "camera": "static",
+      "end": 61.2,
+      "framing": "close graphic",
+      "speed": "real time",
+      "start": 54.53
+    }
+  ],
+  "text_on_screen": "3.3M Views / VICOLO ITALIAN STREET FOOD / This Video Pulled 3.3M Views / COOKIES NOW, ADULTING LATER. / 1.1M Views / THE COOKIE LAB / Then cookielabmiami Used The Same Concept / And Pulled Another 1.1M MIAMI SWEETEST STOP / But you knew transformation was coming still you wanted result / Then shake it in one clean satisfying reveal / That's Why This Works So Well / Swap ingredients packaging final reveal same structure completely different product / Comment Patterns We offer 50+ patterns to adapt product organically",
+  "why_it_works": "Brain sees separate raw piles in the delivery box and predicts the cooked whole, the closed lid holds that prediction for 2 seconds, the open pays it with melted cheese and browned cookies. Second time with different food proves it is a repeatable trick, not luck. This is what Yansel 2 Nov meant by mas creativos no es copiar: the Reel states it at 45.37-54.53 as swap ingredients-packaging-reveal, keep same structure for a different product.",
+  "source": "reference reel (link removed: we study the edit, never use the footage)",
+  "picked_because": "Yansel, 2 Nov: más creativos, no es copiar, es tener la creatividad de crear cosas así que nadie nunca haya hecho",
+  "studied_by": "muse-spark-1.3"
+}

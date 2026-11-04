@@ -1,0 +1,161 @@
+{
+  "audio_role": "Upbeat drum-driven track under the whole reel, no voice. Cuts land about every 1 second on the beat. Kitchen sounds are low under music. Final cross-section hold lets the beat resolve.",
+  "can_make": "We can make the hook and structure from the edit: black title What makes you Happy?, white this. locked over center, fast 1s cuts on beat, music. We can start from the restaurant's real menu photo of the finished burger and generate 4 s push-in clips, and have the house AI cast hold and present the wrapped burger and the two halves - they hold and show, never eat. We cannot make the true build: gloved hands spreading white sauce, dropping lettuce, squeezing pink sauce with real drip, placing two crispy fillets, draping cheddar, closing, wrapping in paper and knife-cutting to a real juicy cross-section. AI hands warp and crispy crust and sauce flow smear in 4 s clips, so layering would be faked stills and morphs, not real assembly.",
+  "core": "Answering What makes you Happy? with this. on every layer while a tall double crispy chicken burger is stacked and then cut open.",
+  "dish": "double crispy fried chicken burger on brioche with white sauce, chopped lettuce, thin deli slice, pink sauce, double cheddar, wrapped in printed paper and cut in half",
+  "fits": "Tall layered dishes with a readable inside: double burgers, crispy chicken sandwiches, club sandwiches, wraps, burritos, shawarma where stacking height and cross-section sell size.",
+  "format": "layer-by-layer build to cross-section",
+  "hook": "0-1s: black screen with big white What popping in, then makes you Happy? stacking word by word - high contrast question with no food yet.",
+  "needs_camera": "Real hands in black gloves building in continuity on a yellow board in a real kitchen; real sauce viscosity and drip over crispy crust in macro; real cheese bend over chicken; real paper wrap and steel knife cut opening to a hot layered interior held to the lens.",
+  "people": "hands only in black nitrile gloves, no faces, no talking. Hands slice bun, spread sauce, place lettuce, deli slice, squeeze bottle, place chicken and cheese twice, close with top bun, wrap, cut and hold up halves.",
+  "shots": [
+    {
+      "action": "words What / makes / you / Happy? appear one by one",
+      "camera": "static",
+      "end": 4.24,
+      "framing": "fullscreen black title",
+      "speed": "real time",
+      "start": 0
+    },
+    {
+      "action": "knife slices bun in half on yellow board",
+      "camera": "static",
+      "end": 5.24,
+      "framing": "close, eye level",
+      "speed": "real time",
+      "start": 4.24
+    },
+    {
+      "action": "spoon spreads thick white sauce on bottom bun",
+      "camera": "static",
+      "end": 6.77,
+      "framing": "macro close, eye level",
+      "speed": "real time",
+      "start": 5.24
+    },
+    {
+      "action": "chopped lettuce dropped onto white sauce",
+      "camera": "static",
+      "end": 8.11,
+      "framing": "close, eye level",
+      "speed": "real time",
+      "start": 6.77
+    },
+    {
+      "action": "thin round white deli slice laid over lettuce",
+      "camera": "static",
+      "end": 8.78,
+      "framing": "close, eye level",
+      "speed": "real time",
+      "start": 8.11
+    },
+    {
+      "action": "pink sauce squeezed from bottle over stack",
+      "camera": "static",
+      "end": 9.88,
+      "framing": "macro close, eye level",
+      "speed": "real time",
+      "start": 8.78
+    },
+    {
+      "action": "first crispy fried chicken fillet placed on stack",
+      "camera": "static",
+      "end": 10.91,
+      "framing": "close, eye level",
+      "speed": "real time",
+      "start": 9.88
+    },
+    {
+      "action": "square cheddar slice laid over fried chicken",
+      "camera": "static",
+      "end": 11.85,
+      "framing": "close, eye level",
+      "speed": "real time",
+      "start": 10.91
+    },
+    {
+      "action": "white-pink sauce drizzled over cheese and drips down side",
+      "camera": "push in",
+      "end": 12.91,
+      "framing": "macro close, eye level",
+      "speed": "real time",
+      "start": 11.85
+    },
+    {
+      "action": "second crispy fried chicken fillet placed on top",
+      "camera": "static",
+      "end": 14.05,
+      "framing": "close, eye level",
+      "speed": "real time",
+      "start": 12.91
+    },
+    {
+      "action": "second thin white deli slice laid on second chicken",
+      "camera": "static",
+      "end": 15.08,
+      "framing": "close, eye level",
+      "speed": "real time",
+      "start": 14.05
+    },
+    {
+      "action": "second cheddar slice laid on top",
+      "camera": "static",
+      "end": 15.88,
+      "framing": "close, eye level",
+      "speed": "real time",
+      "start": 15.08
+    },
+    {
+      "action": "sauced top bun lowered and pressed to close tall burger",
+      "camera": "static",
+      "end": 17.05,
+      "framing": "close, eye level",
+      "speed": "real time",
+      "start": 15.88
+    },
+    {
+      "action": "finished burger lifted off board",
+      "camera": "whip",
+      "end": 17.08,
+      "framing": "close, eye level",
+      "speed": "real time",
+      "start": 17.05
+    },
+    {
+      "action": "burger set on printed paper and wrapped tight",
+      "camera": "static",
+      "end": 17.95,
+      "framing": "medium close, overhead",
+      "speed": "real time",
+      "start": 17.08
+    },
+    {
+      "action": "long knife cuts wrapped burger in half",
+      "camera": "static",
+      "end": 18.99,
+      "framing": "close, eye level",
+      "speed": "real time",
+      "start": 17.95
+    },
+    {
+      "action": "hands pull halves apart to reveal layered interior",
+      "camera": "push in",
+      "end": 19.75,
+      "framing": "macro close, eye level",
+      "speed": "real time",
+      "start": 18.99
+    },
+    {
+      "action": "halves held steady to camera showing chicken, cheese, sauces and lettuce",
+      "camera": "static",
+      "end": 21.2,
+      "framing": "macro close, eye level",
+      "speed": "real time",
+      "start": 19.75
+    }
+  ],
+  "text_on_screen": "0-4.24s: What makes you Happy? in white bold on black. 4.24-21.2s: small white this. centered over every food shot.",
+  "why_it_works": "Close lens shows white smear, green lettuce, pink sauce running down orange crispy crust, cheese bending over the edge, then height doubling with second fillet. The final cut proves the inside: two thick breaded fillets, melted cheese lines, sauces and bun. No eating, just texture, drip, volume and repetition.",
+  "source": "reference reel (link removed: we study the edit, never use the footage)",
+  "studied_by": "muse-spark-1.3"
+}

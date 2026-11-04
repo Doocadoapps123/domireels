@@ -1,0 +1,25 @@
+{
+  "audio_role": "Male Spanish comedic voiceover talking about not dieting plays over the whole 9s. No music, no sizzle. The food action runs under the joke and is not cut to the voice.",
+  "can_make": "We can make the hero still from the real menu photo: close arepa on white plate with beer behind. We can make a 4s AI clip of an AI house-cast hand holding the wrapped arepa up with a slow push-in. We can add text and the voice trend in the edit. We cannot make the real lift off the plate, the real squeeze-bottle pour with thick white-green sauce zig-zagging, clinging and dripping over beef, beans and plantains, or the loose bean left on the plate.",
+  "core": "An overstuffed arepa is lifted off the plate and sauced on camera to show how full and wet it is.",
+  "dish": "Venezuelan arepa stuffed with shredded beef, black beans, grated white cheese and whole fried sweet plantains",
+  "fits": "Handheld stuffed foods where the filling is visible from the side: arepas, gorditas, tacos, tortas, burgers, pita shawarma. Needs 3+ contrasting layers and a final pourable sauce.",
+  "format": "lift-and-sauce",
+  "hook": "Overstuffed arepa fills the frame in close-up, shredded meat, black beans and glossy caramelized plantains stacked high above the plate.",
+  "needs_camera": "Real hands lifting the heavy wrapped arepa, real squeeze bottle laying thick sauce in a continuous stream that piles and drips, real shine and texture of meat, beans, cheese and fried plantain, and a bean dropping onto the plate.",
+  "people": "hands only: woman's hands with bright pink nail polish enter from both sides, grip the paper-wrapped arepa, lift it off the plate and hold it steady while sauce is squeezed from above. No face, no eating.",
+  "shots": [
+    {
+      "action": "hands lift paper-wrapped arepa off plate and squeeze thick white-green sauce over meat, beans and plantains",
+      "camera": "static",
+      "end": 9,
+      "framing": "close",
+      "speed": "real time",
+      "start": 0
+    }
+  ],
+  "text_on_screen": "none",
+  "why_it_works": "You see the layers: white grated cheese on the bottom, dark shredded beef, black beans, browned plantains on top. Lifting it shows weight and leaves one bean on the plate, proving it is overfilled. The thick sauce poured on top and dripping down adds wetness and movement.",
+  "source": "reference reel (link removed: we study the edit, never use the footage)",
+  "studied_by": "muse-spark-1.3"
+}

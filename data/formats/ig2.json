@@ -1,0 +1,257 @@
+{
+  "audio_role": "Upbeat regional Mexican instrumental with brass, accordion and driving percussion for full 17.7s, no voice. Faint griddle sizzle underneath. Hard cuts sit on the beat, short 0.3-0.6s cuts during build, longer 1s holds on dip and cheese-pull at end.",
+  "can_make": "We can make the rhythm and order, not the cooking. From real menu photos: fast-cut push-ins that mimic build order - tortilla, cheese, meat, onion, folded taco, tray of three, cup of consomme, hand holding tray. With 4s AI clips started from a photo: fake falling cheese, fake steam shimmer, fake slow zoom on plated tacos, fake pour shimmer, fake hold on cheese stretch. House cast can hold and present the tray and cup to camera and carry it, never cook on a griddle, never dip and tear. We cannot make real melting, bubbling, browning, real meat juices, real folding, real dripping dunk, or real tearing cheese strings. Those would look frozen or smeared in AI.",
+  "core": "A birria taco is built layer by layer on the griddle and then dunked and torn apart to prove it is juicy and cheesy.",
+  "dish": "Beef birria tacos with melted white cheese, shredded beef, diced onion and cilantro, lime wedges, with red beef consomme for dipping",
+  "fits": "Dishes assembled in layers on a flat top with a melt and a dip pay-off: birria / quesabirria tacos, quesadillas, mulitas, cheesesteak, smash burger with cheese pull, loaded crispy tacos, any juicy meat + melted cheese + fresh chop + sauce cup.",
+  "format": "griddle build to dip-and-pull",
+  "hook": "First 0.37s in macro: white shredded cheese falls from top onto bright orange oiled tortillas on a black griddle. High contrast color, downward motion, sizzle surface.",
+  "needs_camera": "Only a real camera in the real place gives: dark greasy griddle with oil, steam and sizzle; cheese actually melting and bubbling; shredded beef in juice being lifted with tongs; fresh onion-cilantro scattering; tortilla folding and crisp-browning; red consomme actually stirred and poured; taco actually dunked with drips; taco actually torn with long cheese strings and falling meat. Long unbroken take of dip and pull, real cook hands, real heat.",
+  "people": "Nobody with a face. Black-gloved cook hands do all work: shower cheese, handle tongs, sprinkle onion-cilantro, place lime, pour consomme. At end one person seen only chest to knees in black shirt and blue jeans uses bare hands to pick up, dunk and tear the taco. All entries from top or side of frame.",
+  "shots": [
+    {
+      "action": "shredded white cheese falls onto orange tortillas on dark griddle",
+      "camera": "static",
+      "end": 0.37,
+      "framing": "macro overhead",
+      "speed": "real time",
+      "start": 0
+    },
+    {
+      "action": "gloved fingers release last strands of cheese onto second tortilla",
+      "camera": "push in",
+      "end": 0.85,
+      "framing": "close overhead",
+      "speed": "real time",
+      "start": 0.37
+    },
+    {
+      "action": "three cheese-topped tortillas sizzle in oil",
+      "camera": "static",
+      "end": 1.28,
+      "framing": "overhead",
+      "speed": "real time",
+      "start": 0.85
+    },
+    {
+      "action": "tongs dig into tray of dark shredded beef in juice",
+      "camera": "static",
+      "end": 1.87,
+      "framing": "close",
+      "speed": "real time",
+      "start": 1.28
+    },
+    {
+      "action": "tongs drop mound of beef onto melted cheese",
+      "camera": "static",
+      "end": 2.47,
+      "framing": "macro",
+      "speed": "real time",
+      "start": 1.87
+    },
+    {
+      "action": "tongs pile second mound of beef onto second tortilla",
+      "camera": "static",
+      "end": 2.9,
+      "framing": "macro",
+      "speed": "real time",
+      "start": 2.47
+    },
+    {
+      "action": "beef mounds sit on bubbling cheese",
+      "camera": "push in",
+      "end": 3.48,
+      "framing": "close",
+      "speed": "real time",
+      "start": 2.9
+    },
+    {
+      "action": "diced white onion and green cilantro rain down onto meat",
+      "camera": "static",
+      "end": 4.08,
+      "framing": "overhead",
+      "speed": "real time",
+      "start": 3.48
+    },
+    {
+      "action": "garnish lands and scatters on meat and griddle",
+      "camera": "static",
+      "end": 4.33,
+      "framing": "close",
+      "speed": "real time",
+      "start": 4.08
+    },
+    {
+      "action": "gloved hand drops extra pinch of cilantro",
+      "camera": "static",
+      "end": 4.85,
+      "framing": "close",
+      "speed": "real time",
+      "start": 4.33
+    },
+    {
+      "action": "tongs press meat down into cheese",
+      "camera": "handheld follow",
+      "end": 5.18,
+      "framing": "close",
+      "speed": "real time",
+      "start": 4.85
+    },
+    {
+      "action": "tongs lift edge and fold tortilla in half over filling",
+      "camera": "static",
+      "end": 5.48,
+      "framing": "close",
+      "speed": "real time",
+      "start": 5.18
+    },
+    {
+      "action": "folded half-moon taco presses on griddle",
+      "camera": "static",
+      "end": 5.97,
+      "framing": "close",
+      "speed": "real time",
+      "start": 5.48
+    },
+    {
+      "action": "tongs press crisped orange shell with browned spots",
+      "camera": "static",
+      "end": 6.55,
+      "framing": "macro",
+      "speed": "real time",
+      "start": 5.97
+    },
+    {
+      "action": "second taco folded and crisped beside first",
+      "camera": "pan right",
+      "end": 7.08,
+      "framing": "close",
+      "speed": "real time",
+      "start": 6.55
+    },
+    {
+      "action": "crisped tacos sizzle with scattered onions around",
+      "camera": "push in",
+      "end": 7.5,
+      "framing": "close",
+      "speed": "real time",
+      "start": 7.08
+    },
+    {
+      "action": "tongs lift crisped taco off griddle",
+      "camera": "handheld follow",
+      "end": 8.03,
+      "framing": "close",
+      "speed": "real time",
+      "start": 7.5
+    },
+    {
+      "action": "taco carried and set onto paper-lined tray",
+      "camera": "handheld follow",
+      "end": 8.55,
+      "framing": "medium close",
+      "speed": "real time",
+      "start": 8.03
+    },
+    {
+      "action": "second taco placed beside first on printed paper",
+      "camera": "handheld follow",
+      "end": 8.95,
+      "framing": "close",
+      "speed": "real time",
+      "start": 8.55
+    },
+    {
+      "action": "third taco placed to make row of three",
+      "camera": "static",
+      "end": 9.57,
+      "framing": "close",
+      "speed": "real time",
+      "start": 8.95
+    },
+    {
+      "action": "row of three filled tacos shown on tray",
+      "camera": "push in",
+      "end": 10.2,
+      "framing": "overhead",
+      "speed": "real time",
+      "start": 9.57
+    },
+    {
+      "action": "gloved hand sprinkles final onion and cilantro over plated tacos",
+      "camera": "static",
+      "end": 10.98,
+      "framing": "close",
+      "speed": "real time",
+      "start": 10.2
+    },
+    {
+      "action": "gloved hand sets lime wedges beside tacos",
+      "camera": "static",
+      "end": 11.43,
+      "framing": "close",
+      "speed": "real time",
+      "start": 10.98
+    },
+    {
+      "action": "hand places small black cup on tray edge",
+      "camera": "static",
+      "end": 12.37,
+      "framing": "medium",
+      "speed": "real time",
+      "start": 11.43
+    },
+    {
+      "action": "ladle stirs bubbling red-brown consomme in pot",
+      "camera": "static",
+      "end": 13.48,
+      "framing": "macro",
+      "speed": "real time",
+      "start": 12.37
+    },
+    {
+      "action": "thick red consomme poured from ladle into paper cup",
+      "camera": "static",
+      "end": 13.88,
+      "framing": "macro",
+      "speed": "slow motion",
+      "start": 13.48
+    },
+    {
+      "action": "full consomme cup set back on tray next to tacos",
+      "camera": "static",
+      "end": 14.32,
+      "framing": "close",
+      "speed": "real time",
+      "start": 13.88
+    },
+    {
+      "action": "bare hand picks up taco and dunks tip into consomme",
+      "camera": "handheld follow",
+      "end": 15.28,
+      "framing": "medium close",
+      "speed": "real time",
+      "start": 14.32
+    },
+    {
+      "action": "soaked taco lifted dripping from cup",
+      "camera": "push in",
+      "end": 16.43,
+      "framing": "close",
+      "speed": "slow motion",
+      "start": 15.28
+    },
+    {
+      "action": "two hands tear taco apart showing cheese strings and beef inside",
+      "camera": "static",
+      "end": 17.7,
+      "framing": "close",
+      "speed": "slow motion",
+      "start": 16.43
+    }
+  ],
+  "text_on_screen": "No added captions, titles or prices. Only in-frame print: TALKIN TACOS with skull logo on brown tray paper and on black consomme cup.",
+  "why_it_works": "It shows fat and water in order: oil on griddle, cheese melting, beef juice, white onion and green cilantro for contrast, shell browning and crisping, red broth pouring, dunk with drips, cheese stretching when torn. Each step is a close physical change you can see. The brain reads shine, melt, steam and stretch as hot, salty and fatty.",
+  "source": "reference reel (link removed: we study the edit, never use the footage)",
+  "studied_by": "muse-spark-1.3"
+}

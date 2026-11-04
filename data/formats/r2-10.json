@@ -1,0 +1,97 @@
+{
+  "audio_role": "Loud driving percussive track with no speech and no food sound. Cuts sit on the beat hits. The track runs under the talk and handoff, drops out slightly for the shoe-tying setup around 9.6s, then kicks back for the run at the end.",
+  "can_make": "We can make the stop-and-show beats: house model in white t-shirt holding two paper bags up to show logo, house model in black with open hands begging, waist-high handover of bags, model clutching bags and smiling, model crouched tying shoe and staring at lens. Each as a 4 s AI clip started from a still photo, cut fast to music, with real menu photos inserted as what is inside the bag. We cannot make the continuous walk out of the door, the foreground pass-by, or the run down the street look real in AI - legs, background and bag physics will warp after 2-3 seconds.",
+  "core": "A takeout handoff turns into a fake race: one guy gives away the bags, ties his shoes, and gets ready to chase the guy who runs off with them.",
+  "dish": "No dish visible. Only two sealed brown paper takeaway bags with Dhoo logo.",
+  "fits": "Fits takeaway and delivery push for any food that travels in a bag or box like burgers, fried chicken, esfihas, marmita, sushi combos. Does not fit dishes that need to be seen to sell - steak cut, cheese pull, steam, plating.",
+  "format": "bag handoff to footrace",
+  "hook": "In the first second a man in white walks straight out of the open restaurant doors toward camera with a bag in each hand while a second man in black walks across the foreground very close to lens and blocks him.",
+  "needs_camera": "Real restaurant entrance and sign in one wide shot, real sidewalk and street with cars, poles and shops, two real bodies in the same frame exchanging the weight of the bags, and a long unbroken take of a person actually running away with the bags while the other reacts. AI cannot hold location consistency, full-body walk and run, or real contact.",
+  "people": "Two men, late 20s to early 30s. Man 1: short dark hair, beard, white t-shirt, black pants, tattoo on left arm, black watch. He carries, displays and hands over the bags, then ties his shoe and prepares to chase. Man 2: dark hair, neck tattoos, black long-sleeve polo, black pants. He begs with open hands, takes both bags, smiles with them, then sprints away. Full upper bodies, no eating, no talking to camera except gestures.",
+  "shots": [
+    {
+      "action": "walks out of open restaurant doors toward camera carrying a paper bag in each hand while second man crosses foreground",
+      "camera": "static",
+      "end": 2,
+      "framing": "medium wide, eye level",
+      "speed": "real time",
+      "start": 0
+    },
+    {
+      "action": "stops and looks down at the bags, lifting them slightly by the handles",
+      "camera": "static",
+      "end": 3.38,
+      "framing": "close, low angle",
+      "speed": "real time",
+      "start": 2
+    },
+    {
+      "action": "holds both palms open toward camera asking for the bags",
+      "camera": "static",
+      "end": 4.55,
+      "framing": "medium close, eye level",
+      "speed": "real time",
+      "start": 3.38
+    },
+    {
+      "action": "holds both branded bags up to camera to show the logos",
+      "camera": "static",
+      "end": 6.46,
+      "framing": "medium, eye level",
+      "speed": "real time",
+      "start": 4.55
+    },
+    {
+      "action": "repeats open-hands begging gesture toward the bags",
+      "camera": "static",
+      "end": 7.38,
+      "framing": "medium close, eye level",
+      "speed": "real time",
+      "start": 6.46
+    },
+    {
+      "action": "hands both bags over to the other man on the sidewalk",
+      "camera": "static",
+      "end": 8.51,
+      "framing": "medium wide, eye level",
+      "speed": "real time",
+      "start": 7.38
+    },
+    {
+      "action": "clutches both bags to chest and smiles at camera",
+      "camera": "static",
+      "end": 9.68,
+      "framing": "medium close, eye level",
+      "speed": "real time",
+      "start": 8.51
+    },
+    {
+      "action": "crouches on sidewalk and ties his shoelace while staring at camera",
+      "camera": "static",
+      "end": 12.85,
+      "framing": "close, low angle",
+      "speed": "real time",
+      "start": 9.68
+    },
+    {
+      "action": "stands with hands on hips in ready stance with spare shoes left on ground",
+      "camera": "static",
+      "end": 14.18,
+      "framing": "wide, eye level",
+      "speed": "real time",
+      "start": 12.85
+    },
+    {
+      "action": "runs away down sidewalk carrying both bags while first man reaches after him",
+      "camera": "handheld follow",
+      "end": 16.1,
+      "framing": "wide, eye level",
+      "speed": "real time",
+      "start": 14.18
+    }
+  ],
+  "text_on_screen": "none. Only physical shop sign and printed bag logo Dhoo RESTAURANTE are visible.",
+  "why_it_works": "It does not make hungry with food detail because no food is shown. It holds watch time with faces, a clear conflict over who gets the bags, repeated logo shots, and an unfinished chase. Viewer stays to see if the run happens and who wins.",
+  "source": "reference reel (link removed: we study the edit, never use the footage)",
+  "studied_by": "muse-spark-1.3"
+}

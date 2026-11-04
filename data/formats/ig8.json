@@ -1,0 +1,41 @@
+{
+  "audio_role": "No music, no voice, no text. Only live counter sound: cardboard thud as pizza lands, repeated scrape-roll of the pizza wheel, faint shop hum. The cutting strokes set the pace; quiet pause before the lift makes the final pull stand out.",
+  "can_make": "We can fake the layout: start from a real top-down menu photo of pepperoni pizza in a box, do a slow 4 s AI push-in for the boxed whole pizza, cut to a second 4 s AI clip started from the same photo with slight warp to suggest a slice lifting and cheese starting to stretch, with an AI-drawn hand/model holding the box edge, plus added cutter and thud sound effects and simple text in edit. We cannot make a real wheel sawing through crust, real crumbs and grease shifting, or a long natural melting cheese stretch.",
+  "core": "A hot pepperoni pizza is boxed, cut through, then one slice is lifted to prove the cheese is melted.",
+  "dish": "large pepperoni pizza",
+  "fits": "Round dishes that are cut to portion and look hot when stretched: pizza, quesadilla, cheese flatbread, focaccia, lasagna, pie.",
+  "format": "box-cut-and-lift",
+  "hook": "A full pepperoni pizza slides off a peel and thumps into an open box filling the frame in the first second.",
+  "needs_camera": "Real drop with heat and weight, real wheel cutting through crust and cheese with crumbs and shifting pepperoni, long unbroken cheese strings on lift, real display case with other pizzas behind. Nothing else proves it is fresh in a real shop.",
+  "people": "nobody eating or talking. Only hands and forearms and torso of staff in black t-shirt: drops pizza, rolls cutter, lifts slice with small server. No face to camera.",
+  "shots": [
+    {
+      "action": "whole pizza slides off metal peel into cardboard box",
+      "camera": "static",
+      "end": 2.5,
+      "framing": "close overhead",
+      "speed": "real time",
+      "start": 0
+    },
+    {
+      "action": "pizza is sliced through with a rolling wheel cutter",
+      "camera": "static",
+      "end": 23.5,
+      "framing": "close overhead",
+      "speed": "real time",
+      "start": 2.5
+    },
+    {
+      "action": "end slice is pried up and lifted showing long cheese stretch",
+      "camera": "handheld reposition to low side angle then hold",
+      "end": 30.8,
+      "framing": "close eye level",
+      "speed": "real time",
+      "start": 23.5
+    }
+  ],
+  "text_on_screen": "none",
+  "why_it_works": "You see full coverage of crisped pepperoni and bubbling cheese up close, hear the cutter crunch through crust, and the final lift shows cheese stretching and dripping, which reads as hot, greasy, and ready to share.",
+  "source": "reference reel (link removed: we study the edit, never use the footage)",
+  "studied_by": "muse-spark-1.3"
+}

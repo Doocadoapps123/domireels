@@ -1,0 +1,25 @@
+{
+  "audio_role": "Upbeat instrumental music plays for the full 8.8s with no talking, no sizzle, no chewing sound; one continuous take so there are no edits to land on the music.",
+  "can_make": "We can make the setup: overhead or medium still of the real steak board plus real side dishes composited as a full table, same text overlay, plus a 4s AI clip of a house model holding or presenting the steak board with a slight push-in and background wine rack. We cannot make the core action: a believable cut, lift to mouth, chew, and eyes-closed enjoyment. Our cast never eats and a 4s AI clip started from a photo cannot do realistic mouth, chewing, and swallowing.",
+  "core": "Watch a diner take the first bite of steak and enjoy it.",
+  "dish": "sliced grilled steak on a wooden board with roast garlic",
+  "fits": "Dishes where tenderness and enjoyment show on the face in one bite: steak, lamb chops, roast chicken, ribs, pasta, burgers.",
+  "format": "first-bite reaction",
+  "hook": "Woman smiling at a full table cuts straight into a board of sliced steak in the first second.",
+  "needs_camera": "A real person in a real restaurant in one unbroken take actually cutting the meat, putting it in her mouth, chewing, and reacting with closed eyes and smile.",
+  "people": "One woman in her late 20s, long dark brown hair, dark green sleeveless satin top, sitting at the table facing camera; she cuts steak with knife and fork, lifts fork to mouth, chews with eyes closed and smiles. One out-of-focus hand of a second person holding a wine glass in the bottom foreground.",
+  "shots": [
+    {
+      "action": "she cuts a piece of steak and eats it",
+      "camera": "static locked-off",
+      "end": 8.8,
+      "framing": "medium eye-level across the table",
+      "speed": "real time",
+      "start": 0
+    }
+  ],
+  "text_on_screen": "When food is your love language",
+  "why_it_works": "You see the knife go through the meat, see the fork go to her mouth, and see her chew with eyes closed and smile, so you read the steak as tender and tasty from her face, not from a close-up.",
+  "source": "reference reel (link removed: we study the edit, never use the footage)",
+  "studied_by": "muse-spark-1.3"
+}

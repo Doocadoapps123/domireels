@@ -1,0 +1,130 @@
+{
+  "audio_role": "Upbeat regional-Mexican brass / trumpet loop, loud and constant, no voiceover, no audible sizzle. Hard cuts land on the beat every 0.6-0.9s, hands move on the beat to keep energy up.",
+  "can_make": "We can make the structure: fast 0.6-0.9s montage of overhead trays from real menu photos with slow push-in, same white bottom text, same music. We can make 4s AI clips of a house-cast hand holding a taco tray or burrito plate from a photo start-frame. We cannot make the wet moments convincingly: real cheese stretch from burrito, broth dripping off birria taco back into cup, lime juice stream hitting taco, chip scooping thick guac. AI 4s will freeze or smear liquids, stretch cheese like plastic, and merge fingers with food.",
+  "core": "A full table of tacos, burritos, chips and sweets shown in fast hands-in dips and squeezes so you see the food get touched and drip.",
+  "dish": "Talkin' Tacos spread: red street tacos with pickled onion and cotija, birria tacos in consomme, burrito halves, chips + guacamole + salsa, churros with drizzle",
+  "fits": "Colorful handheld Mexican / Latin dishes that can be picked up and dipped: birria tacos, street tacos, burritos, quesadillas, nachos, chips + guac / queso, churros. Not plain soups, salads, or boxed sushi.",
+  "format": "hands-in spread flash",
+  "hook": "0-0.8s overhead close of 3 red tacos with pink onions, green cilantro, white cheese and lime wedges filling the frame, with big white text underneath.",
+  "needs_camera": "A real hand in the real shop doing the wet actions in one take: squeezing half a lime so juice drops fall, dipping a chip and lifting thick guac, dunking birria taco in consomme and lifting with broth and cheese dripping, pulling burrito half with falling filling. Also real steam, real sauce shine, real Jarritos condensation.",
+  "people": "hands only, no faces, no eating. A light-skin right hand with black wristband holds burrito half over salsa, dips chip in guac cup, squeezes lime over tacos, picks up birria taco and dunks it in consomme cup.",
+  "shots": [
+    {
+      "action": "three street tacos with pink onions, cilantro, cotija sit on paper with lime wedges beside them",
+      "camera": "static overhead with slight push in",
+      "end": 0.8,
+      "framing": "overhead close",
+      "speed": "real time",
+      "start": 0
+    },
+    {
+      "action": "burrito halves topped with crema and pico sit on chips next to salsa cup",
+      "camera": "whip pan left to right",
+      "end": 1.4,
+      "framing": "overhead close",
+      "speed": "real time",
+      "start": 0.8
+    },
+    {
+      "action": "two full trays, tacos and chips-burrito, sit on black table with Jarritos bottles",
+      "camera": "handheld pull back",
+      "end": 2.03,
+      "framing": "overhead medium",
+      "speed": "real time",
+      "start": 1.4
+    },
+    {
+      "action": "trays stay in place showing sauce packets and branded paper",
+      "camera": "quick tilt / reframe",
+      "end": 2.63,
+      "framing": "overhead medium",
+      "speed": "real time",
+      "start": 2.03
+    },
+    {
+      "action": "burrito plate and taco plate side by side with red soda bottles behind",
+      "camera": "static overhead",
+      "end": 3.27,
+      "framing": "overhead medium",
+      "speed": "real time",
+      "start": 2.63
+    },
+    {
+      "action": "spread holds as camera settles",
+      "camera": "static hold",
+      "end": 3.87,
+      "framing": "overhead medium",
+      "speed": "real time",
+      "start": 3.27
+    },
+    {
+      "action": "hand holds cut burrito half over salsa cup, filling and sauce drip down",
+      "camera": "static eye level, slight push in",
+      "end": 4.77,
+      "framing": "close",
+      "speed": "real time",
+      "start": 3.87
+    },
+    {
+      "action": "fingers push tortilla chip into guacamole cup",
+      "camera": "static macro",
+      "end": 5.13,
+      "framing": "macro",
+      "speed": "real time",
+      "start": 4.77
+    },
+    {
+      "action": "chip lifts a scoop of guac with tomato chunks",
+      "camera": "static macro hold",
+      "end": 6.5,
+      "framing": "macro",
+      "speed": "slow motion",
+      "start": 5.13
+    },
+    {
+      "action": "hand squeezes lime half, juice streams onto tacos",
+      "camera": "static close",
+      "end": 7.67,
+      "framing": "close",
+      "speed": "slow motion",
+      "start": 6.5
+    },
+    {
+      "action": "queso-covered chips and rolled items sit on tray",
+      "camera": "static overhead",
+      "end": 8.53,
+      "framing": "overhead close",
+      "speed": "real time",
+      "start": 7.67
+    },
+    {
+      "action": "hand pushes birria taco down into consomme cup",
+      "camera": "static close",
+      "end": 9.67,
+      "framing": "close",
+      "speed": "real time",
+      "start": 8.53
+    },
+    {
+      "action": "hand lifts soaked taco, broth and melted cheese drip back into cup",
+      "camera": "static close hold",
+      "end": 10.43,
+      "framing": "close",
+      "speed": "slow motion",
+      "start": 9.67
+    },
+    {
+      "action": "churros with orange and white drizzle and crumb topping lie on tray",
+      "camera": "slow push in overhead",
+      "end": 11.5,
+      "framing": "overhead close",
+      "speed": "real time",
+      "start": 10.43
+    }
+  ],
+  "text_on_screen": "This is your sign to get Talkin' Tacos tonight 🌮😋",
+  "why_it_works": "Red tortilla vs green cilantro and lime, white cheese, orange broth. Every 2nd shot a hand squeezes, dips, or lifts so you see juice fall, cheese stretch, broth drip. That touch + drip triggers hunger and shows portion size and how to eat it.",
+  "source": "reference reel (link removed: we study the edit, never use the footage)",
+  "picked_because": "Yansel, 2 Nov: otro reel que encontré",
+  "studied_by": "muse-spark-1.3"
+}

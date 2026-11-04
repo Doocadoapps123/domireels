@@ -1,0 +1,33 @@
+{
+  "audio_role": "Looping hip-hop beat with a male voice repeating 'burger' over both shots. No sizzle, no talking, no trend sound effect. The chant lands on the fast hand rhythm in shot 1 and continues under the fries in shot 2.",
+  "can_make": "We can fake the structure in 2 shots from stills: shot 1 - tile one real menu burger photo into a row or use a wide kitchen still, then run a 4 s AI clip started from that photo of a black-gloved hand placing one top bun down, looped or cut fast to suggest repetition. Shot 2 - take the real fries menu photo as macro full-frame with a slow AI push-in. Add the 'burger' chant in the edit. We cannot make the real thing: a live unbroken line of 12+ hot patties with melting cheese gloss being capped one after another at full speed, or real steam, grease shine and fry texture in motion. Our version will look like stills brought to life, not a busy pass during service.",
+  "core": "A whole batch of cheeseburgers gets closed in one fast pass.",
+  "dish": "smash cheeseburgers with thin fries cutaway",
+  "fits": "Batch dishes where many identical pieces are finished the same way: smash burgers and sliders, tacos, mini shawarma, dumplings, wings, loaded fries. Needs a second close texture shot to end on.",
+  "format": "assembly line close",
+  "hook": "Overhead down a white board covered with open cheeseburgers - melted yellow squares on patties on the right, sauced buns with pickles on the left - a gloved hand enters and slams the first top bun on.",
+  "needs_camera": "The real long line of hot burgers on a real pass, real melting cheese and sauce shine, real fast two-hand capping rhythm in one unbroken take, and a real basket of fresh fries with steam and oil glisten. AI cannot create that abundance and live kitchen motion convincingly.",
+  "people": "hands only. One person in black nitrile gloves, forearms only, no face, no talking. Enters from right and moves away from camera down the board, placing top buns with both hands.",
+  "shots": [
+    {
+      "action": "gloved hands place top buns onto melted-cheese patties down the line",
+      "camera": "angled overhead, slow pull back down the board to reveal finished row",
+      "end": 4.97,
+      "framing": "overhead angled, close to medium along the line",
+      "speed": "sped up",
+      "start": 0
+    },
+    {
+      "action": "pile of thin golden fries sits filling the frame",
+      "camera": "static",
+      "end": 6.1,
+      "framing": "macro",
+      "speed": "real time",
+      "start": 4.97
+    }
+  ],
+  "text_on_screen": "none",
+  "why_it_works": "You see fat, salt and acid at once: glossy melted cheddar on browned patties, pink sauce and green pickles, shiny golden buns. Repetition of 10+ identical burgers reads as fresh and hot, and each closing bun finishes the look. The hard cut to a full frame of thin salty fries adds a second salt-fat texture without a story.",
+  "source": "reference reel (link removed: we study the edit, never use the footage)",
+  "studied_by": "muse-spark-1.3"
+}

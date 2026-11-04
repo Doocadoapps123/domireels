@@ -1,0 +1,16 @@
+[Unit]
+Description=Domi Reels worker
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=domi
+WorkingDirectory=/srv/domi-reels
+ExecStart=/usr/bin/node --env-file=/srv/domi-state/env src/server/worker.mjs
+Restart=always
+RestartSec=10
+# A Reel can run for most of an hour; a restart in the middle puts its job back in the queue.
+TimeoutStopSec=30
+
+[Install]
+WantedBy=multi-user.target

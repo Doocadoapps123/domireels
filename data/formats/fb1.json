@@ -1,0 +1,89 @@
+{
+  "audio_role": "Upbeat Latin dance track with brass and fast percussion, no voice, no sizzle or bite sounds. Cuts land on the beat: fast table pans on drums, lifts/dips/pulls hold on the groove.",
+  "can_make": "We can make the structure: 1-4 overhead and close table views from real menu photos stitched as a spread with push-in and pan in edit. 5-9 we can fake as 4 s AI clips started from a photo: AI house-cast hand holding a churro up, holding noodles up, holding a taco over a cup, holding two sides of a quesadilla. The AI will show the pose and slow motion hold, but drips, broth flow, noodle gloss and cheese strands will look thick, smooth and repeated. It will not leak, drip, steam or stretch like real food.",
+  "core": "Show a lot of food at once, then have hands prove it is juicy by lifting, dipping and tearing.",
+  "dish": "Talkin Tacos outdoor spread: birria tacos with consomme, shrimp tacos with pink onions, cheese quesadilla with chips, birria ramen in cups, Oreo churros, green and white agua frescas",
+  "fits": "Messy handheld formats with sauce and melt: birria tacos and consomme, quesadillas, loaded nachos, saucy noodles, stuffed churros, saucy wings. Not plain salads, soup bowls or dry pastries.",
+  "format": "spread tour to dip and cheese-pull",
+  "hook": "First second: high sun overhead of a black table completely covered with orange tacos, yellow chips, red soups, green drinks and churros.",
+  "needs_camera": "Real physics and light: broth dripping off a dipped taco, white sauce dripping off a lifted churro, long thin cheese strands when torn, glossy sauce on lifted noodles and steam, lime juice squirting, sun glare on wet food and real outdoor depth.",
+  "people": "hands only, no faces. One bare forearm with silver bracelet lifts churro and squeezes lime. Black nitrile-gloved hands lift noodles, dip taco, tear quesadilla. Hands enter from top or side, hold food still for 2 seconds.",
+  "shots": [
+    {
+      "action": "full trays of tacos, quesadilla, churros, cups and drinks sit on black table",
+      "camera": "handheld orbit left around table",
+      "end": 1.04,
+      "framing": "overhead wide",
+      "speed": "real time",
+      "start": 0
+    },
+    {
+      "action": "birria tacos with onion and cilantro sit next to consomme cup and lime",
+      "camera": "push in",
+      "end": 2.07,
+      "framing": "close angled overhead",
+      "speed": "real time",
+      "start": 1.04
+    },
+    {
+      "action": "shrimp tacos, quesadilla with chips, green drink and hot sauces sit together",
+      "camera": "pan right",
+      "end": 3.11,
+      "framing": "medium close angled overhead",
+      "speed": "real time",
+      "start": 2.07
+    },
+    {
+      "action": "three Oreo-covered churros lie on branded paper next to noodle cups",
+      "camera": "slight push in",
+      "end": 4.48,
+      "framing": "close angled overhead",
+      "speed": "real time",
+      "start": 3.11
+    },
+    {
+      "action": "bare hand lifts one churro, white topping drips back to tray",
+      "camera": "static",
+      "end": 5.66,
+      "framing": "close eye level",
+      "speed": "real time",
+      "start": 4.48
+    },
+    {
+      "action": "black-gloved hand lifts chopsticks of saucy ramen noodles from paper cup",
+      "camera": "static",
+      "end": 6.89,
+      "framing": "close eye level",
+      "speed": "real time",
+      "start": 5.66
+    },
+    {
+      "action": "bare hand squeezes lime over shrimp tacos in front of green drink",
+      "camera": "static",
+      "end": 8.03,
+      "framing": "close eye level",
+      "speed": "real time",
+      "start": 6.89
+    },
+    {
+      "action": "black-gloved hand dips red birria taco into consomme, broth drips off",
+      "camera": "static",
+      "end": 9.44,
+      "framing": "close eye level",
+      "speed": "real time",
+      "start": 8.03
+    },
+    {
+      "action": "two black-gloved hands tear quesadilla triangle apart, cheese stretches",
+      "camera": "static",
+      "end": 12.1,
+      "framing": "close eye level",
+      "speed": "slow motion",
+      "start": 9.44
+    }
+  ],
+  "text_on_screen": "none, only printed logos on cups and paper",
+  "why_it_works": "It shows color contrast orange-red meat, green cilantro and lime, yellow cheese, then close movement: sauce dripping, noodles hanging, broth dripping, cheese stretching. The hand actions let eyes predict wet, salty, fatty taste.",
+  "source": "reference reel (link removed: we study the edit, never use the footage)",
+  "studied_by": "muse-spark-1.3"
+}

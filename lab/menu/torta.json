@@ -1,0 +1,9 @@
+{
+  "restaurant": "Dora Taqueria (Mexican taqueria)",
+  "name": "Torta",
+  "description": "Toasted roll with guacamole cheese pico lettuce and chipotle mayo.",
+  "choices": {
+    "Protein (pick 1)": ["Al Pastor", "Carnitas", "Chicken Tinga", "Chicken", "Chorizo", "Ground Beef", "Veggies", "Fish", "Birria", "Shrimp", "Steak", "Lengua"],
+    "Extras": ["Jalapeno", "Guacamole", "Pico de Pina", "Pico de Mango", "Extra Meat", "Add Maduros"]
+  }
+}

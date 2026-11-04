@@ -1,0 +1,41 @@
+{
+  "audio_role": "No voiceover. Close-mic ASMR of foil crinkling and the wet peel as it opens sits on top; any low background beat is buried under it. Cuts at 0.9s and 2.57s land on crinkle hits, and the long last shot holds the foil rustle and sauce squish.",
+  "can_make": "We can rebuild the structure from stills + AI motion + edit. Shot 1: take the restaurant's real foil-wrapped burger photo, composite AI-drawn black-gloved hands holding it, add 4s slow push-in. Shot 2: use a drawn mid-unwrap frame as start image for a 4s AI clip of fingers peeling foil back, loop foil crinkle sound in edit. Shot 3: use the real unwrapped burger menu photo as start image for 1-2 x 4s AI clips of lift-tilt with a looping drip, stitched to reach ~5s, then add the same text and ASMR. Our house cast holds and presents only, never eats. What will look fake is the foil physically tearing/deforming and the sauce continuously stretching and dripping across a cut.",
+  "core": "Hide the burger completely in foil, then peel it open on camera to deliver the melted sauce drip as payoff.",
+  "dish": "Double smash burger with thick pale cheese sauce overflowing the patties, in a glossy toasted orange-topped bun, served in crinkled foil.",
+  "fits": "Dishes that are wrapped to travel and messy when opened: smash burgers, breakfast sandwiches, burritos and wraps, kebabs and shawarma, loaded hot dogs, grilled sandwiches with melting cheese or sauce.",
+  "format": "foil unwrap reveal",
+  "hook": "First second is a tight close-up of a crinkled foil ball squeezed by a black-gloved hand; you cannot see any food, only foil and text, so you stay to see what is inside.",
+  "needs_camera": "A real continuous unwrap in one take: real fingers denting and tearing real reflective foil, real crinkle synced to movement, and real hot cheese sauce slumping, stretching and dripping without morphing. AI cannot hold foil physics and drip continuity across the peel.",
+  "people": "hands only, nobody else. Two hands in black nitrile gloves with heavily tattooed forearms; one holds the foil ball, the second enters to peel the foil down, then both hold the revealed burger up to the lens. No face, no eating, no talking.",
+  "shots": [
+    {
+      "action": "holds foil-wrapped burger ball steady toward lens",
+      "camera": "static",
+      "end": 0.9,
+      "framing": "close",
+      "speed": "real time",
+      "start": 0
+    },
+    {
+      "action": "peels the foil top open with both hands",
+      "camera": "static",
+      "end": 2.57,
+      "framing": "close",
+      "speed": "real time",
+      "start": 0.9
+    },
+    {
+      "action": "lifts and tilts the unwrapped burger as cheese sauce drips off",
+      "camera": "static",
+      "end": 7.9,
+      "framing": "macro",
+      "speed": "real time",
+      "start": 2.57
+    }
+  ],
+  "text_on_screen": "Send this to Someone hungry - white bold with black outline, top-center, on for full 0-7.9s",
+  "why_it_works": "Curiosity from the hidden food plus crinkle sound holds attention, then the reveal shows browned beef edges, a soft shiny bun, and thick sauce oozing over the sides and dripping down, which reads as hot, fatty and freshly made.",
+  "source": "reference reel (link removed: we study the edit, never use the footage)",
+  "studied_by": "muse-spark-1.3"
+}

@@ -1,0 +1,223 @@
+{
+  "dish": "Chicharron de Cerdo 1 Libra",
+  "photo": "lab/photos/chicharron.jpg",
+  "real": "lab/out/direct/chicharron/real.jpg",
+  "refs": [
+    "lab/out/direct/chicharron/ref-0.jpg"
+  ],
+  "stock": {
+    "fryer": {
+      "url": "https://www.pexels.com/download/video/5780022/",
+      "license": "Pexels (commercial use, no attribution)"
+    }
+  },
+  "crop": {
+    "w": 560,
+    "h": 996,
+    "x": 150,
+    "y": 330
+  },
+  "shots": [
+    {
+      "n": 1,
+      "kind": "stock",
+      "src": "fryer",
+      "at": 2.0,
+      "dur": 0.8,
+      "what": "Basket sunk in boiling oil"
+    },
+    {
+      "n": 2,
+      "kind": "stock",
+      "src": "fryer",
+      "at": 4.0,
+      "dur": 0.6,
+      "crop": "1080:1920:700:1300",
+      "what": "Punch-in: oil bursting in bubbles"
+    },
+    {
+      "n": 3,
+      "kind": "ai",
+      "base": {
+        "src": "fryer",
+        "at": 7.0
+      },
+      "use": 3.0,
+      "swap": "Image 1 is a real phone photo of a restaurant's deep fryer. Keep it exactly: the same worn steel fryer, the same wire basket in the same place, the same violently boiling oil with its thick foam and bubbles, the same warm light, camera angle and framing. Inside the submerged basket a generous load of Dominican chicharron de cerdo is almost done frying: irregular rough chunks, deep golden-brown to dark brown, crackly blistered fried surface, exactly like the chunks in image 2 and image 3. No neat cubes, no visible stripes of fat and meat, no pink. Most of the load is under the boiling foam, only some tops break the surface. No fries, nothing else added, no people, no text.",
+      "motion": "Handheld phone video, slight natural shake, real restaurant kitchen. A hand in a black nitrile glove enters from the bottom right edge, grabs the basket handle and lifts the basket straight up out of the boiling oil. It is packed with golden chicharron chunks; hot oil streams through the mesh and drips back, bubbles burst, steam rises. The hand hangs the basket on the back rail to drain. The fryer never changes. Nothing appears or disappears by itself. No faces, no text, no morphing."
+    },
+    {
+      "n": 7,
+      "kind": "ai",
+      "base": "empty",
+      "end": "fries",
+      "use": 2.0,
+      "motion": "Handheld phone video, slight natural shake, real restaurant kitchen counter. A hand in a black nitrile glove tips a steel fry basket in from the top edge of the frame and pours a big load of golden fries into the right half of the black takeout tray; the fries tumble, bounce and pile up, a few roll. The left half of the tray stays empty and dry. Nothing appears or disappears by itself. No faces, no text, no morphing."
+    },
+    {
+      "n": 8,
+      "kind": "ai",
+      "base": "fries",
+      "end": "nolime",
+      "use": 2.0,
+      "motion": "Handheld phone video, slight natural shake. A hand in a black nitrile glove tips the fryer basket in from the top edge and shakes a generous load of golden-brown chicharron chunks into the left half of the tray next to the fries; the chunks tumble and knock against each other, crumbs bounce. The fries already in the tray stay where they are. Nothing appears or disappears by itself. No faces, no text, no morphing."
+    },
+    {
+      "n": 5,
+      "kind": "ai",
+      "base": "real-crop",
+      "use": 3.0,
+      "motion": "Handheld phone macro video, slight natural shake; the framing stays as in the first frame. A bare hand enters from the right edge, picks up the lime wedge already on the tray and squeezes it hard right above the chicharron, close to the camera: juice pours in thick streams and keeps dripping for the whole shot, splashing on the crackling skin, which turns wet and glossy. The hand keeps squeezing until the end. No faces, no text, no morphing."
+    },
+    {
+      "n": 6,
+      "kind": "ai",
+      "base": "real-chunks",
+      "use": 4.0,
+      "motion": "Handheld phone macro video, slight natural shake. Two bare hands enter from the bottom edge, pick up the biggest chicharron chunk and break it in half close to the camera: the thin crackling skin snaps, crumbs fall, juicy meat fibers pull apart, a little steam. The chunk keeps its exact look from the first frame: deep golden-brown, irregular, thin flat crackling skin, no puffed bubbles. Same tray, nothing else appears or disappears. No faces, no text, no morphing."
+    }
+  ],
+  "music": {
+    "model": "fal-ai/elevenlabs/music",
+    "license": "ElevenLabs (commercial use)",
+    "ms": 11500,
+    "prompt": "Fast festive Dominican merengue tipico (perico ripiao) instrumental for an 11 second restaurant food video: diatonic accordion lead melody, guira scraper, tambora drum, bass guitar, 130 bpm. Full energy from the very first beat, no intro, and it ends on a strong final accent hit at the end.",
+    "owner": "2026-10-28: chose it over guitar/mandolin and kitchen-only (\"el que le llamaste merengue me gusta\")"
+  },
+  "edit": [
+    {
+      "src": "fryer",
+      "at": 2.0,
+      "dur": 0.5,
+      "sound": {
+        "src": "draft-3-0",
+        "at": 0.0
+      },
+      "what": "real: basket in boiling oil"
+    },
+    {
+      "src": "fryer",
+      "at": 4.0,
+      "dur": 0.4,
+      "crop": "1080:1920:700:1300",
+      "sound": {
+        "src": "draft-3-0",
+        "at": 0.5
+      },
+      "what": "real: bubbles punch-in"
+    },
+    {
+      "src": "draft-3-0",
+      "at": 1.0,
+      "dur": 0.5,
+      "what": "hand grabs the basket"
+    },
+    {
+      "src": "draft-3-0",
+      "at": 1.9,
+      "dur": 0.7,
+      "what": "lift, oil streaming"
+    },
+    {
+      "src": "fryer",
+      "at": 5.5,
+      "dur": 0.4,
+      "crop": "1080:1920:300:1100",
+      "sound": {
+        "src": "draft-3-0",
+        "at": 3.0
+      },
+      "what": "real: oil bubbles"
+    },
+    {
+      "src": "draft-7-0",
+      "at": 0.6,
+      "dur": 0.5,
+      "gain": 4,
+      "what": "fries basket tips"
+    },
+    {
+      "src": "draft-7-0",
+      "at": 1.8,
+      "dur": 0.6,
+      "gain": 4,
+      "what": "fries pour onto the pile"
+    },
+    {
+      "src": "draft-7-0",
+      "at": 2.4,
+      "dur": 0.5,
+      "gain": 4,
+      "crop": "240:427:110:150",
+      "what": "punch-in: pile settles"
+    },
+    {
+      "src": "draft-8-0",
+      "at": 1.2,
+      "dur": 0.5,
+      "gain": 4,
+      "what": "chicharron basket tips"
+    },
+    {
+      "src": "draft-8-0",
+      "at": 2.0,
+      "dur": 0.8,
+      "gain": 4,
+      "what": "chunks fall and land"
+    },
+    {
+      "still": true,
+      "dur": 0.6,
+      "sound": {
+        "src": "draft-3-0",
+        "at": 0.0,
+        "gain": -14
+      },
+      "what": "real photo: the full tray"
+    },
+    {
+      "src": "draft-5-2",
+      "at": 0.5,
+      "dur": 0.7,
+      "what": "hand picks the lime"
+    },
+    {
+      "src": "draft-5-2",
+      "at": 2.0,
+      "dur": 0.9,
+      "crop": "iw*0.9:ih*0.9:iw*0.05:0",
+      "what": "squeeze, first stream"
+    },
+    {
+      "src": "draft-5-2",
+      "at": 3.2,
+      "dur": 0.7,
+      "crop": "240:427:90:200",
+      "what": "punch-in: juice on the skin"
+    },
+    {
+      "still": true,
+      "dur": 0.5,
+      "crop": "400:711:0:560",
+      "sound": {
+        "src": "draft-3-0",
+        "at": 0.0,
+        "gain": -14
+      },
+      "what": "real photo: the chunks"
+    },
+    {
+      "src": "draft-6-1",
+      "at": 1.2,
+      "dur": 0.6,
+      "what": "hands grab a chunk"
+    },
+    {
+      "src": "draft-6-1",
+      "at": 2.4,
+      "dur": 1.63,
+      "payoff": 0.725,
+      "what": "break it, hold one second"
+    }
+  ]
+}

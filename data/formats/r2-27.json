@@ -1,0 +1,105 @@
+{
+  "audio_role": "trending upbeat instrumental, no voice and no sizzle or cooking sound. The 0-4s quick cuts land on the beat to drive the travel, then the track opens up and holds under the long 4-8.9s pasta lift with no more cuts.",
+  "can_make": "We can make the payoff: from the real menu photo of the creamy pasta bowl generate 4 s AI clips of a house-cast hand holding a fork - lower, twist, slow lift, macro hold with hanging strands - and edit with the same beat-matched structure and music. We can suggest the travel with a fast 0.4-0.6s slideshow of real exterior/interior menu photos with an overlaid drawn fork. We cannot make the seamless walk: the same hand, purple glitter nails, fork shape and grip will drift between AI clips, and backgrounds, glass reflections, labels and pasta strands will warp if we ask AI to move through a real place.",
+  "core": "One fork travels from the street into the restaurant to prove this one pasta is worth walking in for.",
+  "dish": "spaghetti in creamy sauce with chopped parsley and grated cheese in a rustic brown-rim bowl",
+  "fits": "single-plate fork-lift dishes where twisting shows texture: spaghetti, carbonara, cacio e pepe, tagliatelle, ramen, udon, pad thai, cheesy baked pasta. Not suited to steak, burger, salad, soup or plain desserts with nothing to twist or stretch.",
+  "format": "follow-the-fork to the plate",
+  "hook": "A hand holds the same fork centered while the world jump-cuts every half-second behind it - plaza fountain, town clock, restaurant lights, cake case - so the fork looks like it is teleporting toward food.",
+  "needs_camera": "the real walk in one grip: same real hand, fork, light and focus moving through the actual square, entrance, dessert case, bar wall and live kitchen with a real chef working behind; the real physics of the twirl in warm low light - sauce gloss, cheese, herbs, strands stretching and dripping - in a long unbroken slow-motion take without warping.",
+  "people": "hands only: a woman's right hand with purple glitter nail polish and black sleeve holds a fork tines-down and carries it the whole way, then lowers, twists and lifts the pasta. Background people only blurred - passersby, a person in red behind plants, a chef in white hat in kitchen. Nobody talks, serves, reacts or eats.",
+  "shots": [
+    {
+      "action": "hand holds fork forward while walking",
+      "camera": "handheld follow, fork locked center",
+      "end": 0.4,
+      "framing": "close",
+      "speed": "real time",
+      "start": 0
+    },
+    {
+      "action": "hand lifts fork toward town clock",
+      "camera": "static",
+      "end": 0.87,
+      "framing": "close",
+      "speed": "real time",
+      "start": 0.4
+    },
+    {
+      "action": "hand carries fork past garland lights",
+      "camera": "handheld follow",
+      "end": 1.3,
+      "framing": "close",
+      "speed": "real time",
+      "start": 0.87
+    },
+    {
+      "action": "hand moves fork past glass cake case",
+      "camera": "handheld follow",
+      "end": 1.77,
+      "framing": "close",
+      "speed": "real time",
+      "start": 1.3
+    },
+    {
+      "action": "hand holds fork steady against wooden wall",
+      "camera": "static",
+      "end": 2.2,
+      "framing": "close",
+      "speed": "real time",
+      "start": 1.77
+    },
+    {
+      "action": "hand holds fork up against wine bottles",
+      "camera": "static",
+      "end": 2.73,
+      "framing": "close",
+      "speed": "real time",
+      "start": 2.2
+    },
+    {
+      "action": "hand holds fork still in kitchen",
+      "camera": "static",
+      "end": 3.37,
+      "framing": "medium",
+      "speed": "real time",
+      "start": 2.73
+    },
+    {
+      "action": "hand lowers fork from above toward pasta bowl",
+      "camera": "static",
+      "end": 4,
+      "framing": "close",
+      "speed": "real time",
+      "start": 3.37
+    },
+    {
+      "action": "fork digs in and twists spaghetti",
+      "camera": "static",
+      "end": 5.07,
+      "framing": "close",
+      "speed": "real time",
+      "start": 4
+    },
+    {
+      "action": "fork lifts twisted bundle up with strands hanging",
+      "camera": "static with slight push in",
+      "end": 7.83,
+      "framing": "close to macro",
+      "speed": "slow motion",
+      "start": 5.07
+    },
+    {
+      "action": "pasta hangs on tines and drips",
+      "camera": "static",
+      "end": 8.9,
+      "framing": "macro",
+      "speed": "slow motion",
+      "start": 7.83
+    }
+  ],
+  "text_on_screen": "none - no captions, titles or prices",
+  "why_it_works": "It makes you wait through cold outside places then pays with hot food in the dark: yellow spaghetti coated in creamy sauce with green parsley bits and white grated cheese, wound into a tight bundle and pulled up with long glossy strands stretching and dripping that show thickness and coating.",
+  "source": "reference reel (link removed: we study the edit, never use the footage)",
+  "studied_by": "muse-spark-1.3"
+}

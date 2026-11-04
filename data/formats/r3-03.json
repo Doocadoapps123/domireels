@@ -1,0 +1,26 @@
+{
+  "audio_role": "Upbeat trending music throughout, no voice, no sizzle. The finger-snap motion and the two burger reveals land on the beat. No cuts to sync, one continuous take rides the music.",
+  "can_make": "We can remake the structure: start from the restaurant's real burger photo, put it in AI-drawn black-gloved hands from the house cast holding and showing, no eating. Do it as a 4 s AI clip started from a photo: hands open empty, hidden edit on the snap frame, then same hands holding the burger up to lens, then second burger joins from right. Edit adds the snap-beat music. We cannot do a true one-take two-person snap with real depth and real daylight.",
+  "core": "A finger-snap magic trick conjures the burgers out of empty hands instead of just showing them.",
+  "dish": "cheeseburger on sesame brioche bun with melted cheddar and beef patty",
+  "fits": "Compact foods that one gloved hand can palm and hold up whole: burgers, sliders, sandwiches, wraps, tacos, arepas, donuts, muffins. Not soups, pasta, or plated dishes that need a fork or spill.",
+  "format": "snap-to-reveal",
+  "hook": "A black-gloved hand fills the foreground in close-up and forms a snap shape against the blurred burger shop, you wait for what will appear.",
+  "needs_camera": "Real synchronized two-arm snap in one unbroken take, real shop facade blurred behind as proof of place, real sunlight gloss on bun and melting cheese, real glove texture and natural depth of field.",
+  "people": "hands only: two people visible only as forearms and hands in black nitrile gloves, one forearm tattooed, enter from left and right, snap fingers, pass and hold up burgers, no faces, no eating, no talking",
+  "shots": [
+    {
+      "action": "burgers appear in empty gloved hands and are held up to the lens",
+      "camera": "static",
+      "end": 6.1,
+      "framing": "close, eye level",
+      "speed": "real time",
+      "start": 0
+    }
+  ],
+  "text_on_screen": "none",
+  "why_it_works": "You watch empty hands, then on the snap a glossy toasted bun, melted yellow cheese and browned patty appear inches from the lens in daylight. Black gloves make the colors stand out. A second identical burger joins, doubling the amount of fat, melt and shine in frame.",
+  "source": "reference reel (link removed: we study the edit, never use the footage)",
+  "picked_because": "Yansel, 2 Nov: más creativos, no es copiar, es tener la creatividad de crear cosas así que nadie nunca haya hecho",
+  "studied_by": "muse-spark-1.3"
+}

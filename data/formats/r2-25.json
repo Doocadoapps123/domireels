@@ -1,0 +1,57 @@
+{
+  "audio_role": "Upbeat female pop trend audio with sung vocals throughout, no voiceover and no sizzle or ASMR. The long 0-8.13s fantasy plays uncut under the verse, then the eating section 8.13-13.42s cuts every ~1s on the beat: macro hold, bite, second bite, sip.",
+  "can_make": "We can fake the idea but not the eating proof. 0-8.13s: we can stage an AI model at a table holding a menu and composite real cut-out photos of the burger and juice floating above her - edit can do the appear-on-point effect. This must be split into two 4s AI clips started from a photo/drawn frame because we do not have an 8s unbroken real take. 8.13-9.13s: we can do the macro presentation - AI model hands holding the real burger photo up to lens. We cannot do 9.13-13.42s as shown: our house cast never eats, so no real bite, chew, second bite, or eyes-closed sip, no cheese pull in motion, no swallow. We would replace the ending with stills of the real food plus punch-in zooms in the edit.",
+  "core": "She imagines her drink and burger while reading the menu and they appear floating above her, then land real on the table.",
+  "dish": "double smash cheeseburger on glossy brioche bun with skewer served in paper-lined bowl plus tall glass of dark red juice",
+  "fits": "Two-item combos where drink + handheld main sell together: burgers, sliders, sandwiches, tacos, empanadas + juice, soda, shake or beer. Needs a dish you can lift with two hands for macro and bite.",
+  "format": "point and it appears",
+  "hook": "Menu held vertical covering her face drops in the first second to reveal her reading at the table.",
+  "needs_camera": "Real unbroken performance 0-8s in a real busy restaurant, real hands squeezing the bun with melting cheese moving, real mouth biting and chewing, real sipping and swallowing, real background crowd and staff. Nothing that proves taste and place can be made from photos and non-eating models.",
+  "people": "One woman in her 20s, long black hair, black blazer, red nails. She sits at a wooden table, opens and reads the menu, points up left then right to summon food, smiles, closes menu, gestures excitedly at the arrived food, lifts burger with both hands, takes two bites, then drinks juice.",
+  "shots": [
+    {
+      "action": "Menu is lowered and read, then finger-point summons floating juice then floating burger above her, then menu is closed and real food sits on table as she gestures and reaches for burger",
+      "camera": "static locked-off",
+      "end": 8.13,
+      "framing": "medium eye level",
+      "speed": "real time",
+      "start": 0
+    },
+    {
+      "action": "Both hands lift the cheeseburger toward lens showing melted cheese and patties",
+      "camera": "static",
+      "end": 9.13,
+      "framing": "macro",
+      "speed": "real time",
+      "start": 8.13
+    },
+    {
+      "action": "She takes a large first bite of the burger",
+      "camera": "static",
+      "end": 10.17,
+      "framing": "medium eye level",
+      "speed": "real time",
+      "start": 9.13
+    },
+    {
+      "action": "She takes a second bite seen from the side",
+      "camera": "static",
+      "end": 11.21,
+      "framing": "close side angle",
+      "speed": "real time",
+      "start": 10.17
+    },
+    {
+      "action": "She lifts the glass and sips the dark juice with eyes closed",
+      "camera": "static",
+      "end": 13.42,
+      "framing": "close eye level",
+      "speed": "real time",
+      "start": 11.21
+    }
+  ],
+  "text_on_screen": "none - no captions, titles, prices or end card are visible",
+  "why_it_works": "It shows the ordering fantasy first - think drink, get drink, think burger, get burger - then close-ups of oozing cheese, a big bite with eyes closed, and a long sip make the viewer expect fat, salt and cold sweet drink.",
+  "source": "reference reel (link removed: we study the edit, never use the footage)",
+  "studied_by": "muse-spark-1.3"
+}

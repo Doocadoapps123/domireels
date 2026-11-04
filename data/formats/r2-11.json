@@ -1,0 +1,233 @@
+{
+  "audio_role": "Soft cinematic ambient track under a calm male Portuguese voiceover reading the on-screen lines. No trend sound, no talking to camera, no prominent ASMR. Sizzle, pour and dining-room noise are buried under music. Cuts land on each voice phrase, about every 0.5-1.3s, fast in the middle then slower on final beauty shots.",
+  "can_make": "We can make the food-only part from real menu photos: slow push-in on the crispy bites with added AI smoke, overhead still of rolls with 4s AI spoon/sprinkle motion, macro sauce pour started from a roll photo, torch glow faked with light flicker, plating hands and garnish drop as 4s AI clip from a photo, cocktail pour and mint place as short AI motion, text and voiceover in same rhythm. House cast can hold and present a plate toward lens and carry a tray in a plain close-up, never eat. We cannot fake the real place: busy dining room with guests, servers walking between tables, line of cooks working, real flame searing, real wine pour with chopsticks lifting food, unbroken service handoffs.",
+  "core": "Gastronomy is a journey for the senses where each small plate carries story and emotion.",
+  "dish": "Multiple Nikkei / sushi house signatures: crispy rice bites with tartare, tuna tataki rolls, sushi rolls with yellow and dark sauces, torched salmon, seared scallops in orange broth, nori cups, salmon tartare, roe cups, red cocktails.",
+  "fits": "Small artful plates that finish well in macro: sushi and sashimi sets, tartares, ceviches, torched bites, sauced rolls, mini appetizers and colorful cocktails. Needs glossy sauce, garnish, smoke or color contrast. Does not suit large family portions, pizza, burgers, or dishes that need a bite/cut to prove taste.",
+  "format": "sensory tasting montage",
+  "hook": "First second in black: two golden crispy bites on dark stone with white smoke curling up in macro.",
+  "needs_camera": "Real restaurant and real people in motion: waitress and waiters carrying and serving trays to full tables, three cooks working the sushi counter, chef presenting bowl across the pass, true blowtorch flame, true liquid pours, dim warm dining room depth and guests reacting. Long follow walks and live service energy.",
+  "people": "Hands only for finishing: pouring sauce, torching, placing salmon, sprinkling almonds and salt, squeezing bottles, pouring cocktail, placing mint, lifting with chopsticks. Plus staff: young woman server with ponytail in white shirt and black Dhoo vest carries tray; male chefs in white coats plate and hold dishes toward camera; male servers in vest and tie serve tables and pour wine; blurred diners sit at tables. No one eats on camera.",
+  "shots": [
+    {
+      "action": "smoke rises over two crispy tartare bites",
+      "camera": "slow push in",
+      "end": 1.67,
+      "framing": "macro",
+      "speed": "slow motion",
+      "start": 0
+    },
+    {
+      "action": "spoon adds crispy topping onto four tuna rolls",
+      "camera": "static overhead",
+      "end": 2.93,
+      "framing": "overhead close",
+      "speed": "real time",
+      "start": 1.67
+    },
+    {
+      "action": "waitress carries two plates on tray through room",
+      "camera": "handheld follow",
+      "end": 3.87,
+      "framing": "medium",
+      "speed": "real time",
+      "start": 2.93
+    },
+    {
+      "action": "dark sauce poured in stream over sushi rolls",
+      "camera": "static",
+      "end": 5.3,
+      "framing": "macro",
+      "speed": "slow motion",
+      "start": 3.87
+    },
+    {
+      "action": "blowtorch flame sears sauce on two pieces",
+      "camera": "static overhead",
+      "end": 6.07,
+      "framing": "overhead close",
+      "speed": "real time",
+      "start": 5.3
+    },
+    {
+      "action": "hand places sliced torched salmon in bowl",
+      "camera": "static overhead",
+      "end": 6.83,
+      "framing": "close",
+      "speed": "real time",
+      "start": 6.07
+    },
+    {
+      "action": "chef holds plate forward toward lens",
+      "camera": "slow push in",
+      "end": 7.73,
+      "framing": "medium",
+      "speed": "real time",
+      "start": 6.83
+    },
+    {
+      "action": "three scallops sit in orange broth",
+      "camera": "slow orbit",
+      "end": 8.4,
+      "framing": "overhead macro",
+      "speed": "slow motion",
+      "start": 7.73
+    },
+    {
+      "action": "hands squeeze sauce from red bottles over salmon",
+      "camera": "static overhead",
+      "end": 9.27,
+      "framing": "close",
+      "speed": "real time",
+      "start": 8.4
+    },
+    {
+      "action": "three cooks plate sushi behind counter",
+      "camera": "static",
+      "end": 9.77,
+      "framing": "wide",
+      "speed": "real time",
+      "start": 9.27
+    },
+    {
+      "action": "fingers place green garnish on plated bites",
+      "camera": "static",
+      "end": 10.5,
+      "framing": "close",
+      "speed": "real time",
+      "start": 9.77
+    },
+    {
+      "action": "drop of dark sauce falls onto salmon tartare",
+      "camera": "static",
+      "end": 11.13,
+      "framing": "macro",
+      "speed": "slow motion",
+      "start": 10.5
+    },
+    {
+      "action": "chef lifts and presents stone bowl with both hands",
+      "camera": "static",
+      "end": 11.97,
+      "framing": "medium",
+      "speed": "real time",
+      "start": 11.13
+    },
+    {
+      "action": "red cocktail poured from shaker into tall glass",
+      "camera": "static",
+      "end": 12.8,
+      "framing": "close",
+      "speed": "real time",
+      "start": 11.97
+    },
+    {
+      "action": "fingers set mint leaf on cocktail rim",
+      "camera": "static",
+      "end": 13.33,
+      "framing": "close",
+      "speed": "real time",
+      "start": 12.8
+    },
+    {
+      "action": "waitress hands plate to diners at dark table",
+      "camera": "handheld follow",
+      "end": 14.3,
+      "framing": "medium",
+      "speed": "real time",
+      "start": 13.33
+    },
+    {
+      "action": "waiter pours wine while chopsticks lift food",
+      "camera": "static",
+      "end": 15.3,
+      "framing": "close",
+      "speed": "real time",
+      "start": 14.3
+    },
+    {
+      "action": "two nori cups topped with sauce sit on wood",
+      "camera": "slow push in",
+      "end": 15.87,
+      "framing": "macro",
+      "speed": "slow motion",
+      "start": 15.3
+    },
+    {
+      "action": "smoke drifts over the two crispy bites again",
+      "camera": "slow push in",
+      "end": 16.33,
+      "framing": "macro",
+      "speed": "slow motion",
+      "start": 15.87
+    },
+    {
+      "action": "seared tuna cubes topped with cream rest on plate",
+      "camera": "static",
+      "end": 16.73,
+      "framing": "close",
+      "speed": "slow motion",
+      "start": 16.33
+    },
+    {
+      "action": "row of sauced sushi rolls glistens in dark light",
+      "camera": "static",
+      "end": 17.17,
+      "framing": "close",
+      "speed": "slow motion",
+      "start": 16.73
+    },
+    {
+      "action": "hand sprinkles almond flakes over sushi rolls",
+      "camera": "static overhead",
+      "end": 17.67,
+      "framing": "close",
+      "speed": "real time",
+      "start": 17.17
+    },
+    {
+      "action": "three orange cups topped with red roe stand still",
+      "camera": "slow push in",
+      "end": 18.6,
+      "framing": "macro",
+      "speed": "slow motion",
+      "start": 17.67
+    },
+    {
+      "action": "fingers sprinkle salt over orange cocktail",
+      "camera": "static",
+      "end": 19.13,
+      "framing": "close",
+      "speed": "real time",
+      "start": 18.6
+    },
+    {
+      "action": "waiter walks with small plate toward seated guest",
+      "camera": "handheld follow",
+      "end": 20,
+      "framing": "medium",
+      "speed": "real time",
+      "start": 19.13
+    },
+    {
+      "action": "waiter sets plate down in front of guest",
+      "camera": "static",
+      "end": 21.23,
+      "framing": "medium",
+      "speed": "real time",
+      "start": 20
+    },
+    {
+      "action": "smoke curls over the two crispy bites final hold",
+      "camera": "static",
+      "end": 22.1,
+      "framing": "macro",
+      "speed": "slow motion",
+      "start": 21.23
+    }
+  ],
+  "text_on_screen": "A gastronomia e uma jornada para os sentidos. Onde cada prato guarda historias e memorias e emocoes. Uma experiencia gastronomica que comeca pela visao. Cada prato um poema em aroma e cor, que se completa com sabor.",
+  "why_it_works": "Hunger comes from close glossy liquids, melting sauces, char marks, rising smoke and steam, and hands finishing food. Dark background and warm side light make orange salmon, red sauces and green herbs pop. Fast cuts of pouring, torching and serving signal fresh, hot and made now. Full tables and staff moving signal this place is busy and trusted.",
+  "source": "reference reel (link removed: we study the edit, never use the footage)",
+  "studied_by": "muse-spark-1.3"
+}

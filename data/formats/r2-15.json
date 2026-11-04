@@ -1,0 +1,49 @@
+{
+  "audio_role": "Voice counts 'rock paper scissors shoot' then a short percussive beat track. The plate reveal lands on the 'shoot' beat, and the three food close-ups cut on the following beats with no sizzle or talking.",
+  "can_make": "We can make shots 2-4 from what we have: start each 4 s AI clip from the real menu photo of the pasta and the real menu photo of the salad, add AI-drawn hands/forearms in long sleeves holding the bowl steady underneath, and cut bowl-to-bowl-to-both-together on the beat. We cannot convincingly make shot 1 as real: the fast fist pumps and finger throws of rock-paper-scissors with two synced hands will warp and lose fingers, so we would replace live play with a still setup of two fists and a hard cut to the plates already in frame.",
+  "core": "Two people settle what to show with rock-paper-scissors, so the game delay makes the reveal of two plates the payoff.",
+  "dish": "creamy chicken pasta and tomato-mozzarella salad",
+  "fits": "Pairs of two finished plates that look different from each other: pasta vs salad, fried vs fresh, pizza vs salad, burger vs salad, two bowls or two appetizers served at once.",
+  "format": "play-to-reveal",
+  "hook": "Two fists hover over a dark restaurant table about to play rock-paper-scissors.",
+  "needs_camera": "Only a real camera in the real room gives the live game: two real hands pumping and throwing signs in sync, real skin and sleeve motion, real table reflection, real out-of-focus lights and dining room behind, and real gloss and depth when hot pasta and fresh salad are lifted and tilted together.",
+  "people": "hands only, nobody else. Two forearms enter from left and right edge over a table: left in white pleated sleeve, right in magenta long sleeve. They pump fists, throw scissors signs, then each hand lifts and holds one white bowl toward camera.",
+  "shots": [
+    {
+      "action": "two hands play rock-paper-scissors then lift two plated bowls up into frame",
+      "camera": "static",
+      "end": 3.75,
+      "framing": "medium eye level across table",
+      "speed": "real time",
+      "start": 0
+    },
+    {
+      "action": "left hand holds the pasta bowl steady in close-up",
+      "camera": "static",
+      "end": 5.04,
+      "framing": "close",
+      "speed": "real time",
+      "start": 3.75
+    },
+    {
+      "action": "right hand holds the tomato-mozzarella bowl steady in close-up",
+      "camera": "static",
+      "end": 6.21,
+      "framing": "close",
+      "speed": "real time",
+      "start": 5.04
+    },
+    {
+      "action": "both hands hold both bowls side by side tilted toward lens",
+      "camera": "static low angle",
+      "end": 7.9,
+      "framing": "medium close",
+      "speed": "real time",
+      "start": 6.21
+    }
+  ],
+  "text_on_screen": "none visible",
+  "why_it_works": "Three seconds of hands playing makes the viewer wait, then the camera goes close on sauce-coated pasta with chopped herbs and on sliced tomato with white mozzarella, green basil and dark glaze. Held close and still under bright light the textures and colors are readable: creamy, red, green, white.",
+  "source": "reference reel (link removed: we study the edit, never use the footage)",
+  "studied_by": "muse-spark-1.3"
+}

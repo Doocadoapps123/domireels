@@ -1,0 +1,41 @@
+{
+  "audio_role": "A woman's voice chants 'rock paper scissors shoot' twice in time with the hand throws. On the second 'shoot' the plates slam in and a short beat drops underneath. Cuts land on the throws (4.25s) and on the move to close-ups (6.46s).",
+  "can_make": "Shot 1 partial: we can fake the before/after with a real bar photo as background and our house cast hands holding the two real menu dishes in from left and right, cut fast to the voice chant, but we cannot do real rock-paper-scissors motion - no fist to scissors movement, only still holds. Shot 2 full: 4 s AI clip started from the real loaded-fries photo with a slow push/slide across to the taco photo, plus edit zoom for texture. Shot 3 weak: AI lift from a still cannot make a true hot cheese-pull and fork digging in; our cast never eats, so the fork bite will look frozen or smeary. Edit, chant audio and beat drop we can rebuild.",
+  "core": "Two hands play rock-paper-scissors and the last throw turns directly into two loaded plates being shoved at the camera.",
+  "dish": "carne asada loaded fries in a red bowl topped with guacamole, crema, pico and cheese, plus a black plate with tacos, rice and beans",
+  "fits": "piled shareable dishes where two plates can face off: loaded fries, nachos, taco platters, wings, samplers.",
+  "format": "play-to-reveal",
+  "hook": "A red-nailed fist pumps over a bar counter in the first second - you instantly read rock-paper-scissors starting.",
+  "needs_camera": "Real synchronized game in a real bar: two real arms with natural motion, real bar top light, bottles and mural behind, real weight when full plates land, real steam and real fork digging in and stretching hot cheese.",
+  "people": "nobody full, only hands: left hand woman with red nails and gold bangles, right hand with dark smartwatch; they throw rock-paper-scissors then each holds up a plate",
+  "shots": [
+    {
+      "action": "two hands play rock-paper-scissors twice then lift two full plates into frame",
+      "camera": "static",
+      "end": 4.25,
+      "framing": "medium close on bar counter, eye level",
+      "speed": "real time",
+      "start": 0
+    },
+    {
+      "action": "loaded fries and tacos sit piled high while view moves across them",
+      "camera": "slow push in and slide across plates",
+      "end": 6.46,
+      "framing": "macro close",
+      "speed": "slow motion",
+      "start": 4.25
+    },
+    {
+      "action": "fork spears and lifts a cheesy saucy bite from the fries bowl",
+      "camera": "static",
+      "end": 7.1,
+      "framing": "macro",
+      "speed": "slow motion",
+      "start": 6.46
+    }
+  ],
+  "text_on_screen": "none",
+  "why_it_works": "You wait to see who wins the quick game, then get instant payoff: big color piles of red tomato, white crema, green guac on fries and three tacos, ending with a fork lifting hot melty cheese to prove texture.",
+  "source": "reference reel (link removed: we study the edit, never use the footage)",
+  "studied_by": "muse-spark-1.3"
+}

@@ -1,0 +1,253 @@
+{
+  "about": "Domi's taste memory. Every verdict from the owner or from Muse's own draft review lands here, and the director reads it before pitching. It grows with every reel.",
+  "taste": [
+    "Craving beats cleverness. The viewer must want to eat it now.",
+    "Realism beats everything else: if it looks generated, it is a loss even if the idea is great.",
+    "Kitchen logic must be real: every step is something a line cook at this restaurant actually does (cheese slices melted on the meat on the plancha, never melted cheese poured on raw meat).",
+    "When a dish has a sauce on top, squeezing or zigzagging it on camera makes the Reel longer and more appetizing.",
+    "Generous portions. A skimpy handful of lettuce kills the craving.",
+    "Up close on one dish, the camera stays still and close and the food and the hands move: a slow pan or an orbit around one plate reads as a tutorial. A camera that passes over several dishes on one table, like a documentary, is another style the owner asked for (4 Nov).",
+    "Edits must be continuous with no magic appearances: anyone seen later must be present from the start of that take, otherwise show it as an obvious hard cut to a different take like a real edited video.",
+    "Reels run 9-13 seconds like the references, never 6-8: short cuts feel unfinished and read as an ad (owner, 2026-11-03: \"muy corto, parece un comercial corto\").",
+    "Juicy finishes must be generous and clearly visible - heavy spurt, drip and shine - a token drop never craves.",
+    "Surface continuity is realism: inside the same take nothing dries, disappears or moves by itself - only visible hands change surfaces and food.",
+    "When a Reel shows the dish being made, show the food being emptied into the container (fries and chicharron poured into the tray) and hold about one more second on the payoff after the last action (the chunk broken in half) before the reel ends. Owner, 2026-10-28: \"si se viera cuando se vacea el chicharron y las papas un plus; si durara un segundo mas al final luego de partir el chicharron a la mitad un plus\".",
+    "In a fast-cut Reel, cut fast: about 0.4-0.8 s per shot (the quesabirria reference averages 0.6 s). The shorter an AI shot stays on screen, the less time the viewer has to think it is AI. Put real footage or the real photo between AI shots, and keep a longer hold only for the final payoff. Owner, 2026-10-28: \"mientras menos duren los cortes menos tiempo hay de pensar en ai\". A long-takes Reel lets one real action play through instead.",
+    "Music matches the food's register, not just the cuisine: fast food and street food get something young; classical only for fine dining, which none of our restaurants serve. Made with ElevenLabs (commercial license); each shot's kitchen sound stays on top. Merengue tipico worked on the chicharron (\"el que le llamaste merengue me gusta\"); a merengue de orquesta on the yaroa did not. Owner, 2026-10-29: \"esa musica no es vacana... si es comida fast food algo mas joven\". Owner, 2026-11-03: every Reel with the same trap track and the same final hit reads as an ad; the register changes from Reel to Reel and between restaurants.",
+    "The food sells the dish, not the container: never fail a reel for tray shape alone if the food looks real and craveable.",
+    "Melted-cheese color follows the recipe and owner truth, not the still-photo edge color - white-melting cheeses stay white on camera.",
+    "Score Reels with más movida high-energy music with drive and lift, never a mellow low bed that just loops underneath."
+  ],
+  "proven": [
+    {
+      "move": "Fast build in ONE 4 s image-to-video clip with 5 hard cuts of 0.8 s, from a drawn first frame that shows ONLY the first step (meat on the plancha): meat hits the plancha, spatula chops and flips, cheese slices laid on the meat melt, the cheesy meat goes onto the toasted roll, sauce zigzag.",
+      "evidence": "torta draft A (2026-10-27). Owner: most realistic, the plancha looks best, the sauce makes it appetizing."
+    },
+    {
+      "move": "Gloved hands press the REAL dish photo so sauce oozes and lettuce falls, static camera.",
+      "evidence": "torta draft B. Muse review craving 8, approved. Owner liked it."
+    },
+    {
+      "move": "Video that ends on the real photo using it as the end frame (image-to-video with end_image_url): a hand lowers the top bun into the exact real dish.",
+      "evidence": "torta v1 shot 4."
+    },
+    {
+      "evidence": "Owner: \"ese le gana al AB si\" [AB = torta draft A+B, the previous best]",
+      "move": "Open with the 4s drawn plancha blitz from meat-only macro with 5x0.8s hard cuts, then hard-cut to the 4s real-photo press where gloved hands press the top bun until cheese and chipotle mayo ooze, ending on the exact restaurant plate."
+    },
+    {
+      "evidence": "hay que volver atras, este puso las manos sin el chef. El problema no es el chef",
+      "move": "Real-photo torta press with the cook in black already visible behind the plate from the first frame while black-gloved hands press for the ooze, instead of hands-only forearms."
+    },
+    {
+      "evidence": "muy bueno si [owner confirms v3 is the new best]",
+      "move": "8s two-clip winner: c0 drawn plancha blitz from meat-only macro with 5x0.8s hard cuts (meat drop, chop/flip, cheese slice laid to slump, cheesy meat onto roll, sauce zigzag) hard-cut to real-photo torta with cook in black staged behind plate from frame 0, then black-gloved hands press top bun for cheese and chipotle mayo ooze ending on exact plate."
+    },
+    {
+      "evidence": "Gana solo en que se ve bien real el chicharron y las papas",
+      "move": "Render chicharron as irregular deep-golden shaggy crispy chunks and fries as golden crisp pile in locked close macro, matching the real photo texture."
+    },
+    {
+      "move": "Start the cooking shot from a frame of REAL kitchen equipment (real griddle pixels: grease, scraps, rusty backsplash) and let Muse Image only swap the food for the dish; a gloved hand with a spatula enters from the edge and lifts the meat with cheese strings.",
+      "evidence": "la plancha nueva se ve mejor (2026-10-28, torta de birria sobre plancha real vs plancha dibujada)"
+    },
+    {
+      "move": "Agreed shot-by-shot script: real stock fryer footage (Pexels) for the equipment, the real photo for the dish, AI only where the food moves and always started from real pixels (a real fryer frame with the food swapped in, or the real photo).",
+      "evidence": "muy real la verdad (2026-10-28, chicharron con freidora real, 12.9 s); fast cut with merengue: \"vamos bien verdaderamente... quedo super\" (2026-10-28, 11 s, 17 cuts)"
+    },
+    {
+      "move": "Take the real dish apart layer by layer with Muse (sauces off, cheese off, meat off, empty pan), each layer edited from the one above so the pan never moves, and paste the real sauce lines back by color; every build shot starts and ends on those frames.",
+      "evidence": "\"Muy real\" (2026-10-29, Yaroa de Pierna, Master Pizza Tropical)"
+    },
+    {
+      "evidence": "\"Me gusta y me gusta que hizo creatividad en la Yaroa, que no fue a lo mismo de armándola, sino que iba haciendo diferentes cortes a medida que iba poniendo una salsa. Eso estuvo bueno.\"",
+      "move": "Build the hero Yaroa sauce-by-sauce in separate locked build shots (mayo pass, ketchup pass, cheddar pass) with hard cuts to real photos of sibling Yaroas between each sauce instead of one continuous assembly"
+    },
+    {
+      "evidence": "la pizza con el queso no se ve tan mal",
+      "move": "Slow two-hand cheese pull at chest height with real melted cheese stretching in long strings between pieces and nobody bites, eats or chews"
+    },
+    {
+      "evidence": "ok, esto es válido",
+      "move": "Keep the strict final Muse gate that fails a cut for skimpy fries vs real photo, fryer with no food, out-of-order story and vanishing cheese drip before paying for a draft"
+    },
+    {
+      "evidence": "la yaroa contiene queso mozzarella que se estira, eso quedó perfecto",
+      "move": "Hold a fork-lifted yaroa bite with long glossy mozzarella strings stretching and dripping sauce as the final payoff."
+    },
+    {
+      "evidence": "draft-6-2 (el queso que se estira sobre el consome): 'Esta se ve bien'. The owner's cheese is Monterey Jack, which melts white.",
+      "move": "Hold a long white Monterey Jack stretch with shine and juicy drip over the white consome cup as the payoff"
+    },
+    {
+      "evidence": "Me gustan tus reels, se ven super.",
+      "move": "Build coconut milk tea from empty clear cup in bar-real order: brown-sugar boba bed first, creamy coconut milk tea pour over, ice last, then flat-lid seal + thick straw punch, straw swirl to lift pearls, close on lifted-cup sip"
+    },
+    {
+      "evidence": "si es preparación mejor no con las manos, si es comiendo sí",
+      "move": "Show finished-drink eating with bare hands: grip finished cup by side, lift/tilt and sip through wide straw to lift boba"
+    },
+    {
+      "evidence": "Me gustaron todos, se ven súper.",
+      "move": "Build empanada Reel as three hard-cut crinkled-foil unwraps on plate - bare hand pulls foil back to reveal, then halves separate to show hot filling - cycling spinach, pepperoni and ham with pink-sauce dip, closing with long hold on spinach white-cheese stretch"
+    },
+    {
+      "evidence": "Me gustaron todos, se ven súper.",
+      "move": "Dip cut ham half into pink sauce cup and lift dripping as juicy beat before the final spinach payoff"
+    },
+    {
+      "evidence": "Me gustaron todos, se ven súper.",
+      "move": "Open a shareable picadera with a rock-paper-scissors game: two bare fists hover/pump over the empty wooden board for two fast trick beats, then hard-cut to the full Fusion Picadera on the third hit."
+    },
+    {
+      "evidence": "Me gustaron todos, se ven súper.",
+      "move": "Stage the middle as a bare-hands fight for the pile: hands from edges grab/lift a different hero each beat - golden toston from edge row, wrap slice to show creamy chicken filling, pork-chop bone from center pile, fried yuca chunk - alternating AI grabs with tight real-photo flashes of smoked pork pile and crispy chicken."
+    },
+    {
+      "evidence": "Me gustaron todos, se ven súper.",
+      "move": "Score Dominican picadera fight with young dembow instrumental around 120 bpm under table knocks and fry crunch and close with a long hold lifting crispy fried chicken close to lens."
+    },
+    {
+      "evidence": "Me gustaron todos, se ven súper.",
+      "move": "Stage a fast-cut pechurina steal gag with fork plus two bare hands: fork dips extra-crispy strip in open pink sauce and lifts huge close with thick drip, second bare hand snatches strip off fork and exits leaving a single-strip gap beat, then close with thick yuca stick dipped in pink sauce lifted dripping close."
+    }
+  ],
+  "failed": [
+    {
+      "move": "Drawn first frame that already contains the finished or half-built dish before the build starts.",
+      "why": "Looks fake and breaks the story (owner)."
+    },
+    {
+      "move": "Reference-to-video for the kitchen build.",
+      "why": "Less realistic than image-to-video; invented melted cheese poured on meat on the plancha, which no cook does (owner)."
+    },
+    {
+      "move": "Miniature toy trucks and cranes building the dish.",
+      "why": "Meat appeared from nowhere under the truck bed, skimpy lettuce, gimmick took the screen from the food (owner)."
+    },
+    {
+      "move": "Slow 2-3 s shots with camera push-ins, one gentle action each.",
+      "why": "Reads as a tutorial, no energy (owner, v1)."
+    },
+    {
+      "move": "Drawing every ingredient from a text description.",
+      "why": "The model drew big cubes instead of chopped meat, round burger buns instead of the oval roll, sliced onion rings instead of pico."
+    },
+    {
+      "move": "Real-photo press briefed from an empty plate with no one behind, then a cook materializes behind mid-press inside the same locked take",
+      "why": "It reads as a bad AI edit and magic appearance from empty torta to suddenly someone behind. Instead have the person behind from frame 0 so they are there from the start, or brief an explicit hard cut to a new take/angle where the person is already present so it reads as a real edited video."
+    },
+    {
+      "move": "Real-photo press with only gloved forearms reaching in and no cook body behind to hide a pop-in",
+      "why": "Owner rejected it as hands without the chef - floating disembodied hands look wrong. Do not fix a pop-in by cropping to hands-only; keep the cook anchored behind from the first frame."
+    },
+    {
+      "move": "Shipping an 8s total reel (4s drawn blitz + 4s real) as finished",
+      "why": "Owner scored realism 6-7 and said 8 seg es muy poco vs references 9-13s median 10.6s; build ~10-12s with longer holds or third clip instead of stopping at 8s."
+    },
+    {
+      "move": "Building the tray in c0 by tossing only a few fries and 2-3 small chicharrones",
+      "why": "Owner: Solo unas cuantas papas y chicharrones se tiran en la bandeja, eso no da hambre; pile generous full portions matching real photo - 6-8 large 1.5-2 inch irregular chunks piled left, fries piled right - instead of a skimpy toss."
+    },
+    {
+      "move": "Directing the lime squeeze as a small tight juice arc (brief risk: keep juice arc small)",
+      "why": "Rendered as un juguito y mas nada, eso no da hambre; direct a sustained close squeeze with clearly visible spurt, drip and shine over pork, not a tiny invisible arc."
+    },
+    {
+      "move": "Ending drawn fryer blitz on a wrong tray that does not match the real photo",
+      "why": "Model rendered fries across full tray with pork on top, no lime, uniform pale belly squares vs irregular deep-golden chunks, so hard-cut to real pork-left fries-right lime-center jumps and reads as no se ve tan real; lock end layout to exact real assembly and chunk look."
+    },
+    {
+      "move": "Start the build from a drawn empty black tray rendered wet/oily with puddles that turns dry/matte once fries land",
+      "why": "Wet-to-dry with no cause reads as fake; lock the tray finish identical from frame 0 - brief a clean dry matte black tray and only add gloss/oil where food actually brings it."
+    },
+    {
+      "move": "Direct a bulk fries pour that lets 2 fries fall on the chicharron side and then vanish inside the same take",
+      "why": "Stray pieces that disappear by magic break realism; constrain the pour stream to the empty half with pile growth, and if a stray lands it must stay visible unless a hand visibly removes it - never morph or vanish."
+    },
+    {
+      "move": "Build the reel as plain step assembly with no cooking or craving beat: empty tray -> pour fries -> tongs drop pork -> place lime -> photo",
+      "why": "Owner called it aburrido, parece una animacion; a clean assembly has no hunger hook. Anchor every build around one real kitchen/craving action - fryer bubble + drain, sustained squeeze with spurt/drip/shine - and hold to 10-12s instead of a short assembly."
+    },
+    {
+      "move": "Spatula flips or folds a lifted clump of shredded meat back onto the griddle.",
+      "why": "Owner: al voltear la carne no luce muy bien porque parece una tortilla. The video model melts the clump into one smooth cheese-covered slab. Cut the shot right after the lift and cheese pull, before anything lands; never ask for a flip or fold of loose meat."
+    },
+    {
+      "move": "A pour where the falling food is not in the start frame (chicharron chunks tipped from a basket that enters from the edge).",
+      "why": "Owner: \"cuando se esta vertiendo se ve un poco blanco\" while the same chunks look glossy in the real photo. Food that exists only mid-clip is drawn by the video model, so it came out pale and puffy. Put the food that moves in the start frame from real pixels, keep invented food on screen as briefly as possible, and reject any draft where moving food is paler or duller than the real dish."
+    },
+    {
+      "move": "Building the dish on the surface of the owner's photo when it looks homey (red and white checkered paper).",
+      "why": "Owner, 2026-10-29: \"ese mantel esta como en la casa de la abuela\". Build shots happen in a kitchen: swap the surface for a stainless steel counter with Muse, paste the real food pixels back, and take the dish apart from that frame."
+    },
+    {
+      "move": "A punch-in on stock equipment that lands on an empty basket or empty tool.",
+      "why": "Owner, 2026-10-29: the zoom fell on the empty fryer basket and read as empty. Punch in on the oil foaming around the food, never on empty equipment."
+    },
+    {
+      "move": "Moving the dish to a new surface by pasting the real food back at its old place, while Muse redrew the container a little higher and smaller.",
+      "why": "Owner, 2026-10-29: \"una parte de la yaroa se sale del envase, está flotando en el aire\". The front of the yaroa hung past the pan's rim over the table (SAM measured 28% of the food outside the pan). Muse's own review approved those frames and clips. Now lab/resurface lines the real container up with the drawn one, and every frame is measured before a draft is paid for."
+    },
+    {
+      "move": "Describing a layer the photo does not show with details nobody saw or said (\"darker crispy bits\" on the yaroa's pierna).",
+      "why": "Owner, 2026-10-29: \"por qué cuando se echa la carne tiene esos pedazos negros?\" The pierna is hidden under the cheese in the real photo and the image model drew black charred bits from that line. Muse now writes each layer from what it sees and what the owner said, and leaves out what it cannot see."
+    },
+    {
+      "move": "Open every reel with the same stock fryer basket shot",
+      "why": "Owner: 'necesitamos más asset porque usar la misma freidora todo el tiempo' - repetition reads as stock. Source/shoot a rotating library of real kitchen craving openers (different fryer angles, plancha, melt, sauce) and never repeat the same opener back-to-back."
+    },
+    {
+      "move": "Start a bite clip from a drawn first frame of AI cast + drawn food and direct a bite mark revealing interior filling (lift whole birria taco with both hands, bite front edge to reveal shredded beef, melted cheese and cilantro inside orange-crisp shell)",
+      "why": "Owner: 'El taco falsisimo, no uso el mismo.' Starting from drawn pixels let the video model invent the hero so color, size, shape and filling drifted from the real dish. Start any bite from the real dish photo pixels with the taco locked, never a drawn taco, and never ask image-to-video to invent a bite interior/cross-section."
+    },
+    {
+      "move": "Put AI house cast on camera to eat/pull in a 4s image-to-video from a drawn frame with face animation (Imani biting/chewing/nodding/looking up on a park bench, Yaritza leaning/pulling/looking happy at kitchen counter)",
+      "why": "Owner: 'la persona se ve ai 100%' - even when the cheese looked ok the AI face/hair/chew broke realism. Muse approved both at realism 8 but owner rejected. Do not brief AI faces biting/chewing/looking on camera; use only real people footage or keep people off-camera hands-only, and never trust a Muse realism pass for humans."
+    },
+    {
+      "move": "Cut the real-photo payoff with fries into the middle of the build then cut back to pour fries (press -> payoff with fries -> fries pour -> pull)",
+      "why": "It plays the story backwards: the finished plate appears then disappears with no cause and reads as fake. Build in kitchen-real chronological order and keep the full payoff with fries only as the final hold after plating is done."
+    },
+    {
+      "move": "Brief cheese ooze / plate drip fresh in each shot without carrying the same drip across cuts",
+      "why": "A glossy drop on the cut edge / plate in one shot is gone in the next with no hand wiping it, which breaks continuity across cuts. Carry the same ooze shape and plate drip forward shot to shot and only grow it, never reset it, unless a visible hand changes it."
+    },
+    {
+      "move": "Failing a draft only because the foil pan renders rectangular instead of the real round pan when the yaroa itself matches.",
+      "why": "Owner says what sells is the yaroa, not the tray; pass on container-shape mismatch and keep the gate on food truth, portion and craving."
+    },
+    {
+      "move": "Flagging long stretching melted cheese as a mozzarella-like physics or truth error on yaroa.",
+      "why": "Yaroa contains mozzarella that stretches by recipe, so direct a long stretch with glossy drip and approve it instead of failing it."
+    },
+    {
+      "move": "Lifting 1 taco from a 3-taco blue plate and showing only 2 tacos total after the grab",
+      "why": "Count continuity broke: the lift was briefed as a separate AI diner shot (dish:0, start:real) cut against the real 3-taco still with no locked count, so the plate was redrawn and the held taco did not add up to 2 left + 1 in hand = 3 visible. Owner: 'hay 3 tacos, cuando agarra uno de repente aparecen dos nada mas'. Do instead: brief empty-hand pinch on the exact 3-taco plate, lift leaving 2, and keep 2 on plate + same orange-crisp taco in hand visible throughout; manually count tacos, Muse approved draft-2-0 at realism 8 and missed it."
+    },
+    {
+      "move": "Rejecting a white cheese pull as pale white-cream truth error and forcing yellow-orange glossy Monterey Jack",
+      "why": "Melted Monterey Jack is white by recipe per owner, so white-translucent strings are true; forcing yellow-orange from the still edge color invents fake color and rejects good takes like draft-6-2. Direct white stringy melt with shine and heavy drip over the cup and pass white instead of failing it."
+    },
+    {
+      "move": "A fork pulls the meat out of a birria taco and dips it alone in the consomme",
+      "why": "Nobody eats birria tacos that way: the whole taco is dipped in the consomme by hand. Owner, 2 Nov: \"primera vez que veo un taco de birria que le saquen la carne con un tenedor\". Muse planned it and its draft review passed it. Do instead: plan each dish the way people really eat it (birria taco: picked up whole and dunked), and reject a clip whose way of eating no diner uses."
+    },
+    {
+      "move": "A bare hand lifts a birria taco by one edge of the tortilla",
+      "why": "Twice on Dora's 3 birria tacos (1 and 2 Nov) the hand pinched one side of the taco and lifted it; nobody holds a taco like that, it would open and spill. Owner: 'agarró el taco de un solo lado... lo hizo ayer y hoy'. Muse's draft review passed it both times. Do instead: brief the grip in the motion (fingers under the taco, thumb on top, the fold kept closed) and reject any clip where the taco hangs from one edge."
+    },
+    {
+      "move": "Dropping ready-to-drink ice into the cup with bare fingers during prep",
+      "why": "Shot 5 was briefed as 'Bare hand enters from edge and drops ice cubes from above onto creamy tea' so fingers touch drink ice. Real bar never does that. Do instead: add ice with scoop, tongs or poured from bucket/shaker with no skin contact; reserve bare hands for holding the finished cup and sipping. Applies to ice in any drink or dish, not just milk tea."
+    },
+    {
+      "move": "Stirring a sealed cup with straw through the lid then continuing the same action with the lid open",
+      "why": "Shot 6 seals with white flat lid + straw punch, then shot 7 was briefed as generic 'swirls thick black straw to lift boba' without locking sealed state, so the model dropped the closed lid to an open cup to show ice moving. Do instead: lock open vs sealed state across cuts; once sealed, keep same lid + straw for every later swirl/lift/sip unless a visible hand opens it on camera; never re-brief as open just to show contents. Same for any lidded cup, box or cover."
+    },
+    {
+      "move": "Laying a mellow low background loop under a craving Reel - Afrobeats instrumental around 92 BPM with clean guitar + shaker that stays low under sizzle and never builds",
+      "why": "Owner: \"Esa música no va, más movida.\" It read as too chill/flat and drained energy from the melt. Do instead: brief a más movida higher-energy young track with drive and lift that carries the kitchen sound on top, changing register reel to reel."
+    }
+  ]
+}

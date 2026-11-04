@@ -1,0 +1,25 @@
+{
+  "audio_role": "Real griddle sizzle is the main sound; if music is used it stays low under the sizzle and does not drive cuts because there is only one continuous take.",
+  "can_make": "We can make an imitation from a real menu photo of a cheeseburger or patty: a 4 s slow push-in starting from the photo with slight AI gloss/steam movement and added sizzle sound plus simple text and music. It will read as a finished dish, not as live cooking. We cannot fake the bubbling fat around the patties, the cheese visibly softening and drooping over the crust, or the spatula and tongs sliding under and nudging a patty without it looking false.",
+  "core": "Stare at American cheese melting over browned smash patties on a greasy flat-top.",
+  "dish": "smash burger patties with American cheese slices melting on a flat-top griddle",
+  "fits": "Smash burgers, cheeseburgers, double patties, patty melts, and other flat-top cheese-on-meat items where fat and melt are the sell. Does not suit salads, drinks, desserts, or plated dishes that need assembly.",
+  "format": "flat-top melt stare",
+  "hook": "Overhead close on five dark crusty patties each with a bright yellow cheese square on top, fat bubbling around them, spatula sliding in from the right in the first second.",
+  "needs_camera": "A real camera over a real hot flat-top: live grease bubbling and browning, cheese going from matte to glossy and slumping over the edge, metal spatula scraping and lifting crust, true reflections on fat and steel. Also a clean take without the phone low-battery dimming.",
+  "people": "nobody. No hands or faces on screen. Only off-camera tools - a spatula and tongs - enter from the right and nudge one patty.",
+  "shots": [
+    {
+      "action": "Five cheese-topped patties sizzle in their fat while a spatula and tongs slide under and nudge the middle-right patty",
+      "camera": "static overhead angled close, slight handheld shake",
+      "end": 6.7,
+      "framing": "close overhead of the griddle surface",
+      "speed": "real time",
+      "start": 0
+    }
+  ],
+  "text_on_screen": "No intentional text. An iPhone system popup 'Low Battery 10% battery remaining. Low Power Mode / Close' appears over the center from about mid-clip and dims the image.",
+  "why_it_works": "It shows hot fat bubbling, dark brown crust on the meat edges, and cheese turning shiny and drooping. That combination of sizzle, grease shine, and melt progression reads as hot, salty, and freshly cooked.",
+  "source": "reference reel (link removed: we study the edit, never use the footage)",
+  "studied_by": "muse-spark-1.3"
+}

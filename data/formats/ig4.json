@@ -1,0 +1,33 @@
+{
+  "audio_role": "Loud looping hip-hop/funk trend track with shouted Yeah vocal, no narration and no real sizzle. It runs full volume under both shots and the hard cut at 6.27 lands on the beat to switch from sawing to lifting.",
+  "can_make": "We can fake the setup from real assets: tight crop of the real burger photo on branded paper with fries behind, centered SMASHBURGER + GRILLED CHEESE text, same two-beat edit with music. For shot 1 we can start a 4s AI clip from the overhead burger photo to add tiny shine/steam motion plus a clean AI hand and knife pressing down, then time-stretch to 6.27s. For shot 2 we can start a 4s AI clip from a cross-section photo of hands holding the two halves and add a small separate motion. This fits the house-cast rule because hands only hold and show, never eat. What will not match is real deformation: AI will smear the sawing, warp fingers and knife, and fake the cheese stretch and meat crumble instead of a clean cut and real pull.",
+  "core": "A knife cuts straight through a grilled-cheese smashburger and hands pull the halves apart to show the hot meat and melted cheese inside.",
+  "dish": "smashburger patties stacked between two grilled-cheese buns, served on a tray with cheese fries",
+  "fits": "Hot stacked or stuffed dishes where the cross-section sells it: smashburgers, patty melts, grilled-cheese hybrids, quesabirria, burritos, cheesesteak sandwiches, stuffed pizza, lasagna slice, chicken parm sandwich.",
+  "format": "cut-and-pull-open",
+  "hook": "In the first second a knife blade presses into the browned crisp grilled-cheese top in close-up, with melted cheese and orange fat visible at the edge.",
+  "needs_camera": "The real hot cut and real pull: blade resistance in crisp bread, juice running, cheese strings stretching and breaking, steam, and a clean new meat cross-section with true texture. Only a hot real burger shot in one take gives believable physics and grease.",
+  "people": "hands only, no faces. Right hand holds a small steak knife and saws down through the burger, left thumb steadies the side. Then both hands grip the two halves, lift, and slowly separate them for camera. No carrying, no reacting, no talking, no eating.",
+  "shots": [
+    {
+      "action": "knife saws straight down through the grilled-cheese top and smash patties",
+      "camera": "static",
+      "end": 6.27,
+      "framing": "close, overhead angled",
+      "speed": "real time",
+      "start": 0
+    },
+    {
+      "action": "both hands lift the cut burger and slowly separate the halves to expose meat and melted cheese",
+      "camera": "static",
+      "end": 11.7,
+      "framing": "close, eye level",
+      "speed": "real time",
+      "start": 6.27
+    }
+  ],
+  "text_on_screen": "SMASHBURGER + GRILLED CHEESE in white serif centered over the food for the full 11.7s",
+  "why_it_works": "You see crisp brown crust, bubbling orange fat and cheese at the rim, then the sawing builds wait for the inside. The pull holds the cut face to camera: browned beef layers, soft onions, glossy melted yellow and white cheese stretching between halves. Crunch outside plus hot fat and melt inside reads as salty and filling without any words.",
+  "source": "reference reel (link removed: we study the edit, never use the footage)",
+  "studied_by": "muse-spark-1.3"
+}

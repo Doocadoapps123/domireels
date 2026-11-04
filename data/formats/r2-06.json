@@ -1,0 +1,113 @@
+{
+  "audio_role": "Upbeat funk instrumental with drums, bass and brass hits, no voice, no sizzle. The first 6 fast cuts land on drum hits. The middle beauty shots hold longer and sit inside the groove. Ends on a hit under the logo.",
+  "can_make": "We can make the second half, not the first. From one real overhead menu photo of the set we can make shots 7-12: crops for macro and close, plus 4 s AI clips started from that photo for slow push-in and slow orbit, then cut to the beat and add the end logo. We cannot make shots 1-6 truthfully: real chopsticks putting down one roll after another with correct weight, shadow and no morphing. AI hands with chopsticks warp, and stills cut together look like a jump, not a placement. House cast not needed here; original is hands-only and we should keep it hands-only, no model holding or eating.",
+  "core": "An empty plate fills piece by piece until it is full.",
+  "dish": "Salmon uramaki set, 7 cut rolls with salmon-tuna filling, avocado slices outside, topped alternately with white sauce with tobiko and green oil, and with red shredded garnish.",
+  "fits": "Counted small pieces served as a set where two looks alternate: sushi rolls, hosomaki, dumplings, gyoza, mini tacos, bruschetta, sweets like mochi or petit fours.",
+  "format": "piece-by-piece build-up",
+  "hook": "In the first 0.8 s chopsticks carry a cut salmon roll in close-up and lower it onto crossed sticks over an empty glazed plate.",
+  "needs_camera": "Real chopstick placement on the real plate: the grip, the release, the roll settling without wobble, true gloss on salmon and sauce, true shallow focus shift between rolls, and consistent color and size of all 7 pieces across cuts.",
+  "people": "hands only. An out-of-frame hand holds wooden chopsticks, enters from left or right, places one roll per cut, then exits. No face, no body, no talking, no eating.",
+  "shots": [
+    {
+      "action": "chopsticks lower first roll with white topping onto crossed sticks",
+      "camera": "static",
+      "end": 0.83,
+      "framing": "close",
+      "speed": "real time",
+      "start": 0
+    },
+    {
+      "action": "chopsticks lower second roll with red topping on right side of plate",
+      "camera": "static",
+      "end": 1.67,
+      "framing": "close",
+      "speed": "real time",
+      "start": 0.83
+    },
+    {
+      "action": "chopsticks place third roll on left side",
+      "camera": "static",
+      "end": 2.5,
+      "framing": "medium",
+      "speed": "real time",
+      "start": 1.67
+    },
+    {
+      "action": "chopsticks place fourth roll in center",
+      "camera": "push in",
+      "end": 3.33,
+      "framing": "medium",
+      "speed": "real time",
+      "start": 2.5
+    },
+    {
+      "action": "chopsticks place fifth roll in foreground",
+      "camera": "static",
+      "end": 4,
+      "framing": "close",
+      "speed": "real time",
+      "start": 3.33
+    },
+    {
+      "action": "chopsticks place sixth roll to complete the ring",
+      "camera": "static",
+      "end": 4.83,
+      "framing": "medium",
+      "speed": "real time",
+      "start": 4
+    },
+    {
+      "action": "full plate of rolls rests on crossed sticks",
+      "camera": "slow orbit right",
+      "end": 5.67,
+      "framing": "medium",
+      "speed": "real time",
+      "start": 4.83
+    },
+    {
+      "action": "focus holds on red shredded topping of front roll",
+      "camera": "push in",
+      "end": 6.7,
+      "framing": "macro",
+      "speed": "slow motion",
+      "start": 5.67
+    },
+    {
+      "action": "cut salmon cross-section and avocado face camera",
+      "camera": "orbit left",
+      "end": 7.97,
+      "framing": "close",
+      "speed": "real time",
+      "start": 6.7
+    },
+    {
+      "action": "seven rolls sit in pattern seen from above",
+      "camera": "static",
+      "end": 8.93,
+      "framing": "overhead",
+      "speed": "real time",
+      "start": 7.97
+    },
+    {
+      "action": "plate holds still while perspective circles it",
+      "camera": "orbit",
+      "end": 11.13,
+      "framing": "medium",
+      "speed": "real time",
+      "start": 8.93
+    },
+    {
+      "action": "overhead plate holds still with logo on top",
+      "camera": "static",
+      "end": 13.1,
+      "framing": "overhead",
+      "speed": "real time",
+      "start": 11.13
+    }
+  ],
+  "text_on_screen": "No text for 0-11 s. Final card from 11.1 s: 'Dhoo' in script with orange fish mark, 'SUSHI LOUNGE' below, centered over overhead plate.",
+  "why_it_works": "You see orange salmon centers cut open, white rice, green avocado, white sauce dots and red shreds on a green-brown plate. Each 0.8 s cut adds one piece, so the count grows 1 to 7. Close focus shows oil shine and rice grains and tobiko beads. The repetition tells portion size without words.",
+  "source": "reference reel (link removed: we study the edit, never use the footage)",
+  "studied_by": "muse-spark-1.3"
+}

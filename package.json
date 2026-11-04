@@ -1,0 +1,29 @@
+{
+  "name": "domi-reels",
+  "version": "1.0.0",
+  "description": "Turns the bad food photos restaurant staff already send to Domi into Instagram and Facebook Reels, automatically, with the real dish kept untouched.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Doocadoapps123/domi-reels.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Doocadoapps123/domi-reels/issues"
+  },
+  "homepage": "https://github.com/Doocadoapps123/domi-reels#readme",
+  "dependencies": {
+    "@meta-sam/parser": "^0.1.0",
+    "@supabase/supabase-js": "^2.118.0",
+    "gsap": "^3.15.0",
+    "openai": "^7.44.0",
+    "playwright": "^1.64.1",
+    "sharp": "^0.35.5"
+  }
+}

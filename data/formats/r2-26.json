@@ -1,0 +1,57 @@
+{
+  "audio_role": "Upbeat instrumental Latin jazz with nylon guitar, walking bass and light shaker/percussion, no voice, no sizzle. Continuous cheerful terrace mood; the 5 hard plate swaps land on or near music beats to feel like flipping menu pages.",
+  "can_make": "We can rebuild it as a composite without the bite: 1) background: house cast model seated at wood table in terrace look, smiling with eyes open, holding empty fork up or hands on table, never eating. 2) foreground: real menu photo of each dessert cut out onto a white plate, large at bottom frame. 3) motion: 4s AI clips started from that composite with only very slow push-in to give life, no chewing or spoon-to-mouth. 4) edit: hard cut every ~2s to swap dessert + yellow label. What breaks: we cannot copy the core eating pose because our cast never eats, so no spoon at lips, no closed-eyes tasting moment.",
+  "core": "One eater holds the same about-to-taste bite while five different desserts replace each other on the table in front of her.",
+  "dish": "Waffle de Manzana y Toffee, Alfajor, Cheesecake de Frutos Rojos, Crema Volteada, Enrollado de Chirimoya",
+  "fits": "Single-serve plated sweets that read in 2 seconds from the front: waffle with ice cream, cake/cheesecake slice, flan, cookie sandwich, rolled cake. Needs to hold shape on a plate. Does not suit soups, drinks, large sharing plates, or food that needs cutting, pouring or stretching to understand.",
+  "format": "frozen taster, swapping plates",
+  "hook": "First second: eye-level medium of a young woman eyes closed, mouth open, spoon with berries touching her lips, with a caramel waffle and ice cream large on a plate in foreground.",
+  "needs_camera": "The real tasting proof: a real person in a real place actually bringing spoon to mouth, closing eyes, chewing, with consistent light, real terrace plants/buildings and real hand tension. Also a long unbroken take that proves the same person saw all five plates. AI cast and photo composite cannot show eating, mouth contact, or genuine reaction.",
+  "people": "One woman mid-20s, long dark wavy hair, sunglasses on head, gold hoops, white tee + grey knit cardigan, seated at wood table outdoors. She stays frozen whole Reel: right hand holds spoon to open mouth, left hand rests on table, eyes closed smiling. No talking, no carrying, no movement.",
+  "shots": [
+    {
+      "action": "plate with apple waffle, ice cream, toffee and flower sits centered on table",
+      "camera": "static",
+      "end": 2.1,
+      "framing": "medium eye level, two-plane: woman upper body behind, plate large in foreground",
+      "speed": "real time",
+      "start": 0
+    },
+    {
+      "action": "plate hard-cuts to powdered alfajor sandwich",
+      "camera": "static",
+      "end": 4.3,
+      "framing": "medium eye level, same framing, only plate changes",
+      "speed": "real time",
+      "start": 2.1
+    },
+    {
+      "action": "plate hard-cuts to cheesecake cubes with red berries",
+      "camera": "static",
+      "end": 6.5,
+      "framing": "medium eye level, same framing, only plate changes",
+      "speed": "real time",
+      "start": 4.3
+    },
+    {
+      "action": "plate hard-cuts to crema volteada with strawberries and cream",
+      "camera": "static",
+      "end": 8.7,
+      "framing": "medium eye level, same framing, only plate changes",
+      "speed": "real time",
+      "start": 6.5
+    },
+    {
+      "action": "plate hard-cuts to chirimoya roll slice with cream and flower",
+      "camera": "static",
+      "end": 10.9,
+      "framing": "medium eye level, same framing, only plate changes",
+      "speed": "real time",
+      "start": 8.7
+    }
+  ],
+  "text_on_screen": "Yellow center box, black text, changes per plate: 'Waffle de Manzana y Toffee' / 'Alfajor' / 'Cheesecake de Frutos Rojos' / 'Crema Volteada' / 'Enrollado de Chirimoya'",
+  "why_it_works": "Foreground dessert is big, sharp and wet-looking - sauce, ice cream, berries - and background face with closed eyes and spoon at mouth signals tasting pleasure. Viewer gets product + reaction in one frame, repeated 5 times fast, so hunger comes from gloss plus human proof and variety creates a reason to choose.",
+  "source": "reference reel (link removed: we study the edit, never use the footage)",
+  "studied_by": "muse-spark-1.3"
+}

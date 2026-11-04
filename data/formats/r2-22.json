@@ -1,0 +1,97 @@
+{
+  "audio_role": "Loud upbeat hip-hop rap track all the way through, no audible chewing or kitchen sound. Fast vocal flow drives the pace and the hard cuts at 5.11s, 5.47s, 5.67s land on beats, making the sprinkle and fork-stab feel faster.",
+  "can_make": "We can make the food beauty parts from a real menu photo: overhead whole cake, close slice lift on a server toward lens, macro side of layers and frosting, 4 s AI clip of slow push-in on the slice, 4 s AI clip of flakes falling onto frosting. Our house cast can hold the plate, carry the slice, smile behind it, point at it. We cannot make the eating proof: open mouth taking the bite, chewing and reacting, three different hands stabbing the same slice at once, forks scraping and the truly empty crumbed plate. With no-eat models those shots would look fake if we try them.",
+  "core": "Three friends attack one slice together until the plate is empty.",
+  "dish": "layered coconut cake with white frosting and toasted coconut on top",
+  "fits": "Dishes you can slice to show inside and share at the table: layer cakes, tres leches, bread pudding, cheesecake, lasagna, deep-dish pizza.",
+  "format": "gang-up and gone",
+  "hook": "First second: extreme macro of a crumbly forkful of cake filling the lens and going straight into an open mouth.",
+  "needs_camera": "A real camera in the real place for: a real mouth closing on the fork, a real face chewing with eyes moving, toasted flakes actually falling and landing, three real hands with forks colliding over one plate in the same moment, crumbs and smears on a truly scraped-clean plate.",
+  "people": "Young woman with curly hair, white-green cap and mustard sweater over white collar - she takes the first bite and later chews satisfied; blonde woman in background who watches and smiles with hand on head; young man in white shirt, tie and blue vest who garnishes from above; man in patterned fleece who joins the group fork fight. They enter as blurred faces behind the food and lean in with forks around 5.6s.",
+  "shots": [
+    {
+      "action": "forkful of cake goes into open mouth, then she chews",
+      "camera": "static locked on fork, rack focus fork to face",
+      "end": 1.77,
+      "framing": "macro",
+      "speed": "real time",
+      "start": 0
+    },
+    {
+      "action": "tall slice held up on server toward lens",
+      "camera": "push in",
+      "end": 3.07,
+      "framing": "close",
+      "speed": "real time",
+      "start": 1.77
+    },
+    {
+      "action": "side of slice lowers onto blue plate",
+      "camera": "static",
+      "end": 4.37,
+      "framing": "macro",
+      "speed": "real time",
+      "start": 3.07
+    },
+    {
+      "action": "man sprinkles topping from high above the cake",
+      "camera": "static low angle from plate level",
+      "end": 5.11,
+      "framing": "medium",
+      "speed": "real time",
+      "start": 4.37
+    },
+    {
+      "action": "small crumbs fall through air toward frosting",
+      "camera": "static",
+      "end": 5.47,
+      "framing": "macro",
+      "speed": "slow motion",
+      "start": 5.11
+    },
+    {
+      "action": "toasted coconut flakes land on white frosting",
+      "camera": "static",
+      "end": 5.67,
+      "framing": "macro",
+      "speed": "slow motion",
+      "start": 5.47
+    },
+    {
+      "action": "three people hold forks hovering over the slice",
+      "camera": "static low angle from plate",
+      "end": 6.67,
+      "framing": "close",
+      "speed": "real time",
+      "start": 5.67
+    },
+    {
+      "action": "multiple forks cut into slice and pull pieces apart",
+      "camera": "handheld follow on plate",
+      "end": 9.11,
+      "framing": "close",
+      "speed": "real time",
+      "start": 6.67
+    },
+    {
+      "action": "woman in cap chews with empty fork held toward lens",
+      "camera": "static",
+      "end": 10.84,
+      "framing": "medium close",
+      "speed": "real time",
+      "start": 9.11
+    },
+    {
+      "action": "empty blue plate with crumbs only, forks dropped and hands pick last bits",
+      "camera": "static overhead",
+      "end": 12,
+      "framing": "overhead",
+      "speed": "real time",
+      "start": 10.84
+    }
+  ],
+  "text_on_screen": "No on-screen text.",
+  "why_it_works": "You see crumb texture and thick frosting in macro, then you see a real person bite and chew, then you see three people take it at once and leave only crumbs. That sequence reads as soft, sweet, and wanted by others.",
+  "source": "reference reel (link removed: we study the edit, never use the footage)",
+  "studied_by": "muse-spark-1.3"
+}

@@ -1,0 +1,65 @@
+{
+  "audio_role": "no music and no voice, only close kitchen sounds: fries thud, chicken tap, wet mac plop, squeeze-bottle hiss, bacon sprinkle; fast first cuts land on each contact sound, long 2.6-5.77s sauce pour holds on continuous squeeze sound.",
+  "can_make": "we can copy the rhythm and order with stills: photo of empty tray > photo of fries > photo with chicken > photo with mac > fake sauce with a 4s AI morph started from the finished photo, plus fast cuts and top text. We cannot make real falling fries, tumbling mac from a basket, or a real liquid sauce stream and falling crumbs - AI 4s clips started from a photo smear cheese and sauce and hands look wrong, and our house cast only holds and shows and never handles messy build.",
+  "core": "A takeout tray is stacked layer by layer in the same frame until it overflows.",
+  "dish": "loaded fries in a foil tray topped with sliced fried chicken, mac and cheese, pink sauce and bacon crumbs",
+  "fits": "loaded fries, poutine, nachos, kebab plates, mac bowls - any bowl/tray dish where fries/chips/rice can be covered with meat then a creamy element then sauce then crunch.",
+  "format": "layer-by-layer build-up",
+  "hook": "fistful of fries falls from top frame into an empty foil pan in the first 0.6s",
+  "needs_camera": "real falling and piling in motion: fries dropping, chicken placed, mac tumbling from basket, liquid sauce stringing, crumbs falling from fingers, with true weight, steam and gloss under one light.",
+  "people": "hands only, nobody shown: person in black with black disposable gloves, face out of frame; both hands drop fries, place chicken, tip basket, squeeze bottle, sprinkle bacon",
+  "shots": [
+    {
+      "action": "french fries dropped into empty foil pan",
+      "camera": "static",
+      "end": 0.63,
+      "framing": "close, eye level",
+      "speed": "real time",
+      "start": 0
+    },
+    {
+      "action": "sliced breaded chicken laid on fries",
+      "camera": "static",
+      "end": 1.3,
+      "framing": "close, eye level",
+      "speed": "real time",
+      "start": 0.63
+    },
+    {
+      "action": "mac and cheese tipped from wire basket onto chicken",
+      "camera": "static",
+      "end": 1.97,
+      "framing": "close, eye level",
+      "speed": "real time",
+      "start": 1.3
+    },
+    {
+      "action": "basket lifted leaving mound of mac and cheese",
+      "camera": "static",
+      "end": 2.6,
+      "framing": "macro, eye level",
+      "speed": "real time",
+      "start": 1.97
+    },
+    {
+      "action": "light pink sauce squeezed in zigzag over mac",
+      "camera": "slow push in",
+      "end": 5.77,
+      "framing": "macro, eye level",
+      "speed": "real time",
+      "start": 2.6
+    },
+    {
+      "action": "crumbled bacon sprinkled by fingers over sauce",
+      "camera": "static",
+      "end": 7.5,
+      "framing": "close, eye level",
+      "speed": "real time",
+      "start": 5.77
+    }
+  ],
+  "text_on_screen": "none",
+  "why_it_works": "each layer adds a texture you can read: dry fries, crisp brown chicken cut to show white inside, wet yellow mac sliding down, pale sauce coating it, red crumbs on top. The pile gets taller than the tray edge, so portion looks large.",
+  "source": "reference reel (link removed: we study the edit, never use the footage)",
+  "studied_by": "muse-spark-1.3"
+}

@@ -1,0 +1,33 @@
+{
+  "audio_role": "Quick count-in then upbeat track. First 5.73s is quiet tension under finger moves, cut lands on the beat at 5.73s when the full plate appears and music hits for the hold.",
+  "can_make": "We can make the structure from assets: shot 1 as a 4s AI clip started from the real menu photo shown on a phone mockup, with an AI hand doing a pinch-drag, cut to shot 2 as a locked hold on the same real menu photo reframed overhead on checkered paper with HAKKA BUL text added in edit. We can match timing, framing, and text. We cannot make the seamless finger contact, true shadows, and food popping from empty tray to full with real weight and steam - that will look like a photo swap.",
+  "core": "You pinch the food out of the phone photo and drop it on the table as the real plate.",
+  "dish": "3-compartment white plate with vegetable fried rice, red masala fries, and red chilli chicken with peppers and onions.",
+  "fits": "Combo plates, thalis, lunch boxes, and any dish with 2-4 distinct components where the payoff is seeing it all full at once.",
+  "format": "pinch-out-of-phone reveal",
+  "hook": "In a dark close-up, fingers pinch-zoom into a glowing phone photo of rice and red chicken like they are grabbing the food itself.",
+  "needs_camera": "A real hand in the real place doing one unbroken pinch-drag from phone screen to empty plate, and the real full plate landing with correct light, shadow, steam, and restaurant table background. Only that gives the tactile trick.",
+  "people": "hands only: right-hand fingers pinch on the phone, lift off screen, keep pinching in the air and drag to the empty tray, then snap open to reveal.",
+  "shots": [
+    {
+      "action": "fingers pinch-out on the phone photo of the plate then drag the gesture off the phone toward the table",
+      "camera": "handheld follow",
+      "end": 5.73,
+      "framing": "close",
+      "speed": "real time",
+      "start": 0
+    },
+    {
+      "action": "empty compartment plate becomes full with rice, fries, and chilli chicken on checkered paper",
+      "camera": "static",
+      "end": 8.4,
+      "framing": "overhead",
+      "speed": "real time",
+      "start": 5.73
+    }
+  ],
+  "text_on_screen": "HAKKA BUL in black and orange over the final plate",
+  "why_it_works": "Brain expects a photo zoom and gets a real plate instead. The empty tray makes you wait, then the full rice, fries, and glossy red chicken land together with color contrast that reads as hot and salty.",
+  "source": "reference reel (link removed: we study the edit, never use the footage)",
+  "studied_by": "muse-spark-1.3"
+}

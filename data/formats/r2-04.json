@@ -1,0 +1,97 @@
+{
+  "audio_role": "Loud upbeat regional Mexican brass track throughout, no voice, no audible sizzle. The track stays high-energy and each of the 10 cuts lands on a beat, so the layering feels faster than it is.",
+  "can_make": "We can make the shell of it: opening and closing hold of the giant burrito using a real menu photo with a house-cast model hands holding it, slow push-in over 4 s AI clips, fast 0.8-1.0 s cuts on the music beat, and the same order cheese > meat > cilantro > onion > salsa > beans > guacamole as stills or slight Ken Burns moves. We cannot make the real cooking actions: actual melted cheese stretching with steam, foil-pour of glistening chopped meat falling, fingers scattering fresh cilantro and onion, liquid salsa and beans pouring, thick guacamole being laid and spreading. AI from a photo will look like a frozen texture warping, not falling, sprinkling, pouring or steaming food.",
+  "core": "Show the huge finished roll first, then prove it is stuffed by piling meat, cheese and sauces layer by layer in fast cuts.",
+  "dish": "giant carne asada burrito in a char-spotted flour tortilla with melted white cheese, chopped grilled meat, cilantro, white onion, red salsa, beans and guacamole",
+  "fits": "Suits dishes built open then rolled or folded where the filling can be piled in the open: burritos, tlayudas, tacos grandes, kebab wraps, shawarma, quesadillas grandes, loaded pizzas. Does not suit soups, stews, small plated dishes or anything eaten with a fork where there is no pile-up to show.",
+  "format": "money-first layer pile-up",
+  "hook": "0-0.88s a hand holds a forearm-long charred flour roll inches from the lens, cut end facing camera showing chopped meat and green filling, two more on red plates below for scale.",
+  "needs_camera": "Real overhead close-ups in the taqueria: tortilla on the hot plancha with steam, cheese actually melting and stretching, hot chopped meat falling and glistening, fresh herbs and onion falling from fingers, salsa and beans spooned wet, guacamole texture, and hands folding/rolling the heavy tortilla. Also the real stainless counter, red apron cook torso, and background kitchen that proves size and freshness.",
+  "people": "Hands only plus torso of cook in white shirt and red apron. Hands hold up the finished roll, pull cheese, pour meat, sprinkle herbs and onion, spoon salsa, beans and guacamole. No face to camera, no talking, no eating. Second cook blurred behind the counter in first shot.",
+  "shots": [
+    {
+      "action": "hand lifts whole charred rolled tortilla upright over red plate to show size and stuffed cut end",
+      "camera": "handheld static with slight wobble",
+      "end": 0.88,
+      "framing": "close",
+      "speed": "real time",
+      "start": 0
+    },
+    {
+      "action": "melted white cheese is pulled and spread across the open giant tortilla",
+      "camera": "static overhead",
+      "end": 1.92,
+      "framing": "overhead",
+      "speed": "real time",
+      "start": 0.88
+    },
+    {
+      "action": "chopped charred carne asada is poured from foil into a mound on the cheese",
+      "camera": "static overhead",
+      "end": 2.9,
+      "framing": "overhead",
+      "speed": "real time",
+      "start": 1.92
+    },
+    {
+      "action": "fingers scatter chopped green cilantro over the meat",
+      "camera": "static overhead",
+      "end": 3.72,
+      "framing": "close",
+      "speed": "real time",
+      "start": 2.9
+    },
+    {
+      "action": "fingers scatter diced white onion over meat and cilantro",
+      "camera": "static overhead",
+      "end": 4.72,
+      "framing": "overhead",
+      "speed": "real time",
+      "start": 3.72
+    },
+    {
+      "action": "spoon pours red chunky salsa in a line down the center",
+      "camera": "push in",
+      "end": 5.52,
+      "framing": "close",
+      "speed": "real time",
+      "start": 4.72
+    },
+    {
+      "action": "spoon adds saucy whole pinto beans over the salsa line",
+      "camera": "static",
+      "end": 6.4,
+      "framing": "close",
+      "speed": "real time",
+      "start": 5.52
+    },
+    {
+      "action": "spoon lays a thick ridge of pale green guacamole alongside the salsa",
+      "camera": "static",
+      "end": 7.45,
+      "framing": "close",
+      "speed": "real time",
+      "start": 6.4
+    },
+    {
+      "action": "spoon spreads and piles the guacamole higher to show texture",
+      "camera": "push in",
+      "end": 8.42,
+      "framing": "macro",
+      "speed": "real time",
+      "start": 7.45
+    },
+    {
+      "action": "hand lifts the finished rolled burrito upright again to close the loop",
+      "camera": "handheld static",
+      "end": 9.3,
+      "framing": "close",
+      "speed": "real time",
+      "start": 8.42
+    }
+  ],
+  "text_on_screen": "none visible - no captions, labels, price or logo in these frames",
+  "why_it_works": "Hand gives scale for how big the roll is. Each cut adds a new fat or color: white melting cheese, brown-red crisp meat, white onion, green cilantro and guacamole, red salsa, tan beans. Steam, meat juices and char spots read as hot and fresh. The viewer sees more food than the tortilla should hold, which reads as value and abundance.",
+  "source": "reference reel (link removed: we study the edit, never use the footage)",
+  "studied_by": "muse-spark-1.3"
+}

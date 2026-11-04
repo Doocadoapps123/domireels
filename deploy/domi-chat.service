@@ -1,0 +1,16 @@
+[Unit]
+Description=Domi Reels WhatsApp webhook
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=domi
+WorkingDirectory=/srv/domi-reels
+ExecStart=/usr/bin/node --env-file=/srv/domi-state/env src/chat/server.mjs
+Restart=always
+RestartSec=10
+
+TimeoutStopSec=30
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,73 @@
+{
+  "audio_role": "Loud funky dance-pop track with female vocals plays throughout, no voiceover, no sizzle or ASMR. The lens-wipe at 3.9s lands on a beat drop, then the 0.7-0.9s food cuts land on successive beats, driving the fast slideshow feel.",
+  "can_make": "We can make all of it without a shoot. Shot 1: empty wood table photo, add blur-to-black in edit to fake hand over lens. Shot 2: composite wide spread from real menu photos of nachos, pasta, chicken, wraps plus sodas on same table background. Shots 3-7: tight crops of real menu photos, each held 0.7-1.5s with a tiny digital push-in, no one touches or eats. House cast not needed because no one appears. 4s AI clips not needed except to add faint steam/shine if wanted. Recreate white text and hard cuts on beat in edit.",
+  "core": "A fake dirty camera is wiped to reveal the same empty table suddenly full of sharp, colorful food.",
+  "dish": "Cafe mixed spread on one round table: cheesy chicken nachos with jalapenos and olives, creamy mushroom penne with basil and cherry tomato, grilled chicken strips with white sauce, two paper-wrapped rolls with dips, two iced colas.",
+  "fits": "Mixed sharing spreads and colorful saucy dishes with visible texture: loaded nachos/fries, creamy pasta, grilled strips, wraps, any set of 3-4 dishes that look different from each other in one wide shot.",
+  "format": "wipe-to-feast reveal",
+  "hook": "0-1s: empty wood table in dark restaurant with white text 'Wait.. let me wipe the camera' as image goes soft and dark like a finger covering the lens.",
+  "needs_camera": "nothing",
+  "people": "nobody. No hands, faces or staff visible; only an unseen finger blurs the lens for the wipe effect.",
+  "shots": [
+    {
+      "action": "empty table sits, then lens is covered and goes to dark blur",
+      "camera": "static",
+      "end": 3.9,
+      "framing": "medium wide eye level",
+      "speed": "real time",
+      "start": 0
+    },
+    {
+      "action": "full spread of nachos, pasta, chicken, wraps and colas sits revealed on the table",
+      "camera": "static",
+      "end": 4.83,
+      "framing": "wide eye level",
+      "speed": "real time",
+      "start": 3.9
+    },
+    {
+      "action": "creamy mushroom penne with basil, tomato and grated cheese sits",
+      "camera": "static",
+      "end": 5.57,
+      "framing": "close",
+      "speed": "real time",
+      "start": 4.83
+    },
+    {
+      "action": "cheesy nachos with jalapenos, olives and dip sits in foreground",
+      "camera": "static",
+      "end": 6.33,
+      "framing": "close",
+      "speed": "real time",
+      "start": 5.57
+    },
+    {
+      "action": "sliced grilled chicken with white sauce drizzle, tomatoes and olives sits",
+      "camera": "static",
+      "end": 7.1,
+      "framing": "close overhead",
+      "speed": "real time",
+      "start": 6.33
+    },
+    {
+      "action": "two paper-wrapped rolls with ketchup and mayo dips sit on wooden board",
+      "camera": "static",
+      "end": 7.93,
+      "framing": "medium close overhead",
+      "speed": "real time",
+      "start": 7.1
+    },
+    {
+      "action": "melted cheese, chicken, jalapenos and olives on nachos sit in top-down macro",
+      "camera": "static",
+      "end": 9.5,
+      "framing": "macro overhead",
+      "speed": "real time",
+      "start": 7.93
+    }
+  ],
+  "text_on_screen": "'Wait.. let me wipe the camera' over empty/blurred table, then 'ah, much better.' over all food shots, plus small STAR CAFE logo bottom-center throughout.",
+  "why_it_works": "The blur to sharp contrast makes colors look more saturated, then it holds on melted cheese, creamy sauce and fresh herbs in big close-ups with no people or story to distract, so the viewer just scans textures and portion size.",
+  "source": "reference reel (link removed: we study the edit, never use the footage)",
+  "studied_by": "muse-spark-1.3"
+}

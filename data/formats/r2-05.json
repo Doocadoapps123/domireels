@@ -1,0 +1,81 @@
+{
+  "audio_role": "cinematic orchestral swell with choir and drums, no voice, no sizzle. Builds under the bite, hits hard cuts during the 3-5.8s montage, drops into wide sustained hit for the powder burst and logo hold.",
+  "can_make": "We can make the structure but not the proof. Shot 1: house cast model in clean shirt can hold the real beef bite photo toward lens and smile in a 4s push-in started from the photo, but he never bites, chews or closes eyes. Shots 2-6: we can fake the montage from menu photos with 4s AI moves - macro meat texture for eye/skin, flower/food detail for rose, menu photo textures, hand + bread photo with AI crumble motion - but no real breaking physics or crumbs. Shot 7: we cannot shoot real night sea lightning, would be stock/AI background. Shot 8: we can make the powder burst graphic and Dhoo SUSHI LOUNGE end card in edit with music. The eating enjoyment is lost.",
+  "core": "One bite triggers a fast chain of intense sense images.",
+  "dish": "small seared beef bite topped with diced orange and green vegetables",
+  "fits": "Single-bite intense dishes where taste is the sell: sushi nigiri, steak bites, oysters, tartare bites, small desserts. Does not suit large plates, pasta bowls, burgers or sharing platters that need context and scale.",
+  "format": "bite-to-senses explosion",
+  "hook": "Smiling man holds a small meat bite up toward the lens in warm dark restaurant light.",
+  "needs_camera": "A real person in the real place actually biting, chewing and reacting with closed eyes. Real mouth/teeth contact, real eye macro in same light, real hand snapping dry pasta with natural crumbs and motion blur. Without that the pleasure looks acted.",
+  "people": "One man 30s, light skin, short brown hair and beard, light button shirt. He holds the bite up, smiles at camera, brings it to mouth, bites with eyes closed. One distant silhouette stands waist-deep in the sea at night during lightning shot.",
+  "shots": [
+    {
+      "action": "man lifts small beef bite to his mouth and bites",
+      "camera": "slow push in",
+      "end": 2.97,
+      "framing": "medium close, eye level",
+      "speed": "real time",
+      "start": 0
+    },
+    {
+      "action": "extreme iris and pupil fills frame",
+      "camera": "static",
+      "end": 3,
+      "framing": "macro",
+      "speed": "real time",
+      "start": 2.97
+    },
+    {
+      "action": "backlit eyelashes and skin texture hold still",
+      "camera": "static",
+      "end": 3.7,
+      "framing": "macro",
+      "speed": "real time",
+      "start": 3
+    },
+    {
+      "action": "pink rose hangs against blue background",
+      "camera": "static",
+      "end": 4.47,
+      "framing": "close",
+      "speed": "real time",
+      "start": 3.7
+    },
+    {
+      "action": "wave crashes over rock in the sea",
+      "camera": "static",
+      "end": 5.2,
+      "framing": "wide",
+      "speed": "real time",
+      "start": 4.47
+    },
+    {
+      "action": "hand snaps dry spaghetti sticks over bread",
+      "camera": "static",
+      "end": 5.83,
+      "framing": "close, overhead",
+      "speed": "real time",
+      "start": 5.2
+    },
+    {
+      "action": "man stands in sea while lightning flashes behind clouds",
+      "camera": "static",
+      "end": 7.43,
+      "framing": "wide",
+      "speed": "real time",
+      "start": 5.83
+    },
+    {
+      "action": "purple powder bursts outward on black and logo fades in over it",
+      "camera": "static graphic expand",
+      "end": 11.6,
+      "framing": "full frame graphic",
+      "speed": "slow motion",
+      "start": 7.43
+    }
+  ],
+  "text_on_screen": "No text until end: white script Dhoo with orange brush mark, then SUSHI LOUNGE in orange underneath, over powder burst.",
+  "why_it_works": "Viewer watches a face enjoy a bite with eyes shut and mirrors it. Fast flashes of eye, skin, flower, wave, snap and lightning keep the nervous system up for 3 seconds so the brain links that arousal to the meat. Powder burst gives a clear end point with the name.",
+  "source": "reference reel (link removed: we study the edit, never use the footage)",
+  "studied_by": "muse-spark-1.3"
+}

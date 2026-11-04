@@ -1,0 +1,57 @@
+{
+  "audio_role": "Loud funk-pop track with female vocal chops ('Don't believe me just watch'). First beat hits as plates come forward, vocal stabs land on the two title cards, driving drums carry the push-ins and the pick-up. No sizzle or voiceover; music sets pace and cuts sit on vocal hits.",
+  "can_make": "We can make most of it. Start from the restaurant's real menu photos of the two dishes cut out on black. Shot 1: AI-drawn model in white chef coat composited behind a dark counter sliding two plates forward - 4 s AI clip from a drawn frame. Shots 2-3: 4 s slow push-in AI clips started from the real dish photos, yellow sauce and upright chips kept sharp, background blurred to black. Shot 4: AI model hand picks up the blue bowl - faked as a short slide-off move. Edit adds big white TAR-TAR-TAR / KUMA 2.0 text and end logo on black with same track. What will look slightly CG is skin, hand contact on plates, and sauce shine.",
+  "core": "You are standing at the pass and the chef pushes two signature plates straight to you.",
+  "dish": "tuna tartar tower with yellow sauce, and salmon in orange sauce with upright plantain chips called KUMA 2.0",
+  "fits": "Tall fine-dining starters that have height and color contrast: tartars, tatakis, ceviches, carpaccios, small stacks with sauce dots and a crisp sticking up.",
+  "format": "dark pass double serve",
+  "hook": "Dark kitchen, two lit plates pushed fast toward the lens in the first second.",
+  "needs_camera": "Real low-key pass with true depth and reflections, a real chef's face and hands in continuous motion, sauce gloss and steam moving in real light, and the clean hand-off where a second person actually takes the bowl - AI hands and contact shadows still read fake on close inspection.",
+  "people": "One man about 30, short beard, in white chef coat, behind the pass; he pushes both plates forward, then holds them for close-ups, then gestures with open hands. At the end only another person's forearm and hand enters from left to take the blue bowl.",
+  "shots": [
+    {
+      "action": "chef slides a black plate and a blue bowl forward across the dark pass toward camera",
+      "camera": "static with slow push in",
+      "end": 2.2,
+      "framing": "medium",
+      "speed": "real time",
+      "start": 0
+    },
+    {
+      "action": "stacked tartar with dripping yellow sauce and sauce dots sits centered on black plate",
+      "camera": "push in to macro",
+      "end": 4.8,
+      "framing": "macro",
+      "speed": "slow motion",
+      "start": 2.2
+    },
+    {
+      "action": "salmon cubes in orange sauce with two upright crisps stand in blue bowl",
+      "camera": "push in",
+      "end": 7.2,
+      "framing": "close",
+      "speed": "slow motion",
+      "start": 4.8
+    },
+    {
+      "action": "server hand picks up the blue bowl and carries it off while chef gestures behind",
+      "camera": "handheld follow, slight pull back",
+      "end": 9.8,
+      "framing": "medium",
+      "speed": "real time",
+      "start": 7.2
+    },
+    {
+      "action": "white and orange restaurant logo appears on black",
+      "camera": "static",
+      "end": 12.4,
+      "framing": "full-screen title card",
+      "speed": "real time",
+      "start": 9.8
+    }
+  ],
+  "text_on_screen": "TAR-TAR-TAR over tartar close-up, KUMA 2.0 over blue bowl close-up, Dhoo SUSHI LOUNGE logo on black end card",
+  "why_it_works": "Black surroundings isolate only the food. Yellow sauce on dark plate and orange salmon in blue bowl give strong color contrast. Close macro shows wet gloss, chunks, and height. Plates move toward viewer and then are taken away, which reads as being served and creates missing-bite tension without anyone eating.",
+  "source": "reference reel (link removed: we study the edit, never use the footage)",
+  "studied_by": "muse-spark-1.3"
+}

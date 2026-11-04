@@ -1,0 +1,42 @@
+{
+  "audio_role": "Comedic upbeat track with no voice and no sizzle. Three small pop accents land as left burger, middle burger, right burger appear 0-3.08s. A whoosh covers the whip at 3.08s. A hard final hit lands exactly on the logo cut at 4.88s and holds under the end card.",
+  "can_make": "We cannot make the real trick. Shot 1: from a real final burger menu photo we can fake three stills side-by-side with hard pop-cuts left to right, plus zoom and pop sounds in edit, but a 4s AI clip started from a photo cannot hold three buns locked in place while patties, melted cheese and lettuce grow without warping. Shot 2: house cast AI model can stand and hold a bottle and pose, never eating, but cannot do the fast whip from table to bottle-to-mouth without hands and face melting. Shot 3: we can remake exactly in edit - black card with white logo and same music hit. The seamless before-after build and the bottle gag need a real shoot.",
+  "core": "Bare bottom buns turn into tall double burgers one by one as if the cook's sauce bottle is building them by magic.",
+  "dish": "double cheeseburger with melted cheese and lettuce",
+  "fits": "Dishes that start from a plain base and finish tall and layered where the change reads in one glance: burgers, sandwiches, tacos, hot dogs, loaded fries, pizza with toppings added in steps.",
+  "format": "magic build-up trick",
+  "hook": "Table-level macro of three bare buns sharp on steel in first second while a blurred cook behind aims a sauce bottle at camera.",
+  "needs_camera": "A locked-off real camera low on a real steel counter in a real kitchen, real buns swapped for real built burgers between hidden cuts, a real cook timing both hands on a real squeeze bottle, and the fast real whip push from burgers to his face with bottle tip to mouth. Stable reflections, identical framing, and synced hands are what sell it.",
+  "people": "One man in his 30s in black t-shirt and backward black cap standing behind the counter. He holds a white squeeze bottle with yellow sauce in both hands, points and pretends to work magic, then brings the tip to his mouth like a trumpet as camera rushes to him.",
+  "shots": [
+    {
+      "action": "Three bottom buns on steel turn into three double cheeseburgers one by one left to right",
+      "camera": "static",
+      "end": 3.08,
+      "framing": "macro",
+      "speed": "real time",
+      "start": 0
+    },
+    {
+      "action": "Cook brings sauce bottle tip to his mouth as if blowing it",
+      "camera": "handheld push in",
+      "end": 4.88,
+      "framing": "medium",
+      "speed": "real time",
+      "start": 3.08
+    },
+    {
+      "action": "White burger icon and text logo appears on black",
+      "camera": "static",
+      "end": 6.5,
+      "framing": "close",
+      "speed": "real time",
+      "start": 4.88
+    }
+  ],
+  "text_on_screen": "No text for 0-4.88s. From 4.88-6.5s white on black: bitten burger icon with .fat. BURGER.",
+  "why_it_works": "You see dry bare buns become full burgers with two brown patties, dripping yellow cheese and green lettuce in 3 seconds, close and glossy with reflections on steel. The before-after is instant and the cheese pull and height show fat and freshness.",
+  "source": "reference reel (link removed: we study the edit, never use the footage)",
+  "picked_because": "Yansel, 2 Nov: más creativos, no es copiar, es tener la creatividad de crear cosas así que nadie nunca haya hecho",
+  "studied_by": "muse-spark-1.3"
+}

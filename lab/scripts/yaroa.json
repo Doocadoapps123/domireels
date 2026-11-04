@@ -1,0 +1,255 @@
+{
+  "dish": "Yaroa de Pierna (Master Pizza Tropical)",
+  "photo": "lab/photos/yaroa-pierna.jpg",
+  "real": "lab/out/scripted/yaroa/real.jpg",
+  "container": "foil pan",
+  "concept": "Muse pitch 2026-10-29, 'Yaroa con triple linea', chosen by the owner",
+  "card": {
+    "ingredients": [
+      {
+        "name": "french fries",
+        "looks": "plain golden fries, the base layer"
+      },
+      {
+        "name": "pierna",
+        "looks": "shredded roast pork leg over the fries, juicy and brown all the way through, no black or charred bits (owner, 2026-10-29: 'se parece a esa pero sin eso negro')"
+      },
+      {
+        "name": "sliced cheese",
+        "looks": "slices of white cheese laid on the hot meat, melted flat"
+      },
+      {
+        "name": "ketchup",
+        "looks": "thin red lines"
+      },
+      {
+        "name": "mayonnaise",
+        "looks": "thin white lines"
+      },
+      {
+        "name": "cheese sauce",
+        "looks": "warm yellow nacho-style cheese sauce, runny and liquid like the ketchup, never thick"
+      }
+    ],
+    "assembly": "In a round foil pan: fries, then the shredded pierna, then cheese slices that melt on the hot meat, then lines of ketchup, mayonnaise and liquid cheese sauce drawn back and forth across the top. Owner, 2026-10-29: ketchup, mayonesa y queso derretido como nacho cheese, liquido como el ketchup; papa frita, la proteina y queso en lonja."
+  },
+  "layers": [
+    {
+      "name": "nosauce",
+      "from": "real",
+      "shows": "the yaroa with its melted cheese slices, before any sauce",
+      "remove": "Remove every line of ketchup, mayonnaise and yellow cheese sauce from the yaroa in the foil pan. Underneath them show what is really there: slices of white cheese melted flat over the meat, soft and glossy, a little browned and crispy at the edges where they touch the foil, exactly like the dark crispy edges visible in the photo."
+    },
+    {
+      "name": "meat",
+      "from": "nosauce",
+      "shows": "the shredded pierna piled over the fries, before the cheese",
+      "remove": "Remove the melted flat white cheese slices. What lies underneath in this restaurant is a generous pile of shredded roast pork leg over the fries, juicy shredded strands brown all the way through with no black or charred bits, covering the fries. Same round foil pan in same place on brushed stainless steel kitchen counter.",
+      "by": "muse"
+    },
+    {
+      "name": "fries",
+      "from": "meat",
+      "shows": "only the fries in the pan, before the meat",
+      "remove": "Remove the shredded pork from the foil pan. Underneath show only french fries filling the pan in a loose pile: the very same plain golden fries that peek out at the edges in this photo, same cut, same color, no seasoning, no herbs."
+    },
+    {
+      "name": "empty",
+      "from": "real",
+      "shows": "the empty foil pan",
+      "remove": "Remove all the food from the round foil pan, so it is an empty, clean, shiny aluminum pan with nothing in it, no grease, no crumbs."
+    }
+  ],
+  "stock": {
+    "fryer": {
+      "url": "https://www.pexels.com/download/video/5780022/",
+      "license": "Pexels (commercial use, no attribution)"
+    }
+  },
+  "shots": [
+    {
+      "n": 1,
+      "kind": "ai",
+      "start": "empty",
+      "end": "fries",
+      "motion": "Handheld phone video, slight natural shake, real restaurant counter. A hand in a black nitrile glove tips a steel fry basket in from the top edge and pours a big load of golden fries into the round foil pan; the fries tumble, bounce and pile up, a few roll. The pan and the checkered paper never move. Nothing appears or disappears by itself. No faces, no text, no morphing."
+    },
+    {
+      "n": 2,
+      "kind": "ai",
+      "start": "fries",
+      "end": "meat",
+      "motion": "Locked static close-up handheld phone video in a real restaurant kitchen, fries in round foil pan on stainless steel counter. A hand in a black nitrile glove with tongs enters from the edge and piles generous shredded roast pork leg over the fries, juicy and brown all the way through with no black or charred bits, covering the fries. The container and counter never move. No faces, no text, no morphing.",
+      "by": "muse"
+    },
+    {
+      "n": 3,
+      "kind": "ai",
+      "start": "meat",
+      "motion": "Locked static close-up handheld phone video in a real restaurant kitchen, shredded pierna over fries in round foil pan on stainless steel counter. A hand in a black nitrile glove enters from the edge laying slices of white cheese flat onto the hot meat, the heat slumping them flat and melted over the pork. The container and counter never move. No faces, no text, no morphing.",
+      "by": "muse"
+    },
+    {
+      "n": 4,
+      "kind": "ai",
+      "start": "nosauce",
+      "end": "sauce-1-red",
+      "motion": "Handheld phone video, slight natural shake, close. A hand squeezes a red plastic squeeze bottle above the yaroa and draws thin lines of runny ketchup back and forth across the melted cheese, from the far edge toward the camera, one continuous glossy stream. The pan never moves. Nothing appears by itself: every line comes out of the bottle. No faces, no text, no morphing."
+    },
+    {
+      "n": 5,
+      "kind": "ai",
+      "start": "sauce-1-red",
+      "end": "sauce-2-white",
+      "motion": "Handheld phone video, slight natural shake, close. A hand squeezes a white plastic squeeze bottle above the yaroa and draws thin lines of mayonnaise back and forth between the ketchup lines, from the far edge toward the camera, one continuous stream. The pan never moves. Nothing appears by itself: every line comes out of the bottle. No faces, no text, no morphing."
+    },
+    {
+      "n": 6,
+      "kind": "ai",
+      "start": "sauce-2-white",
+      "end": "real",
+      "motion": "Handheld phone video, slight natural shake, close. A hand squeezes a yellow squeeze bottle above the yaroa and draws lines of warm nacho cheese sauce back and forth across it, from the far edge toward the camera; the cheese sauce is runny and liquid like ketchup, it flows in a thin glossy stream and spreads a little where it lands. The pan never moves. Nothing appears by itself: every line comes out of the bottle. No faces, no text, no morphing."
+    },
+    {
+      "n": 7,
+      "kind": "ai",
+      "start": "macro",
+      "motion": "Handheld phone macro video, slight natural shake; the framing stays as in the first frame. A metal fork enters from the bottom edge, digs into the yaroa and lifts a big forkful toward the camera: fries and shredded pork wrapped in melted white cheese that stretches in long strings, the ketchup, mayonnaise and cheese sauce dripping off it. The fork holds the forkful still for the last second. No faces, no text, no morphing."
+    }
+  ],
+  "music": {
+    "model": "fal-ai/elevenlabs/music",
+    "license": "ElevenLabs (commercial use)",
+    "ms": 11500,
+    "pick": "dembow",
+    "owner": "2026-10-29, on the merengue de orquesta take: 'esa musica no es vacana'. Music goes with the food: fast food gets something young.",
+    "options": {
+      "dembow": "Hard-hitting modern Dominican dembow instrumental for an 11 second street food video: the classic dembow drum pattern, deep 808 bass, sharp snare rolls, a catchy synth lead hook, 120 bpm. Young, loud and fun, full energy from the very first beat, no intro, and it ends on one big final hit.",
+      "trap": "Bouncy modern hip-hop trap instrumental for an 11 second street food video: punchy 808 bass, crisp hi-hat rolls, claps, a playful brass stab hook, 140 bpm. Young and confident, full energy from the very first beat, no intro, and it ends on one big final hit.",
+      "urbano": "Upbeat modern Latin urban reggaeton pop instrumental for an 11 second street food video: perreo dembow-reggaeton drums, warm synth bass, a bright plucked guitar and synth hook, 95 bpm. Young, sunny and catchy, full energy from the very first beat, no intro, and it ends on one big final hit."
+    }
+  },
+  "edit": [
+    {
+      "src": "draft-6-0",
+      "at": 1.5,
+      "dur": 0.6,
+      "crop": "240:427:60:120",
+      "what": "hook: the cheese sauce stream, punch-in"
+    },
+    {
+      "src": "fryer",
+      "at": 6.5,
+      "dur": 0.5,
+      "sound": {
+        "src": "draft-1-0",
+        "at": 0
+      },
+      "what": "real: basket in boiling oil"
+    },
+    {
+      "src": "fryer",
+      "at": 6,
+      "dur": 0.4,
+      "crop": "1080:1920:250:1500",
+      "sound": {
+        "src": "draft-1-0",
+        "at": 0.5
+      },
+      "what": "real: punch-in on the oil foaming in the basket (not the empty hanging one)"
+    },
+    {
+      "src": "draft-1-0",
+      "at": 1,
+      "dur": 0.5,
+      "gain": 3,
+      "what": "basket tips, fries fall"
+    },
+    {
+      "src": "draft-1-0",
+      "at": 2.2,
+      "dur": 0.6,
+      "gain": 3,
+      "what": "fries pile up"
+    },
+    {
+      "src": "draft-2-1",
+      "at": 1.2,
+      "dur": 0.6,
+      "what": "tongs drop the pork"
+    },
+    {
+      "src": "draft-2-1",
+      "at": 2.6,
+      "dur": 0.5,
+      "what": "pork spread over the fries"
+    },
+    {
+      "src": "draft-3-1",
+      "at": 0.5,
+      "dur": 0.4,
+      "what": "first cheese slice"
+    },
+    {
+      "src": "draft-3-1",
+      "at": 2.3,
+      "dur": 0.4,
+      "what": "more slices"
+    },
+    {
+      "src": "draft-4-0",
+      "at": 1.5,
+      "dur": 0.6,
+      "what": "ketchup lines"
+    },
+    {
+      "src": "draft-4-0",
+      "at": 2.6,
+      "dur": 0.5,
+      "crop": "240:427:60:160",
+      "what": "punch-in: ketchup stream"
+    },
+    {
+      "src": "draft-5-0",
+      "at": 1.2,
+      "dur": 0.5,
+      "what": "mayonnaise lines"
+    },
+    {
+      "src": "draft-6-0",
+      "at": 2,
+      "dur": 0.7,
+      "what": "cheese sauce lines"
+    },
+    {
+      "still": true,
+      "photo": "lab/out/scripted/yaroa/macro.jpg",
+      "dur": 0.5,
+      "sound": {
+        "src": "draft-7-1",
+        "at": 0,
+        "gain": -14
+      },
+      "what": "real photo: the sauces, macro"
+    },
+    {
+      "still": true,
+      "photo": "lab/photos/yaroa-pollo.jpg",
+      "crop": "2405:4275:2041:0",
+      "dur": 0.5,
+      "sound": {
+        "src": "draft-7-1",
+        "at": 0,
+        "gain": -14
+      },
+      "what": "real photo: the Yaroa de Pollo from above"
+    },
+    {
+      "src": "draft-7-1",
+      "at": 1.6,
+      "dur": 2.4,
+      "payoff": 0.9,
+      "what": "fork lifts, the cheese stretches, hold"
+    }
+  ]
+}

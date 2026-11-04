@@ -1,0 +1,33 @@
+{
+  "audio_role": "soft romantic trending music throughout, no voiceover or sizzle. Hard cut at 3.3s from pasta to dessert lands on the music beat.",
+  "can_make": "We can remake both beats from real menu photos. Shot 1: place the two real pasta photos overhead on dark table with two wine glasses composited, add house-cast hands with forks from top and bottom, run 4 s AI clip to animate the simultaneous twirl. Shot 2: place the real cheesecake and tiramisu photos overhead with two coffees composited, add house-cast hands with fork and spoon, run 4 s AI clip to animate the cut and scoop. Edit keeps static overhead, hard cut at 3.3s, centered text and same music.",
+  "core": "Two people start eating at the exact same moment so the viewer feels like they are sharing the table.",
+  "dish": "tomato spaghetti with basil and creamy yellow spaghetti, then cherry-topped cheesecake slice and cocoa-dusted tiramisu with espresso",
+  "fits": "paired dishes that look different side-by-side for two people: two pastas, two desserts, pasta plus dessert, any date-night combo with two drinks.",
+  "format": "synced two-person POV tasting",
+  "hook": "overhead of two pastas and two red wines with two hands twirling forks at the same time in the first second.",
+  "needs_camera": "nothing required - no faces, talking, kitchen, crowd, or long take. A real camera would only give true pasta stretch, sauce shine, and real spoon resistance in the tiramisu.",
+  "people": "hands only: two women's hands with light manicure, one from top edge and one from bottom edge, each holding a fork or spoon to twirl pasta then cut dessert, faces never shown.",
+  "shots": [
+    {
+      "action": "two forks twirl spaghetti in two separate plates at the same time",
+      "camera": "static",
+      "end": 3.3,
+      "framing": "overhead",
+      "speed": "real time",
+      "start": 0
+    },
+    {
+      "action": "fork cuts cheesecake slice while spoon presses into tiramisu",
+      "camera": "static",
+      "end": 5.5,
+      "framing": "overhead",
+      "speed": "real time",
+      "start": 3.3
+    }
+  ],
+  "text_on_screen": "POV: sharing food is your love language",
+  "why_it_works": "You watch strands wrap around the fork and see red sauce vs creamy coating, then watch the fork split cheesecake and spoon break cocoa crust. Paired plates and two glasses show sharing without faces getting in the way.",
+  "source": "reference reel (link removed: we study the edit, never use the footage)",
+  "studied_by": "muse-spark-1.3"
+}

@@ -1,0 +1,121 @@
+{
+  "audio_role": "Loud female dance-pop vocal, no voiceover, no sizzle or chewing ASMR. First 6 food lifts cut on the vocal beat. 0.24s flash-montage from 6.57 to 7.54 lands on a drum hit. Long pour 8.24-9.98 and glass offer hold under the chorus without cutting.",
+  "can_make": "We can make the structure from stills: 6x close lift-and-hold beats made as 4 s AI clips started from a real menu photo of each bite with chopsticks or AI-drawn hand added by the house cast holding still, slight upward lift and sauce gloss added in edit, quick menu-page flash and overhead spread made by Ken Burns push on real photos, final glass-offer made as AI push-in on a photo of a glass over a table photo with Dhoo SUSHI LOUNGE text overlay and the same pop track. We cannot fake the thin dripping sauce strand, wet crunch texture in macro, real drifting smoke, or clear pour stream - AI will smear almonds, roe, crunch and glass refraction.",
+  "core": "Every bite is picked up and held close to show its wet inside and crunchy top.",
+  "dish": "Assorted modern sushi bites: crispy rice with chopped salmon, torched salmon nigiri, tuna-wrapped bites, tuna tartare cone with roe, salmon roll with sliced almonds",
+  "fits": "Small one- or two-bite dishes with a wet top and a crunch top: crispy rice, gunkan, uramaki, hand cones, tataki bites. Not soups, large cuts of meat, pasta, or full plates that need cutting.",
+  "format": "lift-and-hold tasting sprint",
+  "hook": "In 0-0.9s manicured fingers pinch and lift a glistening crispy rice cube topped with diced orange salmon from a dark stone plate in macro.",
+  "needs_camera": "Real macro gloss on fish fat and sauce, sauce dripping off a lifted roll in motion, real smoke curling around cold fish, real sake pour with light through the liquid and glass, real fingers pressing soft fish, long unbroken table depth with true blur. Nothing with a talking person or crowd is needed - no faces appear.",
+  "people": "Hands only. Light-pink manicured female hand picks up bites with fingers, wooden chopsticks lift bites and hold them dripping, server torso out of focus in dark vest places and offers a wine glass in final shot. No faces, no eating, no talking.",
+  "shots": [
+    {
+      "action": "fingers lift crispy rice topped with diced salmon",
+      "camera": "static",
+      "end": 0.9,
+      "framing": "macro",
+      "speed": "real time",
+      "start": 0
+    },
+    {
+      "action": "chopsticks hold torched salmon roll topped with sauce and green onion",
+      "camera": "push in",
+      "end": 1.7,
+      "framing": "close",
+      "speed": "real time",
+      "start": 0.9
+    },
+    {
+      "action": "chopsticks hold tuna-wrapped bite topped with crunch over sauce",
+      "camera": "static",
+      "end": 3.3,
+      "framing": "macro",
+      "speed": "real time",
+      "start": 1.7
+    },
+    {
+      "action": "fingers set down crisp cone topped with tuna and orange roe",
+      "camera": "static",
+      "end": 4.2,
+      "framing": "close",
+      "speed": "real time",
+      "start": 3.3
+    },
+    {
+      "action": "chopsticks lift salmon roll topped with almonds and sauce",
+      "camera": "push in",
+      "end": 5.34,
+      "framing": "macro",
+      "speed": "real time",
+      "start": 4.2
+    },
+    {
+      "action": "chopsticks lift tuna roll topped with brown sauce and crunch",
+      "camera": "static",
+      "end": 6.57,
+      "framing": "macro",
+      "speed": "real time",
+      "start": 5.34
+    },
+    {
+      "action": "open menu shows Compartilhar page with photos",
+      "camera": "handheld pan",
+      "end": 6.81,
+      "framing": "medium",
+      "speed": "real time",
+      "start": 6.57
+    },
+    {
+      "action": "full spread of small stone plates sits on black table",
+      "camera": "static",
+      "end": 7.04,
+      "framing": "overhead",
+      "speed": "real time",
+      "start": 6.81
+    },
+    {
+      "action": "tuna rolls sit on long plate while smoke drifts past flower",
+      "camera": "slow dolly side",
+      "end": 7.27,
+      "framing": "close",
+      "speed": "real time",
+      "start": 7.04
+    },
+    {
+      "action": "single crispy bite sits under spotlight in smoke",
+      "camera": "static",
+      "end": 7.54,
+      "framing": "close",
+      "speed": "real time",
+      "start": 7.27
+    },
+    {
+      "action": "focus settles on SAKE HAKUSHIKA bottle label",
+      "camera": "rack focus",
+      "end": 8.24,
+      "framing": "close",
+      "speed": "real time",
+      "start": 7.54
+    },
+    {
+      "action": "clear sake pours in thin stream from amber bottle",
+      "camera": "static",
+      "end": 9.98,
+      "framing": "macro",
+      "speed": "slow motion",
+      "start": 8.24
+    },
+    {
+      "action": "hand offers wine glass over blurred table of bites",
+      "camera": "push in",
+      "end": 15.5,
+      "framing": "medium",
+      "speed": "real time",
+      "start": 9.98
+    }
+  ],
+  "text_on_screen": "No titles until end. White script Dhoo with orange SUSHI LOUNGE under it over the final glass shot.",
+  "why_it_works": "You see fingers and chopsticks lift each bite and hold it dripping, so you see wet sauce, orange fat, white rice cross-section and brown crunch in macro. Fast succession shows variety without explaining, smoke and dark background make red tuna and orange salmon stand out, pour and glass signal drink pairing.",
+  "source": "reference reel (link removed: we study the edit, never use the footage)",
+  "studied_by": "muse-spark-1.3"
+}

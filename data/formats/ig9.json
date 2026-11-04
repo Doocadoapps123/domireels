@@ -1,0 +1,25 @@
+{
+  "audio_role": "Loud upbeat regional-Mexican dance track for the whole 8.3s, no voice, no audible sizzle. The pull-up and the dunk hit on the beat so the action feels faster.",
+  "can_make": "We can fake the outline: start from the restaurant's real overhead photo of the round, then one 4s AI clip of a still gloved hand holding a slice up, then a second 4s AI clip posed over the consomme cup, cut fast with music and price/text. We cannot fake the real physics: long elastic cheese strands stretching, thinning and breaking, shredded meat fibers, red oily broth coating and dripping off the tip. AI from a photo will smear the cheese, warp the glove fingers, and freeze the drip, and our house cast can hold and show but never dunk, bite, or do a real pull.",
+  "core": "One hot slice is pulled long to prove melted cheese inside, then dunked to prove juice outside.",
+  "dish": "large cheese-crusted birria quesadilla cut like a pizza into triangles, filled with shredded beef and peppers, served with red consomme for dipping",
+  "fits": "Only hot dishes with melted cheese pull plus a dip: birria tacos and quesadillas, pizzabirria, cheese-pull pizza, cheese-stuffed rolls, cheesy garlic bread. Does not fit dry, cold, or neatly plated dishes with no stretch and no sauce.",
+  "format": "pull-then-dunk",
+  "hook": "Frame one is already a blue-gloved hand lifting a golden brown-crusted triangle while white cheese strings stretch from the tray.",
+  "needs_camera": "A real camera over a real hot dish for the unbroken lift-dunk-lift: true cheese elasticity and thin strands, steaming meat texture, broth clinging and dripping in real time.",
+  "people": "hands only. One person in black apron with tattooed forearm and blue nitrile gloves, face never shown, does not talk. Right hand grips and lifts the slice, carries it sideways, dunks it and holds it up dripping.",
+  "shots": [
+    {
+      "action": "gloved hand pulls one triangle up from the round, stretches cheese, carries it sideways, dunks the tip in red consomme and lifts it dripping cheese and broth",
+      "camera": "handheld close follow, slight push-in then pan right with the hand, tilt up to stay on the hanging slice",
+      "end": 8.3,
+      "framing": "tight close, slightly above table level",
+      "speed": "real time",
+      "start": 0
+    }
+  ],
+  "text_on_screen": "none",
+  "why_it_works": "You see browned spotty cheese crust, then long white-orange cheese strings, then open cross-section with shredded beef and green chile, then the slice goes under red oily broth and comes out coated and dripping. Each step shows fat, salt, heat, and chew without anyone explaining it.",
+  "source": "reference reel (link removed: we study the edit, never use the footage)",
+  "studied_by": "muse-spark-1.3"
+}

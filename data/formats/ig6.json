@@ -1,0 +1,89 @@
+{
+  "audio_role": "No music, no voiceover, no trend audio. Foreground is kitchen ASMR: foil crinkle on the unwrap, thick glug on the cheese pours, faint metal tray clatter and background kitchen chatter. Cuts land on hand actions, not on beats.",
+  "can_make": "We can make the layout and the edit: tray of fries and bites from a real menu photo as background, burger hero from a real menu photo, 4 s AI clips started from photos for hold-up, slow turn, cheese pour over the top, and hold-up dripping, cut fast in the same order with no text. We cannot make a believable foil tear with hands - AI foil and fingers warp - and we cannot make a real bite: our house cast never eats, so no teeth marks and no true pink juicy cross-section, and AI cheese pours stretch and smear and do not drip and land on fries with real weight.",
+  "core": "Hide the burger in foil, then prove excess with two cheese drownings and a pink bitten middle.",
+  "dish": "foil-wrapped double cheeseburger on sesame-seed bun with melted cheese and burger sauce, on a tray of parmesan-dusted fries and red-sauced fried chicken bites",
+  "fits": "Burgers, smash burgers, cheesesteaks, loaded sandwiches, shawarma/kebab wraps where sauce or molten cheese can be poured over the top and the meat still looks pink and juicy when cut or bitten, especially when served over fries that catch the overflow.",
+  "format": "unwrap and drown",
+  "hook": "A hand holds a crinkled foil ball over loaded fries and starts ripping it open in the first 0.75 seconds.",
+  "needs_camera": "A real camera in the real place for the foil unwrap in one continuous take with synced crinkle sound, the real viscosity and dripping of the hot cheese sauce falling onto the fries, and the bitten patty showing steam and juice in the pink interior.",
+  "people": "hands only: light-skinned woman's hands with nude manicure, no face, no talking. One hand presents, two hands unwrap, lift, rotate and pour; the person never eats on camera.",
+  "shots": [
+    {
+      "action": "hand holds foil-wrapped burger over tray of fries and sauced bites",
+      "camera": "static",
+      "end": 0.75,
+      "framing": "close",
+      "speed": "real time",
+      "start": 0
+    },
+    {
+      "action": "fingers tear the foil back off the burger",
+      "camera": "static",
+      "end": 1.72,
+      "framing": "close",
+      "speed": "real time",
+      "start": 0.75
+    },
+    {
+      "action": "foil pulled away to reveal sesame burger oozing cheese and sauce",
+      "camera": "slight push in",
+      "end": 3.25,
+      "framing": "close",
+      "speed": "real time",
+      "start": 1.72
+    },
+    {
+      "action": "two hands grip and turn the burger to show sauce-covered side",
+      "camera": "static",
+      "end": 4.27,
+      "framing": "close",
+      "speed": "real time",
+      "start": 3.25
+    },
+    {
+      "action": "hands tilt burger to show cheese and sauce dripping from bottom",
+      "camera": "static",
+      "end": 5.4,
+      "framing": "macro",
+      "speed": "real time",
+      "start": 4.27
+    },
+    {
+      "action": "thick yellow cheese sauce poured from small cup over whole burger and drips onto fries",
+      "camera": "static",
+      "end": 7.15,
+      "framing": "macro",
+      "speed": "real time",
+      "start": 5.4
+    },
+    {
+      "action": "cheese-covered burger held up dripping",
+      "camera": "static",
+      "end": 8.08,
+      "framing": "close",
+      "speed": "real time",
+      "start": 7.15
+    },
+    {
+      "action": "bitten half brought in to show pink patty interior over tray",
+      "camera": "static",
+      "end": 10.7,
+      "framing": "macro",
+      "speed": "real time",
+      "start": 8.08
+    },
+    {
+      "action": "cheese sauce poured again over bitten half, covering meat and running down",
+      "camera": "static",
+      "end": 13.4,
+      "framing": "macro",
+      "speed": "real time",
+      "start": 10.7
+    }
+  ],
+  "text_on_screen": "none",
+  "why_it_works": "You see fat in three readable states: sauce oozing out, a slow sheet of poured cheese, and juice in the pink cut patty, with fries underneath catching the drips. That reads as hot, salty, and more than fits in the bun.",
+  "source": "reference reel (link removed: we study the edit, never use the footage)",
+  "studied_by": "muse-spark-1.3"
+}

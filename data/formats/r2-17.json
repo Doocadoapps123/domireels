@@ -1,0 +1,81 @@
+{
+  "audio_role": "Funky mid-tempo track with female French voice counting 'un deux trois quatre' over bass and drums. The counts sit under the cutlery flips in 0-4.5s, beat lands as the meat dish appears at 4.46s, steady groove continues under table, cake and coffee cuts, no sizzle or voiceover.",
+  "can_make": "We can make the still-food part: shots 3-6 as 4s AI clips started from real menu photos - slow push-in on the meat dish, slow zoom-out on the full table, push-in on cheesecake slice, focus hold on coffee cup. We can make a still hand holding the napkin set using a house-cast model, no twirl, no eating. We can remake the edit: same order, same lengths, same final text and similar funky music. We cannot make shots 1-2 twirl and shots 7-8 cut-and-lift: AI hands break on reflective metal in motion, and our cast never eats or cuts, so we cannot show a knife slicing and a fork lifting dripping sauce with real stretch and drip.",
+  "core": "A proper table is set first, then a real cut and lift proves the meat is tender and saucy.",
+  "dish": "Creamy sliced meat in sauce over smashed roast potatoes with zucchini and dill, served as a set with a chocolate-topped cheesecake slice and black coffee.",
+  "fits": "Saucy cut-with-knife mains that look better opened: stroganoff, beef strips, chicken in creamy/mushroom sauce, pork with gravy, with potatoes and vegetables; and lunch sets where main plus dessert plus coffee are sold together. Does not suit soup, burger, pizza, sushi, or single-drink posts.",
+  "format": "set-the-table to first-bite",
+  "hook": "Extreme close-up of a manicured hand spinning a shiny steak knife upright against black in the first 0.9s.",
+  "needs_camera": "One unbroken real take of a hand twirling real knife-spoon-fork with true reflections, and two hands really cutting the meat and lifting a forkful with stretching creamy sauce, drip and steam.",
+  "people": "Hands only, no faces. A woman's hand with nude manicure presents knife, spoon, fork and then the napkin set in 0-4.5s. Later two hands enter overhead to cut the meat with knife and fork and lift the bite. Nobody eats, talks, or looks at camera.",
+  "shots": [
+    {
+      "action": "woman's hand holds a steak knife upright and rotates it",
+      "camera": "static",
+      "end": 0.92,
+      "framing": "close",
+      "speed": "real time",
+      "start": 0
+    },
+    {
+      "action": "same hand flips spoon to fork and ends holding a napkin-wrapped fork-and-knife set",
+      "camera": "static",
+      "end": 4.46,
+      "framing": "close",
+      "speed": "real time",
+      "start": 0.92
+    },
+    {
+      "action": "creamy sliced meat over crisp potatoes and zucchini sits in a brown bowl",
+      "camera": "push in",
+      "end": 5.63,
+      "framing": "macro",
+      "speed": "real time",
+      "start": 4.46
+    },
+    {
+      "action": "full wooden table with meat dish, cheesecake, coffee and cutlery is revealed",
+      "camera": "static",
+      "end": 6.79,
+      "framing": "medium",
+      "speed": "real time",
+      "start": 5.63
+    },
+    {
+      "action": "triangular cheesecake slice with dark glaze sits on a white plate",
+      "camera": "push in",
+      "end": 8,
+      "framing": "close",
+      "speed": "real time",
+      "start": 6.79
+    },
+    {
+      "action": "black coffee sits in a white cup with cheesecake blurred behind",
+      "camera": "static",
+      "end": 9.17,
+      "framing": "close",
+      "speed": "real time",
+      "start": 8
+    },
+    {
+      "action": "two hands cut into the creamy meat with knife and fork",
+      "camera": "static",
+      "end": 10.92,
+      "framing": "overhead close",
+      "speed": "real time",
+      "start": 9.17
+    },
+    {
+      "action": "fork lifts dripping creamy meat strips toward the lens",
+      "camera": "static",
+      "end": 13.8,
+      "framing": "macro",
+      "speed": "slow motion",
+      "start": 10.92
+    }
+  ],
+  "text_on_screen": "Only at the end: KOΦEMAKC in large white sans-serif centered over the lifting bite, held for the last ~3s.",
+  "why_it_works": "The knife and polished cutlery signal restaurant service. The macro shows gloss on the sauce, browned edges on potatoes, green zucchini and dill for contrast. The cut shows the meat separates easily, the slow lift shows strips coated and dripping. Cake and black coffee add a sweet plus bitter finish, so it reads as a full ordered meal.",
+  "source": "reference reel (link removed: we study the edit, never use the footage)",
+  "studied_by": "muse-spark-1.3"
+}
