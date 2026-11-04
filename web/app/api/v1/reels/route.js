@@ -20,7 +20,7 @@ export const GET = handle(async (req) => {
   }
   if (!restaurants.length) return json({ reels: [] });
   const rows = await must(
-    db.from("reels").select("id, restaurant_id, job_id, title, idea, kind, dishes, seconds, cover_path, versions, chosen, caption, public, deliver_at, delivered_at, created_at")
+    db.from("reels").select("id, restaurant_id, job_id, title, idea, kind, dishes, seconds, cover_path, versions, chosen, public, deliver_at, delivered_at, created_at")
       .in("restaurant_id", restaurants.map((r) => r.id)).order("created_at", { ascending: false }).limit(limit),
   );
   const ext = Object.fromEntries(restaurants.map((r) => [r.id, r.external_id]));

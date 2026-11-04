@@ -6,7 +6,7 @@ import { IconSpark, IconWhatsApp } from "./Icons";
 import { WA_LINK } from "@/lib/constants";
 
 const ACTIVE = ["queued", "running", "waiting_owner"];
-const KIND = { reel: "New Reel", remusic: "New music", storyboard: "Storyboard", import: "Menu import" };
+const KIND = { reel: "New Reel", remusic: "New music", storyboard: "Storyboard", import: "Menu import", equipment: "Kitchen equipment" };
 const STATUS = {
   queued: { t: "In line", c: "chip", dot: true },
   running: { t: "Muse is working on it", c: "chip chip-accent", dot: true, pulse: true },

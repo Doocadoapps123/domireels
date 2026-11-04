@@ -9,7 +9,7 @@ ordering platform                      Domi Reels (Muse decides everything in be
 kit  ───────────────────────────────▶  menu + owner notes + the restaurant's own photos
                                         Muse logs the photos, makes the house cast, pitches,
                                         plans, draws, films, judges, cuts, scores, reviews
-drop ◀───────────────────────────────  the Reel, its cover, its caption, the owner's message
+drop ◀───────────────────────────────  the Reel, its cover, the owner's message
 the owner gets it on the platform's own channel (Doocado: WhatsApp) and posts it.
 ```
 
@@ -52,7 +52,7 @@ Two steps, so the video never travels inside JSON.
 
 1. `{ "action": "open", "restaurant_id": 8, "run": "8-0" }` returns `{ "upload": { "reel.mp4": url, "cover.jpg": url } }`.
    Domi Reels `PUT`s each file to its url.
-2. `{ "action": "close", "restaurant_id": 8, "run": "8-0", "title", "caption", "owner_summary", "dishes": [676],
+2. `{ "action": "close", "restaurant_id": 8, "run": "8-0", "title", "owner_summary", "dishes": [676],
    "ai_label": true, "cost": 1.42 }` returns the public `video` and `cover` links and `owner_message`: the text the
    platform sends the owner, in the restaurant's language.
 

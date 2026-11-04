@@ -1,6 +1,6 @@
 // "How Muse directed it": one public Reel, opened up. Everything here comes from reels.director.gallery
 // (src/server/gallery.mjs); each part shows only when the run left it. The site is in English, so it reads only the
-// gallery's English fields, never the reel's own title, idea, kind or caption (those are in the owner's language).
+// gallery's English fields, never the reel's own title, idea or kind (those are in the owner's language).
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { cache } from "react";
@@ -340,12 +340,6 @@ export default async function DirectedPage({ params }) {
                 Every creative call was Muse&apos;s: the idea, the shots, which seconds stayed, the words on screen and the music.
                 {cost != null ? ` All of it cost $${cost.toFixed(2)} in AI calls.` : ""} The owner got it on WhatsApp and posts it from their own account.
               </p>
-              {g.caption ? (
-                <div className="saw-row">
-                  <span className="saw-k">The caption Muse wrote</span>
-                  <div className="caption-box">{g.caption}</div>
-                </div>
-              ) : null}
               <div className="cta-row mt-8">
                 <Link href="/#gallery" className="btn btn-ghost">More Reels</Link>
                 <Link href="/signup" className="btn btn-primary">Have an invitation code? <IconArrow size={18} /></Link>

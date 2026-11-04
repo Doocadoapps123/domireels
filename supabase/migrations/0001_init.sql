@@ -126,7 +126,6 @@ create table reels (
   cover_path text,
   versions jsonb not null default '[]',   -- [{ register, path }]: the same Reel with each score
   chosen int,
-  caption text,
   director jsonb not null default '{}',   -- what Muse saw and decided, for the "how Muse directed it" page
   cost numeric,
   public boolean not null default false,

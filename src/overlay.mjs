@@ -8,7 +8,7 @@ import { execFileSync } from "node:child_process";
 import sharp from "sharp";
 
 const W = 1080, H = 1920;
-// The apps' safe zone: caption and buttons own the bottom 22%, the like/comment column the right 14%, the account bar
+// The apps' safe zone: the post text and buttons own the bottom 22%, the like/comment column the right 14%, the account bar
 // the top 9%. Blocks sit a little left of centre so even a full-width line clears the buttons.
 const SAFE = { top: 0.09 * H + 12, bottom: 0.78 * H - 12, right: 0.86 * W - 8 };
 const CX = 520, MAXW = 2 * (SAFE.right - CX);
@@ -32,7 +32,7 @@ export const TEXT_STYLES = {
   box: "White text on a black rounded box behind each line (the apps' background text). Loudest and most legible; a punchy line over a busy shot.",
   "box-light": "Black text on a white rounded box behind each line. Same shape as box but lighter and chattier; reads best on darker shots.",
   typewriter: "Instagram's Typewriter: smaller white serif with a soft shadow. A quiet aside or a place/time note ('Lawrence, MA'); best on calmer, darker shots.",
-  meme: "A 'POV:' meme caption: heavy white text, thick black outline, upper third. Only for POV or relatable jokes, never for prices or offers.",
+  meme: "A 'POV:' meme line: heavy white text, thick black outline, upper third. Only for POV or relatable jokes, never for prices or offers.",
 };
 
 const probe = (f, e) => execFileSync("ffprobe", ["-v", "error", "-select_streams", "v:0", "-show_entries", e, "-of", "csv=p=0", f]).toString().trim();

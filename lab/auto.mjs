@@ -54,13 +54,16 @@ let k = +pick;
 if (week && !worthMaking(list()[k] || {})) {
   tried.push(k);
   const next = await nextIdea();
+  // A restaurant always gets its Reel (Yansel, 4 Nov: "NOSOTROS NO PODEMOS DEJAR DE ENTREGAR EL REEL NUNCA"): when no
+  // idea reaches the bar, the one Muse expects most to come out is made anyway.
   if (next === undefined) {
-    console.log("no idea this week that Muse expects to come out: no video was paid for");
-    console.log(`RESULT ${JSON.stringify({ stop: "no_idea", dir: null, questions: null, final: null, cost: 0, review: null, failed: null })}`);
-    process.exit(0);
+    const best = list().map((c, i) => ({ c, i })).sort((a, b) => (b.c.muse?.realism ?? 0) - (a.c.muse?.realism ?? 0) || (b.c.total ?? 0) - (a.c.total ?? 0))[0].i;
+    console.log(`no idea reaches the bar this week; the most likely to come out is made anyway: idea ${best}`);
+    k = best;
+  } else {
+    console.log(`idea ${k} is not worth making (realism ${list()[k]?.muse?.realism}); idea ${next} instead`);
+    k = next;
   }
-  console.log(`idea ${k} is not worth making (realism ${list()[k]?.muse?.realism}); idea ${next} instead`);
-  k = next;
 }
 let dir = dirOf(k);
 tried.push(k);

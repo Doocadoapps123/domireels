@@ -74,7 +74,12 @@ export async function music(script, out, ledger = "lab/out/ledger.jsonl") {
 // so a Reel that opened on a still played every clip washed out (Dora, 2 Nov). The still is converted to TV range.
 export async function render(script, out) {
   const file = (src) => (src === "real" ? script.real : `${out}/${src}.mp4`);
-  for (const e of script.edit) if (script.stock?.[e.src]) await source(script, out, e.src);
+  // Footage that cannot be fetched at render (Mixkit answered 403 to Pikalo's fryer, 4 Nov, after $3.26 of takes) is
+  // left out of the cut instead of losing the Reel.
+  for (const src of [...new Set(script.edit.filter((e) => script.stock?.[e.src]).map((e) => e.src))]) {
+    try { await source(script, out, src); }
+    catch (e) { console.log(`${src}: footage not fetched (${e.message}), left out of the cut`); script.edit = script.edit.filter((x) => x.src !== src); }
+  }
   const enc = ["-an", "-c:v", "libx264", "-crf", "18", "-pix_fmt", "yuv420p"];
   const VF = V.replace("increase", "increase:flags=lanczos");
   let t0 = 0, payoff = null;

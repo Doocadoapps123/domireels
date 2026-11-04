@@ -14,7 +14,7 @@ import * as wa from "./whatsapp.mjs";
 import { layoutKit } from "../kit.mjs";
 import { sortAssets } from "../assets.mjs";
 import { readMenu } from "../menu.mjs";
-import { writeCaption, deliver } from "../drop.mjs";
+import { deliver } from "../drop.mjs";
 import { spent } from "../video.mjs";
 import { probe } from "../edit.mjs";
 import { ensureEquipment } from "./equipment.mjs";
@@ -93,6 +93,7 @@ async function schedule() {
 
 // --- the reel ---------------------------------------------------------------------------------------------------
 async function makeReel(job, r, account) {
+  if (job.input?.fix) return fixReel(job, r, account);
   const dir = kitDir(r, account), week = job.week || local(r.timezone).date, weekFile = `${dir}/week-${week}.json`;
   fs.mkdirSync(dir, { recursive: true });
   await layoutKit(await kitFor(r, account), dir);
@@ -128,6 +129,24 @@ async function makeReel(job, r, account) {
   await jobUpdate(job.id, { status: "done", spent: +spent(LEDGER, prefix).toFixed(2) });
 }
 
+// The owner asked on WhatsApp to change one part of a Reel they have ("the rice looks like soup"): the same run, the
+// takes already paid for kept, only the shots Muse picks from their words come out or are filmed again (lab/fix.mjs).
+// It arrives as a new Reel with the music it had.
+async function fixReel(job, r, account) {
+  const [old] = await must(db.from("reels").select("*").eq("id", job.input.fix).eq("restaurant_id", r.id));
+  const d = old?.director || {};
+  if (!d.dir || !d.kit || !d.week || !fs.existsSync(`${d.dir}/script.json`)) throw new Error("no Reel: that Reel cannot be fixed (its run is not here)");
+  const lessons = [...(await must(db.from("lessons").select("text").eq("scope", "global"))).map((l) => l.text),
+    ...(await must(db.from("lessons").select("text").eq("restaurant_id", r.id))).map((l) => `This restaurant's owner: ${l.text}`)];
+  fs.writeFileSync(`${LOGS}/${job.id}.lessons.json`, JSON.stringify(lessons));
+  const p = await run(["lab/fix.mjs", d.dir, d.kit, d.week, job.input.words || ""], { env: { FIX: "1", NO_QUESTIONS: "1", DR_LESSONS: `${LOGS}/${job.id}.lessons.json` }, job });
+  const res = p.result;
+  if (!res) throw new Error(`no Reel: the fix ended without a result (exit ${p.code}): ${p.tail}`);
+  if (res.stop !== "done") throw new Error(`no Reel: ${res.stop}`);
+  await publish(job, r, account, d.kit, d.dir, d.week);
+  await jobUpdate(job.id, { status: "done", spent: +spent(LEDGER, `${d.dir}/`).toFixed(2), state: { ...job.state, fix: res.fix } });
+}
+
 async function askOwner(r, questions) {
   const lines = questions.map((q, i) => `${i + 1}. ${q.ask}${q.options?.length ? ` (${q.options.join(" / ")})` : ""}`).join("\n");
   for (const m of await membersOf(r)) {
@@ -152,7 +171,7 @@ export async function publish(job, r, account, kit, dir, weekFile) {
   const script = read(`${dir}/script.json`), menu = readMenu(kit), id = crypto.randomUUID(), base = `${r.id}/${id}`;
   // The owner who deals with us directly chooses the music among a few scores; a platform gets the one Muse chose.
   let versions = [{ register: script.music?.register || "", file: `${dir}/final.mp4` }];
-  if (account.kind === "owner" && r.music_options > 1) {
+  if (account.kind === "owner" && r.music_options > 1 && !job.input?.fix) {
     const v = await run(["lab/versions.mjs", dir, weekFile, String(r.music_options)], { job });
     if (v.result?.length) versions = v.result;
   }
@@ -167,12 +186,11 @@ export async function publish(job, r, account, kit, dir, weekFile) {
   }
   const dishIds = [...new Set([...(script.dishes || []), ...script.shots.map((s) => s.dish)].filter(Boolean))];
   const dishes = dishIds.map((d) => menu.items.find((m) => m.id === d)).filter(Boolean);
-  const caption = await writeCaption(menu, script, dishes).catch(() => "");
   const week = read(weekFile).find((c) => c.title === script.concept) || {};
   const reel = {
     id, restaurant_id: r.id, job_id: job.id, title: script.concept, idea: week.idea || script.owner_summary || "", kind: week.kind || null,
     dishes: dishes.map((d) => d.name), seconds: +probe(`${dir}/final.mp4`).toFixed(2), cover_path: `${base}/cover.jpg`,
-    versions: stored, chosen: versions.length > 1 ? null : 0, caption, cost: +spent(LEDGER, `lab/out/auto/${kit.split("/").pop()}-w${job.week}`).toFixed(2),
+    versions: stored, chosen: versions.length > 1 ? null : 0, cost: +spent(LEDGER, `lab/out/auto/${kit.split("/").pop()}-w${job.week}`).toFixed(2),
     director: { kit, dir, week: weekFile, approved: fs.existsSync(`${dir}/review.json`) ? read(`${dir}/review.json`).approved ?? null : null }, deliver_at: account.kind === "platform" || job.input?.now ? new Date().toISOString() : nextDelivery(r).toISOString(),
   };
   await must(db.from("reels").insert(reel));
@@ -206,7 +224,6 @@ export async function sendReel(r, reel, to) {
     if (many) await wa.buttons(to, `${i + 1}. ${v.register}`, [{ id: `music:${reel.id}:${i}`, title: T(r, `I want #${i + 1}`, `Quiero la ${i + 1}`) }], r.id, { type: "video", link: url });
     else await wa.video(to, url, reel.title, r.id);
   }
-  if (reel.caption) await wa.text(to, T(r, `Caption, ready to paste:\n\n${reel.caption}`, `Texto para la publicación, listo para pegar:\n\n${reel.caption}`), r.id);
 }
 
 // --- a new score from the owner's words -------------------------------------------------------------------------
@@ -233,6 +250,14 @@ async function handle(job) {
   try {
     if (job.kind === "reel") await makeReel(job, r, r.accounts);
     else if (job.kind === "remusic") await remusic(job, r);
+    else if (job.kind === "import" && job.input?.equipment) {
+      // Sign-up: the equipment the owner marked gets a provisional photo now (free footage, or one Muse makes).
+      const dir = kitDir(r, r.accounts);
+      fs.mkdirSync(dir, { recursive: true });
+      await layoutKit(await kitFor(r, r.accounts), dir);
+      const got = await ensureEquipment(dir, { restaurantId: r.id, only: job.input.equipment });
+      await jobUpdate(job.id, { status: "done", state: got });
+    }
     else if (job.kind === "import") {
       const got = await importWebsite(r, job.input.url);
       await jobUpdate(job.id, { status: "done", state: got });

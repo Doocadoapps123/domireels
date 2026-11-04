@@ -43,10 +43,12 @@ async function savePhoto(r, phone, m) {
   if (dup) return { ...dup, dup: true, jpg };
   await upload("photos", path, jpg, "image/jpeg");
   const look = await lookAt(r, jpg, m.image.caption || "");
+  // A screenshot of a food photo is still the dish: the owner is never asked to resend it.
+  if (look.kind === "food" && !look.usable && /screenshot|button|interface|\bui\b|overlay|icon/i.test(look.why)) Object.assign(look, { usable: true, why: "" });
   let dish = null;
   if (look.kind === "food" && look.dish) {
     [dish] = await must(db.from("dishes").select("id, photo_path").eq("restaurant_id", r.id).ilike("name", look.dish).limit(1));
-    if (!dish && look.usable) [dish] = await must(db.from("dishes").insert({ restaurant_id: r.id, external_id: await nextDishNumber(r), name: look.dish, photo_path: path }).select("id, photo_path"));
+    if (!dish && look.usable) [dish] = await must(db.from("dishes").insert({ restaurant_id: r.id, external_id: String(parseInt(sha1.slice(0, 7), 16)), name: look.dish, photo_path: path }).select("id, photo_path"));
     else if (dish && !dish.photo_path && look.usable) await must(db.from("dishes").update({ photo_path: path, updated_at: new Date().toISOString() }).eq("id", dish.id));
   }
   await must(db.from("photos").insert({ restaurant_id: r.id, path, source: "whatsapp", dish_id: dish?.id || null, kind: look.kind, label: look.label + (look.usable ? "" : ` (not usable: ${look.why})`), sha1, from_phone: phone }));
@@ -78,6 +80,15 @@ async function act(r, phone, actions, restaurants) {
         const week = new Intl.DateTimeFormat("en-CA", { timeZone: r.timezone }).format(new Date());
         const same = await must(db.from("jobs").select("id").eq("restaurant_id", r.id).eq("kind", "reel").eq("week", week));
         await must(db.from("jobs").insert({ restaurant_id: r.id, kind: "reel", week, input: { pick: same.length, now: true, asked: a.words || "" } }));
+      }
+    }
+    if (a.type === "fix_reel") {
+      const reel = await latestReel(r, a.reel_id);
+      const open = await must(db.from("jobs").select("id").eq("restaurant_id", r.id).eq("kind", "reel").in("status", ["queued", "running", "waiting_owner"]));
+      if (open.length) notes.push("busy");
+      else if (reel) {
+        const [orig] = reel.job_id ? await must(db.from("jobs").select("week").eq("id", reel.job_id)) : [];
+        await must(db.from("jobs").insert({ restaurant_id: r.id, kind: "reel", week: orig?.week || null, input: { fix: reel.id, words: a.words || "" } }));
       }
     }
     if (a.type === "new_music") {
@@ -112,9 +123,11 @@ async function act(r, phone, actions, restaurants) {
 }
 const latestReel = async (r, id) => (await must(db.from("reels").select("*").eq("restaurant_id", r.id).order("created_at", { ascending: false }).limit(5))).find((x) => !id || x.id === id) || null;
 
-export async function handle(m, contact) {
+const acked = new Map(); // phone -> when we last said "got your photos"
+export async function handle(m, contact, { more = () => false, last = () => true, replay = false } = {}) {
   const phone = m.from;
-  const { error } = await db.from("messages").insert({ phone, direction: "in", type: m.type, body: textOf(m) || null, wa_id: m.id });
+  // media_path keeps WhatsApp's media id, so a photo cut off by a restart can be fetched again (resume()).
+  const { error } = replay ? {} : await db.from("messages").insert({ phone, direction: "in", type: m.type, body: textOf(m) || null, wa_id: m.id, media_path: m.image?.id || m.audio?.id || null });
   if (error?.code === "23505") return; // Meta sent it again
   if (error) throw new Error(error.message);
   const rows = await must(db.from("members").select("restaurant_id, role, name, restaurants(*)").eq("phone", phone));
@@ -136,18 +149,32 @@ export async function handle(m, contact) {
 
   let text = textOf(m), image = null;
   if (m.type === "image") {
-    const p = await savePhoto(r, phone, m);
-    // Several photos arrive together: Muse answers the first one; the rest are saved quietly.
-    const burst = await must(db.from("messages").select("id").eq("phone", phone).eq("type", "image").eq("direction", "in").gte("created_at", new Date(Date.now() - 60e3).toISOString()));
-    if (burst.length > 1 && !m.image.caption) return;
-    text = `[sent a photo${m.image.caption ? ` with the words "${m.image.caption}"` : ""}. You looked at it: ${p.dup ? "already had it" : `${p.kind}${p.dish ? `, ${p.dish}${p.new_dish ? " (new on the menu, you added it)" : ""}` : ""}: ${p.label}${p.usable === false ? `; not usable in a Reel (${p.why})` : ""}`}]`;
+    // First photo of a batch: say at once that they arrived and about how long Muse needs to look at them all.
+    if (Date.now() - (acked.get(phone) || 0) > 3 * 60e3) {
+      acked.set(phone, Date.now());
+      // WhatsApp hands an album over one photo at a time, so how many there are is not known yet: no number is said.
+      await wa.text(phone, r.language === "es"
+        ? "📸 Recibí tus fotos. Las estoy revisando todas, te contesto en 1 o 2 minutos."
+        : "📸 Got your photos. I'm looking at all of them now, I'll reply in 1 or 2 minutes.", r.id);
+    } else acked.set(phone, Date.now());
+    let p, failed;
+    try { p = await savePhoto(r, phone, m); } catch (e) { failed = e; }
+    // An album arrives as many messages: each photo is saved quietly and Muse answers once, after the last, about all of them.
+    if (!last()) { if (failed) throw failed; return; }
+    if (failed) throw failed;
+    const recent = await must(db.from("photos").select("kind, label").eq("restaurant_id", r.id).eq("from_phone", phone).gte("created_at", new Date(Date.now() - 5 * 60e3).toISOString()).order("created_at"));
+    const all = recent.length > 1 ? ` Together with it, in the last minutes they sent ${recent.length} photos: ${recent.map((x) => `${x.kind}: ${x.label}`).join("; ")}.` : "";
+    text = `[sent a photo${m.image.caption ? ` with the words "${m.image.caption}"` : ""}. You looked at it: ${p.dup ? "already had it" : `${p.kind}${p.dish ? `, ${p.dish}${p.new_dish ? " (new on the menu, you added it)" : ""}` : ""}: ${p.label}${p.usable === false ? `; not usable in a Reel (${p.why})` : ""}`}.${all}]`;
     image = p.jpg;
   } else if (m.type === "audio") {
     const { buf } = await media(m.audio.id), f = `${os.tmpdir()}/${m.id}.ogg`;
     fs.writeFileSync(f, buf);
     try { text = await transcribe(f, { languages: r.language === "es" ? ["Spanish", "English"] : ["English", "Spanish"] }); } finally { fs.rmSync(f, { force: true }); }
     await must(db.from("messages").update({ body: `[voice] ${text}` }).eq("wa_id", m.id));
+  } else if (m.type === "unsupported") {
+    return; // what WhatsApp cannot pass on (an album's header, a view-once): the photos behind it get the answer
   } else if (!text) {
+    if (more()) return;
     return wa.text(phone, r.language === "es" ? "Mándame fotos de tu comida o notas de voz, con eso trabajo." : "Send me photos of your food or voice notes, that's what I work with.", r.id);
   }
 
@@ -158,4 +185,28 @@ export async function handle(m, contact) {
   if (notes.includes("nophotos")) reply = r.language === "es" ? "Para hacer el Reel necesito fotos de tu comida. Mándamelas aquí." : "I need photos of your food to make the Reel. Send them here.";
   if (reply) await wa.text(phone, reply, r.id);
   log(`${phone} @ ${r.name}: ${text.slice(0, 80)} -> ${out.actions.map((a) => a.type).join(", ") || "reply"}`);
+}
+
+// After a restart: whoever wrote in the last 20 minutes and got no answer (the "got your photos" note does not count)
+// is answered now, as if nothing happened. Their photos are fetched again from WhatsApp; ones already saved are skipped.
+export async function resume() {
+  const since = new Date(Date.now() - 20 * 60e3).toISOString();
+  const rows = await must(db.from("messages").select("*").gte("created_at", since).order("created_at"));
+  const phones = [...new Set(rows.map((x) => x.phone))];
+  for (const phone of phones) {
+    const mine = rows.filter((x) => x.phone === phone), lastOut = mine.findLastIndex((x) => x.direction === "out" && !(x.body || "").startsWith("📸"));
+    const open = mine.slice(lastOut + 1).filter((x) => x.direction === "in" && x.type !== "unsupported");
+    if (!open.length) continue;
+    log(`resume ${phone}: ${open.length} unanswered`);
+    const asMsg = (x) => ({ id: x.wa_id, from: phone, type: x.type, text: { body: x.body || "" }, image: { id: x.media_path, caption: x.body || "" }, audio: { id: x.media_path } });
+    const photos = open.filter((x) => x.type === "image"), rest = open.filter((x) => x.type !== "image");
+    try {
+      if (photos.length) {
+        let left = photos.filter((x) => x.media_path).length;
+        const tries = photos.filter((x) => x.media_path).map((x) => handle(asMsg(x), null, { replay: true, last: () => --left === 0 }).catch((e) => log(`resume ${phone}: ${e.message}`)));
+        if (tries.length) await Promise.all(tries);
+        else await handle({ id: `resume-${Date.now()}`, from: phone, type: "text", text: { body: "[They sent their photos a moment ago; you have already looked at them (see MENU and PHOTOS). Answer about them now.]" } }, null, { replay: true });
+      } else if (rest.length) await handle(asMsg(rest.at(-1)), null, { replay: true });
+    } catch (e) { log(`resume ${phone}: ${e.message}`); }
+  }
 }

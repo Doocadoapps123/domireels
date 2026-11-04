@@ -90,7 +90,7 @@ export async function nextDishNumber(restaurantId) {
 }
 
 export const jobView = (j) => ({
-  id: j.id, kind: j.kind, status: j.status, week: j.week,
+  id: j.id, kind: j.input?.equipment ? "equipment" : j.kind, status: j.status, week: j.week,
   questions: (j.state?.questions || []).map((q) => ({ ask: q.ask, options: q.options || [] })).filter((q) => q.ask),
   error: j.status === "failed" ? j.error || null : null,
   url: j.input?.url || null,

@@ -65,7 +65,7 @@ kit  ◀────────────────────────
                                                Muse looks at every photo, pitches, plans,
                                                films takes, keeps the good seconds, cuts,
                                                scores, writes the text, gives it a last look
-drop ◀───────────────────────────────────────  the Reel, its cover, its caption, the owner's message
+drop ◀───────────────────────────────────────  the Reel, its cover, the owner's message
 GET  /api/v1/reels?restaurant=8 ───────────▶   the same Reels, any time, with download urls
 `}</Code>
 
@@ -97,7 +97,7 @@ curl ${BASE}/api/v1/restaurants \\
                     <tr><td><code>name</code></td><td>string</td><td></td><td>The restaurant&apos;s name, as customers know it.</td></tr>
                     <tr><td><code>cuisine</code></td><td>string</td><td>null</td><td>&quot;Empanadas, sandwiches&quot;. Muse reads it.</td></tr>
                     <tr><td><code>city</code></td><td>string</td><td>null</td><td>Where it is.</td></tr>
-                    <tr><td><code>language</code></td><td><code>en</code> | <code>es</code></td><td><code>en</code></td><td>The language of the Reel&apos;s words, its caption and the owner&apos;s message.</td></tr>
+                    <tr><td><code>language</code></td><td><code>en</code> | <code>es</code></td><td><code>en</code></td><td>The language of the Reel&apos;s words and the owner&apos;s message.</td></tr>
                     <tr><td><code>timezone</code></td><td>IANA name</td><td><code>America/New_York</code></td><td>Days and hours are counted here.</td></tr>
                     <tr><td><code>delivery_day</code></td><td>0 to 6</td><td>0</td><td>The day the week&apos;s Reels go out. 0 is Sunday.</td></tr>
                     <tr><td><code>delivery_hour</code></td><td>0 to 23</td><td>20</td><td>The hour they go out, in the restaurant&apos;s timezone.</td></tr>
@@ -159,7 +159,6 @@ curl -X POST ${BASE}/api/v1/restaurants/8/reels -H "Authorization: Bearer $DOMI_
       "id": "0b8e7c1d-...", "restaurant": "8", "job_id": "6f1c2a0e-...",
       "title": "The plancha that melts the big quesadilla", "idea": "...", "kind": "Cheese on the plancha",
       "dishes": ["Large Quesadilla"], "seconds": 11.2,
-      "caption": "...",
       "status": "delivered",
       "deliver_at": "2026-11-08T01:00:00.000Z", "delivered_at": "2026-11-08T01:00:12.000Z",
       "created_at": "2026-11-07T18:40:00.000Z",
@@ -272,7 +271,7 @@ POST {your drop url}
 x-reels-token: <your token>
 
 { "action": "close", "restaurant_id": 8, "run": "8-0",
-  "title": "...", "caption": "...", "owner_summary": "...",
+  "title": "...", "owner_summary": "...",
   "dishes": [676], "ai_label": true, "cost": 1.42 }
 
 => { "video": "https://...", "cover": "https://...", "owner_message": "..." }

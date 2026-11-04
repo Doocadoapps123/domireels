@@ -1,6 +1,7 @@
 // A restaurant's kit (docs/CONTRACT.md, domi-reels/kit@1), wherever it lives: an ordering platform answers it from
 // its own kit url; an owner who deals with Domi Reels directly has it in our tables (dishes and photos).
 import { db, must, signed } from "./db.mjs";
+import { WORDS } from "./equipment.mjs";
 
 const slug = (s) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 
@@ -24,7 +25,11 @@ export async function kitFor(r, account) {
     return kit;
   }
   const dishes = await must(db.from("dishes").select("*").eq("restaurant_id", r.id).eq("active", true));
-  const photos = await must(db.from("photos").select("*").eq("restaurant_id", r.id).in("source", ["whatsapp", "upload", "library"]));
+  // The provisional equipment Muse made (source stock) goes in until the owner sends a photo of their own of it.
+  const all = await must(db.from("photos").select("*").eq("restaurant_id", r.id).in("source", ["whatsapp", "upload", "library", "stock"]));
+  const st = (p) => Object.keys(WORDS).find((k) => WORDS[k].test(p.label || ""));
+  const ownSt = new Set(all.filter((p) => p.source !== "stock" && p.kind === "equipment").map(st).filter(Boolean));
+  const photos = all.filter((p) => p.source !== "stock" || !ownSt.has(st(p)));
   const num = (id) => +dishes.find((d) => d.id === id)?.external_id || null;
   return {
     contract: "domi-reels/kit@1", platform: "domi",

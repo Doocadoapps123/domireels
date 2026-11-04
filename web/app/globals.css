@@ -327,7 +327,6 @@ p { margin: 0; }
 .version-label { display: flex; align-items: baseline; gap: 10px; }
 .version-n { font-family: var(--display); font-weight: 300; font-variation-settings: "wdth" 75; font-size: 1.6rem; color: var(--accent); line-height: 1; }
 .version-reg { font-weight: 600; text-transform: capitalize; }
-.caption-box { white-space: pre-wrap; font-size: 0.98rem; line-height: 1.55; color: var(--text); background: rgba(255, 236, 214, 0.04); border: 1px solid var(--line); border-radius: 14px; padding: 16px; max-height: 360px; overflow: auto; }
 
 /* ---- how Muse directed it ---- */
 .bts-hero { display: grid; gap: 32px; padding: 16px 0 40px; }

@@ -1,5 +1,7 @@
 import Link from "next/link";
 import ReelStudio from "@/components/ReelStudio";
+import EquipmentSetup from "@/components/EquipmentSetup";
+import { EQUIPMENT_SOURCE } from "@/lib/equipment";
 import { IconDownload } from "@/components/Icons";
 import { requireOwner } from "@/lib/auth";
 import { db, must, signedMany, linkKey } from "@/lib/db";
@@ -12,10 +14,11 @@ const when = (iso) => new Date(iso).toLocaleDateString("en-US", { weekday: "shor
 
 export default async function ReelsPage() {
   const { restaurant: r } = await requireOwner();
-  const [jobs, reels, food] = await Promise.all([
+  const [jobs, reels, food, equipment] = await Promise.all([
     must(db.from("jobs").select("*").eq("restaurant_id", r.id).order("created_at", { ascending: false }).limit(10)),
     must(db.from("reels").select("id, job_id, title, idea, versions, chosen, cover_path, seconds, created_at, delivered_at, deliver_at, public").eq("restaurant_id", r.id).order("created_at", { ascending: false }).limit(30)),
     must(db.from("dishes").select("id").eq("restaurant_id", r.id).eq("active", true).not("photo_path", "is", null).limit(1)),
+    must(db.from("lessons").select("id").eq("restaurant_id", r.id).eq("source", EQUIPMENT_SOURCE).limit(1)),
   ]);
   const covers = await signedMany("reels", reels.map((x) => x.cover_path), 6 * 3600).catch(() => ({}));
   const links = Object.fromEntries(reels.map((x) => [x.id, `/r/${x.id}?k=${linkKey(x.id)}`]));
@@ -36,6 +39,8 @@ export default async function ReelsPage() {
             : <>Weekly Reels are off. <Link href="/app/settings" className="link">Turn them on</Link></>}
         </p>
       </div>
+
+      {equipment.length ? null : <EquipmentSetup restaurantId={r.id} />}
 
       <ReelStudio
         restaurantId={r.id}

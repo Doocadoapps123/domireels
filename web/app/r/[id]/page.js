@@ -13,7 +13,7 @@ export default async function OwnerReelPage({ params, searchParams }) {
   const { id } = await params;
   const { k } = await searchParams;
   if (!isUuid(id) || !validKey(id, k)) notFound();
-  const [reel] = await must(db.from("reels").select("id, title, idea, versions, chosen, caption, cover_path, seconds, created_at, restaurants(name)").eq("id", id).limit(1));
+  const [reel] = await must(db.from("reels").select("id, title, idea, versions, chosen, cover_path, seconds, created_at, restaurants(name)").eq("id", id).limit(1));
   if (!reel) notFound();
   const v = await ownerVersions(reel);
 
@@ -31,7 +31,6 @@ export default async function OwnerReelPage({ params, searchParams }) {
           cover={v.cover}
           versions={v.versions}
           chosen={Number.isInteger(reel.chosen) ? reel.chosen : null}
-          caption={reel.caption || ""}
         />
       </main>
     </>

@@ -8,6 +8,27 @@ import { db, must, upload } from "./db.mjs";
 
 const UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Safari/537.36";
 const get = async (url) => { const r = await fetch(url, { headers: { "User-Agent": UA }, redirect: "follow" }); if (!r.ok) throw new Error(`${url}: ${r.status}`); return r; };
+
+// Many restaurant sites sit behind an anti-bot wall (Cloudflare, "Just a moment..."): then Zyte opens the page in a real
+// browser for us, and fetches the photos the same way.
+const BLOCKED = /just a moment|cf-chl|captcha|access denied|attention required|verify you are human/i;
+async function zyte(url, want) {
+  if (!process.env.ZYTE_API_KEY) throw new Error(`${url}: blocked and no ZYTE_API_KEY`);
+  const r = await fetch("https://api.zyte.com/v1/extract", {
+    method: "POST", headers: { Authorization: `Basic ${Buffer.from(`${process.env.ZYTE_API_KEY}:`).toString("base64")}`, "Content-Type": "application/json" },
+    body: JSON.stringify({ url, ...(want === "html" ? { browserHtml: true } : { httpResponseBody: true }) }),
+  });
+  const j = await r.json();
+  if (!r.ok) throw new Error(`zyte ${url}: ${r.status} ${j.detail || j.title || ""}`);
+  return want === "html" ? j.browserHtml : Buffer.from(j.httpResponseBody, "base64");
+}
+async function page(url) {
+  try { const html = await (await get(url)).text(); if (html.length > 2000 && !BLOCKED.test(html.slice(0, 5000))) return html; } catch {}
+  return zyte(url, "html");
+}
+async function bytes(url) {
+  try { return Buffer.from(await (await get(url)).arrayBuffer()); } catch { return zyte(url, "bytes"); }
+}
 const abs = (u, base) => { try { return new URL(u.replace(/&amp;/g, "&"), base).href; } catch { return null; } };
 
 // The page as Muse reads it: its text, and every image with what the page says about it.
@@ -43,14 +64,14 @@ const MENU = {
 };
 
 export async function importWebsite(r, url) {
-  const home = await (await get(url)).text(), pages = [{ url, ...read(home, url) }];
+  const home = await page(url), pages = [{ url, ...read(home, url) }];
   const menuLinks = pages[0].links.filter((l) => /menu|order|food|carta|platos/i.test(`${l.url} ${l.text}`) && new URL(l.url).host === new URL(url).host);
   for (const l of [...new Map(menuLinks.map((x) => [x.url, x])).values()].slice(0, 3)) {
-    try { pages.push({ url: l.url, ...read(await (await get(l.url)).text(), l.url) }); } catch {}
+    try { pages.push({ url: l.url, ...read(await page(l.url), l.url) }); } catch {}
   }
   const images = [...new Map(pages.flatMap((p) => p.images).map((i) => [i.url, i])).values()].slice(0, 200);
   const text = pages.map((p) => `PAGE ${p.url}\n${p.text.slice(0, 18000)}`).join("\n\n").slice(0, 50000);
-  const found = await ask([{ type: "input_text", text: `This is a restaurant's website (${r.name}). Write down its menu: every dish or drink it sells, with its description and price as the site gives them, and its own photo when the site has one. Only what the site says; nothing invented. At most 60 items, the ones with photos first.\n\n${text}\n\nIMAGES (url | alt text):\n${images.map((i) => `${i.url} | ${i.alt}`).join("\n")}` }], "menu", MENU);
+  const found = await ask([{ type: "input_text", text: `This is a restaurant's website (${r.name}). Write down the dishes and drinks of its menu that have their own photo on the site, with the description and price the site gives them. Leave out every item without its own photo. Only what the site says; nothing invented. At most 60 items.\n\n${text}\n\nIMAGES (url | alt text):\n${images.map((i) => `${i.url} | ${i.alt}`).join("\n")}` }], "menu", MENU);
 
   const have = await must(db.from("dishes").select("name, external_id").eq("restaurant_id", r.id));
   const names = new Set(have.map((d) => d.name.toLowerCase()));
@@ -59,7 +80,7 @@ export async function importWebsite(r, url) {
     let photo_path = null;
     if (d.image && images.some((i) => i.url === d.image)) {
       try {
-        const buf = Buffer.from(await (await get(d.image)).arrayBuffer()), meta = await sharp(buf).metadata();
+        const buf = await bytes(d.image), meta = await sharp(buf).metadata();
         if (Math.min(meta.width, meta.height) >= 300) {
           const jpg = await sharp(buf).rotate().jpeg({ quality: 92 }).toBuffer(), sha1 = crypto.createHash("sha1").update(jpg).digest("hex");
           photo_path = await upload("photos", `${r.id}/menu/${sha1}.jpg`, jpg, "image/jpeg");
@@ -68,6 +89,8 @@ export async function importWebsite(r, url) {
         }
       } catch {}
     }
+    // Only dishes with their own photo come in: a Reel is made from the real photo, a dish without one is noise (Yansel, 4 Nov).
+    if (!photo_path) continue;
     await must(db.from("dishes").insert({ restaurant_id: r.id, external_id: String(next++), name: d.name, description: d.description || null, price: d.price || null, photo_path, photo_url: d.image || null }));
     names.add(d.name.toLowerCase());
     added++;

@@ -46,11 +46,11 @@ export async function gallery({ id, dir, kit, restaurantName }) {
   const review = fs.existsSync(`${dir}/review.json`) ? read(`${dir}/review.json`) : {};
   // The site is in English; Muse wrote some of its notes in the owner's Spanish.
   const notes = [review.note, ...(review.problems || [])].filter(Boolean);
-  // Everything the site shows is English (Yansel, 4 Nov): dish names too ("Roast Pork Yaroa"), and a caption and a
+  // Everything the site shows is English (Yansel, 4 Nov): dish names too ("Roast Pork Yaroa"), and a
   // one-line summary of the Reel written for the site.
   const dishNames = photos.map((p) => p.caption);
-  const en = await ask([{ type: "input_text", text: `Translate to natural English for a website (keep English as it is, keep it short and plain; a dish keeps the name an English-speaking diner would order it by, "pico de gallo" stays). Also write a short Instagram-style caption for this Reel and a one-line summary of what happens in it, both in English, true to the idea and the dishes, no prices, no em dashes. ${JSON.stringify({ title: concept?.title || script.concept, kind: concept?.kind || "", idea: concept?.idea || "", why: concept?.why_real || "", note: concept?.muse?.note || "", review: notes, dishes: dishNames, caption: script.caption || "", summary: script.owner_summary || "" })}` }],
-    "english", { type: "object", additionalProperties: false, required: ["title", "kind", "idea", "why", "note", "review", "dishes", "caption", "summary"], properties: { title: { type: "string" }, kind: { type: "string", description: "The kind of Reel as a short English name." }, idea: { type: "string" }, why: { type: "string" }, note: { type: "string" }, review: { type: "array", items: { type: "string" } }, dishes: { type: "array", items: { type: "string" }, description: "The dish names in English, same order." }, caption: { type: "string" }, summary: { type: "string" } } })
+  const en = await ask([{ type: "input_text", text: `Translate to natural English for a website (keep English as it is, keep it short and plain; a dish keeps the name an English-speaking diner would order it by, "pico de gallo" stays). Also write a one-line summary of what happens in it, in English, true to the idea and the dishes, no prices, no em dashes. ${JSON.stringify({ title: concept?.title || script.concept, kind: concept?.kind || "", idea: concept?.idea || "", why: concept?.why_real || "", note: concept?.muse?.note || "", review: notes, dishes: dishNames, summary: script.owner_summary || "" })}` }],
+    "english", { type: "object", additionalProperties: false, required: ["title", "kind", "idea", "why", "note", "review", "dishes", "summary"], properties: { title: { type: "string" }, kind: { type: "string", description: "The kind of Reel as a short English name." }, idea: { type: "string" }, why: { type: "string" }, note: { type: "string" }, review: { type: "array", items: { type: "string" } }, dishes: { type: "array", items: { type: "string" }, description: "The dish names in English, same order." }, summary: { type: "string" } } })
     .catch(() => null);
   if (en?.dishes?.length === photos.length) {
     photos.forEach((p, i) => { p.caption = en.dishes[i]; });
@@ -61,7 +61,7 @@ export async function gallery({ id, dir, kit, restaurantName }) {
     idea: concept ? { title: en?.title || concept.title, kind: en?.kind || concept.kind, idea: en?.idea || concept.idea, why: en?.why || concept.why_real || "", scores: { ...(concept.muse || {}), note: en?.note || concept.muse?.note || "" } } : { title: en?.title || script.concept },
     board, takes, review: { approved: review.approved ?? null, notes: en?.review || notes },
     cost: +spent("lab/out/ledger.jsonl", `${dir}/`).toFixed(2), seconds: +probe(`${dir}/final.mp4`).toFixed(1),
-    music: script.music?.register || "", rhythm: script.rhythm || "", caption: en?.caption || "", summary: en?.summary || "",
+    music: script.music?.register || "", rhythm: script.rhythm || "", summary: en?.summary || "",
   };
 }
 
@@ -92,7 +92,7 @@ if (process.argv[1]?.endsWith("gallery.mjs")) {
     await upload("reels", `${b}/0-phone.mp4`, fs.readFileSync(phone), "video/mp4");
     await upload("reels", `${b}/cover.jpg`, fs.readFileSync(`/tmp/${id}.jpg`), "image/jpeg");
     const [reel] = await must(db.from("reels").insert({ id, restaurant_id: r.id, title: script.concept, idea: script.owner_summary || "", seconds: +probe(`${dir}/final.mp4`).toFixed(2), cover_path: `${b}/cover.jpg`,
-      versions: [{ register: script.music?.register || "", path: `${b}/0.mp4`, phone: `${b}/0-phone.mp4` }], chosen: 0, caption: script.caption || "", director: { kit, dir }, cost: +spent("lab/out/ledger.jsonl", `${dir}/`).toFixed(2), delivered_at: new Date().toISOString() }).select());
+      versions: [{ register: script.music?.register || "", path: `${b}/0.mp4`, phone: `${b}/0-phone.mp4` }], chosen: 0, director: { kit, dir }, cost: +spent("lab/out/ledger.jsonl", `${dir}/`).toFixed(2), delivered_at: new Date().toISOString() }).select());
     await publish(reel, await gallery({ id, dir, kit, restaurantName: r.name.split(" - ")[0] }));
     console.log(`${process.env.DR_PUBLIC_URL}/g/${id}`);
   } else {

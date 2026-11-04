@@ -18,9 +18,11 @@ export const img = async (buf) => ({
   type: "input_image",
   image_url: `data:image/jpeg;base64,${(await sharp(buf).rotate().resize({ width: 1280, withoutEnlargement: true }).jpeg({ quality: 90 }).toBuffer()).toString("base64")}`,
 });
-export async function ask(content, name, schema) {
+// effort: "minimal" for WhatsApp, where the owner is waiting (a "hi" took 12 s at the default; minimal answers in ~2 s).
+export async function ask(content, name, schema, { effort } = {}) {
   const res = await client.responses.create({
     model: MODEL,
+    ...(effort ? { reasoning: { effort } } : {}),
     input: [{ type: "message", role: "user", content }],
     text: { format: { type: "json_schema", name, schema, strict: true } },
   });
@@ -65,7 +67,7 @@ const CONCEPTS = {
       type: "array",
       items: {
         type: "object", additionalProperties: false,
-        required: ["title", "idea", "format", "cast", "new_format", "clips", "audio", "caption", "why_hungry", "realism_plan", "risk"],
+        required: ["title", "idea", "format", "cast", "new_format", "clips", "audio", "on_screen", "why_hungry", "realism_plan", "risk"],
         properties: {
           title: { type: "string" },
           idea: { type: "string", description: "The whole reel in two sentences." },
@@ -74,7 +76,7 @@ const CONCEPTS = {
           new_format: { type: "boolean", description: "true if it is not one of the reference formats." },
           clips: { type: "array", description: "3 generated clips of 4 s (a 12 s Reel). One clip may hold up to 5 hard cuts.", items: CLIP },
           audio: { type: "string" },
-          caption: { type: "string", description: "On-screen line, under 9 words, or empty." },
+          on_screen: { type: "string", description: "On-screen line, under 9 words, or empty." },
           why_hungry: { type: "string" },
           realism_plan: { type: "string", description: "Why this will look like real footage from this kitchen: which proven moves it uses, where the real photo carries it." },
           risk: { type: "string", description: "What the video model may get wrong here." },
@@ -508,7 +510,7 @@ ${inventoryLines(inv)}
 ${tasteText(playbook)}
 ${historyText(history, restaurant)}
 ${trackText()}
-Score every concept honestly. Realism is whether every shot will come out with our camera, judged shot by shot against the craft and the inventory: a shot that needs the video model to make food appear, a person eating, walking or talking, or a liquid from nothing will not. A hand doing what nobody does with that dish (a fork lifting a sandwich, a spoon on a taco: the inventory says what each dish is eaten with) is realism 2 at most: the owner sees it at once. The table pass of several dishes (a spread) is made in the edit by moving over the restaurant's real photos set on one table, with no video model: it always comes out, so judge only the dish shots after it. Judge every idea against what its own style's tools do, never against another style: the restaurant's food on a real equipment frame (making), the camera passing over the real photos in the edit (table), text over the real photos (letters) are as real as a hand on the dish when done that way. Several dishes come out as well as one (Yansel, 4 Nov: "hay muchas maneras de hacerlo"): each dish gets its own shot from its own real photo with its own motion (a hand lifts, dips or breaks that dish), or the camera moves over the real dishes while the food stays still. Judge each of those shots like a one-dish shot; a Reel of several dishes is photos passing by only when nothing happens in its shots. An idea told in letters over the real photos has no AI video and always comes out, but it is a Reel only if the text tells a story the viewer wants to finish; photos passing by with captions score low on scroll stop. Low scores for a dish just sitting there, photos passing by, an ad more than a Reel, anything under 9 s, steps a cook would not do, photos too weak to carry it.
+Score every concept honestly. Realism is whether every shot will come out with our camera, judged shot by shot against the craft and the inventory: a shot that needs the video model to make food appear, a person eating, walking or talking, or a liquid from nothing will not. A hand doing what nobody does with that dish (a fork lifting a sandwich, a spoon on a taco: the inventory says what each dish is eaten with) is realism 2 at most: the owner sees it at once. The table pass of several dishes (a spread) is made in the edit by moving over the restaurant's real photos set on one table, with no video model: it always comes out, so judge only the dish shots after it. Judge every idea against what its own style's tools do, never against another style: the restaurant's food on a real equipment frame (making), the camera passing over the real photos in the edit (table), text over the real photos (letters) are as real as a hand on the dish when done that way. Several dishes come out as well as one (Yansel, 4 Nov: "hay muchas maneras de hacerlo"): each dish gets its own shot from its own real photo with its own motion (a hand lifts, dips or breaks that dish), or the camera moves over the real dishes while the food stays still. Judge each of those shots like a one-dish shot; a Reel of several dishes is photos passing by only when nothing happens in its shots. An idea told in letters over the real photos has no AI video and always comes out, but it is a Reel only if the text tells a story the viewer wants to finish; photos passing by with labels score low on scroll stop. Low scores for a dish just sitting there, photos passing by, an ad more than a Reel, anything under 9 s, steps a cook would not do, photos too weak to carry it.
 Repeats: compare each concept's structure with THIS RESTAURANT'S own Reels above, beat by beat: the same structure is a repeat even with another of its dishes and another name. Other restaurants' Reels are not repeats: each restaurant gets a different style this week, and an idea may come back made a restaurant's own (Yansel, 4 Nov). Sharing only a cast (gloved hands, bare hands, a fork) is not a repeat. Never compare concepts of this pitch with each other.
 Concepts (index: JSON):
 ${concepts.map((c, i) => `${i}: ${JSON.stringify(c)}`).join("\n")}` },
@@ -549,7 +551,7 @@ const PLAN_SHOT = {
   },
 };
 const PLAN_REEL = {
-  type: "object", additionalProperties: false, required: ["container", "surface", "layers", "shots", "rhythm", "music_register", "music", "text_style", "texts", "caption", "owner_summary"],
+  type: "object", additionalProperties: false, required: ["container", "surface", "layers", "shots", "rhythm", "music_register", "music", "text_style", "texts", "owner_summary"],
   properties: {
     container: { type: "string", description: "What holds the hero dish, in 1-3 plain English words a segmentation model finds: \"foil pan\", \"white plate\", \"black takeout tray\"." },
     surface: { type: "string", description: "Empty to keep the photo's own table. Otherwise one edit instruction that puts the dish in the idea's place or on a restaurant table." },
@@ -569,7 +571,6 @@ const PLAN_REEL = {
       text: { type: "string" },
       shot: { type: "integer", description: "0 for the hook in the first second; else the shot it sits on." },
     } } },
-    caption: { type: "string", description: "The post caption idea in one short line, in the Reel's language." },
     owner_summary: { type: "string", description: "The Reel in 3-5 short lines, in Spanish, for the owner." },
   },
 };

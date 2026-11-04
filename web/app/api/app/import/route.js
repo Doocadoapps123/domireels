@@ -11,7 +11,7 @@ export const POST = handle(async (req) => {
   if (error) return error;
   const url = normalizeUrl(b.url);
   if (!url) return fail(400, "Enter your website's address, like yourrestaurant.com.");
-  const open = await must(db.from("jobs").select("id").eq("restaurant_id", restaurant.id).eq("kind", "import").in("status", ACTIVE).limit(1));
+  const open = await must(db.from("jobs").select("id").eq("restaurant_id", restaurant.id).eq("kind", "import").not("input->>url", "is", null).in("status", ACTIVE).limit(1));
   if (open.length) return fail(409, "Your menu is already being imported.");
   const [job] = await must(db.from("jobs").insert({ restaurant_id: restaurant.id, kind: "import", input: { url } }).select("*"));
   if (!restaurant.website) await db.from("restaurants").update({ website: url }).eq("id", restaurant.id);

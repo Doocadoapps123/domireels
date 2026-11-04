@@ -10,7 +10,7 @@ const STEPS = [
   { t: "Photos in", d: "Send the food photos you already have on WhatsApp, or upload them. The dishes, the fryer, the griddle, the storefront. A voice note works too." },
   { t: "Muse looks at every photo", d: "And decides what each one can do: the layers a dish peels into, what a hand can do to it, the photo that is too weak to use." },
   { t: "Muse directs the Reel", d: "It pitches the idea, plans the shots from your real photo, watches every take, keeps only the good seconds, then adds the text and the music." },
-  { t: "It arrives on WhatsApp", d: "Ready to post, with the caption written. Pick the music you like best and Muse remembers your taste for the next one." },
+  { t: "It arrives on WhatsApp", d: "Ready to post. Pick the music you like best and Muse remembers your taste for the next one." },
 ];
 
 const MODELS = [

@@ -27,7 +27,7 @@ export async function reelsOut(rows, externalIdOf, seconds = 3600) {
   const site = process.env.DR_PUBLIC_URL || "";
   return rows.map((r) => ({
     id: r.id, restaurant: externalIdOf(r.restaurant_id), job_id: r.job_id, title: r.title, idea: r.idea, kind: r.kind,
-    dishes: r.dishes || [], seconds: r.seconds, caption: r.caption,
+    dishes: r.dishes || [], seconds: r.seconds,
     status: r.delivered_at ? "delivered" : "ready",
     deliver_at: r.deliver_at, delivered_at: r.delivered_at, created_at: r.created_at,
     cover: urls[r.cover_path] || null,

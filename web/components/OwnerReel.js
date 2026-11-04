@@ -4,7 +4,7 @@ import ReelPlayer from "./ReelPlayer";
 import CopyButton from "./CopyButton";
 import { IconCheck, IconDownload } from "./Icons";
 
-export default function OwnerReel({ id, k, title, place, idea, cover, versions, chosen: initial, caption }) {
+export default function OwnerReel({ id, k, title, place, idea, cover, versions, chosen: initial }) {
   const [chosen, setChosen] = useState(initial);
   const [busy, setBusy] = useState(null);
   const [error, setError] = useState("");
@@ -65,19 +65,10 @@ export default function OwnerReel({ id, k, title, place, idea, cover, versions, 
       </div>
 
       <div className="wrap-narrow stack gap-16" style={{ padding: 0 }}>
-        {caption ? (
-          <div className="card stack gap-12">
-            <div className="row between">
-              <span className="panel-title">Caption</span>
-              <CopyButton text={caption} label="Copy caption" />
-            </div>
-            <div className="caption-box">{caption}</div>
-          </div>
-        ) : null}
         <div className="card stack gap-8">
           <span className="panel-title">Before you post</span>
           <p className="muted small">
-            Domi prepares, you publish. Download the version you like, post it from your own Instagram or TikTok, and paste the caption.
+            Domi prepares, you publish. Download the version you like, post it from your own Instagram or TikTok.
             This Reel was made with AI, so turn on the AI label in the app when you post.
           </p>
         </div>

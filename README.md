@@ -37,7 +37,7 @@ Built for the Meta Global AI Developer Hackathon (Oct 26 to Nov 4, 2026).
 ## How it fits
 
 Domi Reels is a product on its own. An online ordering platform hands it a **kit** (the menu with its photos and the
-owner's notes, plus the restaurant's own photos) and gets back a **drop** (the Reel, its cover, its caption and the
+owner's notes, plus the restaurant's own photos) and gets back a **drop** (the Reel, its cover and the
 message for the owner). Doocado is the first platform connected. See [docs/CONTRACT.md](docs/CONTRACT.md).
 
 ```
@@ -65,7 +65,7 @@ No two restaurants get the same style in a week, and Muse chooses which idea eac
 | takes, dailies | cheap 360p takes; Muse watches each one like an editor watching dailies and marks which seconds go in the Reel and which to avoid, and rewrites the shot only when its key action never plays clean | `src/auto.mjs`, `src/director.mjs` |
 | sharp | the approved clips, upscaled without invented detail | `src/video.mjs` |
 | cut, music, text, review | Muse cuts the good seconds to the idea's rhythm, writes the music for its register, places the on-screen text a creator would type, and gives the finished Reel a last look that checks again every problem it named before; what it drops never comes back | `src/auto.mjs`, `src/edit.mjs`, `src/overlay.mjs` |
-| drop | the caption, the cover, and the Reel back to the platform as a draft | `src/drop.mjs` |
+| drop | the cover and the Reel back to the platform as a draft | `src/drop.mjs` |
 
 Domi prepares, the owner publishes. Nothing here posts to anyone's account.
 

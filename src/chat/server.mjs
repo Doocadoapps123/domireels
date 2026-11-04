@@ -5,9 +5,9 @@
 // Usage: node --env-file=../.env src/chat/server.mjs
 import http from "node:http";
 import crypto from "node:crypto";
-import { handle } from "./handle.mjs";
+import { handle, resume } from "./handle.mjs";
 
-const PORT = +process.env.CHAT_PORT || 8787, queues = new Map();
+const PORT = +process.env.CHAT_PORT || 8787, queues = new Map(), pending = new Map(), albums = new Map();
 const log = (...a) => console.log(new Date().toISOString(), ...a);
 
 function signed(raw, header) {
@@ -16,8 +16,11 @@ function signed(raw, header) {
   return header.length === want.length + 7 && crypto.timingSafeEqual(Buffer.from(header.slice(7)), Buffer.from(want));
 }
 
+// pending: messages from this phone not handled yet, so a photo in an album knows more are coming behind it.
 function enqueue(phone, fn) {
-  const next = (queues.get(phone) || Promise.resolve()).then(fn).catch((e) => log(`${phone}: ${e.stack || e.message}`));
+  pending.set(phone, (pending.get(phone) || 0) + 1);
+  const next = (queues.get(phone) || Promise.resolve()).then(fn).catch((e) => log(`${phone}: ${e.stack || e.message}`))
+    .finally(() => pending.set(phone, pending.get(phone) - 1) || pending.delete(phone));
   queues.set(phone, next);
   next.finally(() => queues.get(phone) === next && queues.delete(phone));
 }
@@ -41,7 +44,16 @@ http.createServer(async (req, res) => {
   for (const e of body.entry || []) for (const c of e.changes || []) {
     const v = c.value || {};
     if (v.metadata?.phone_number_id !== process.env.WA_PHONE_ID) continue;
-    for (const m of v.messages || []) enqueue(m.from, () => handle(m, (v.contacts || []).find((x) => x.wa_id === m.from)));
+    for (const m of v.messages || []) {
+      const contact = (v.contacts || []).find((x) => x.wa_id === m.from);
+      if (m.type !== "image") { enqueue(m.from, () => handle(m, contact, { more: () => (pending.get(m.from) || 0) > 1 })); continue; }
+      // Photos are looked at all at once, not one after another: an album of 6 takes as long as one. The photo that
+      // finishes last (last() counts down without a gap) is the one Muse answers.
+      albums.set(m.from, (albums.get(m.from) || 0) + 1);
+      let counted = false;
+      const last = () => { if (counted) return false; counted = true; const n = albums.get(m.from) - 1; albums.set(m.from, n); return n === 0; };
+      handle(m, contact, { last }).catch((e) => log(`${m.from}: ${e.stack || e.message}`)).finally(() => last());
+    }
     for (const s of v.statuses || []) if (s.status === "failed") log(`message to ${s.recipient_id} failed: ${JSON.stringify(s.errors)}`);
   }
-}).listen(PORT, "127.0.0.1", () => log(`whatsapp webhook on :${PORT}`));
+}).listen(PORT, "127.0.0.1", () => { log(`whatsapp webhook on :${PORT}`); resume().catch((e) => log(`resume: ${e.message}`)); });

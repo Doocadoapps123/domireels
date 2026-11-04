@@ -14,7 +14,7 @@ export const W = 1080, H = 1920;
 const PLAN = {
   type: "object",
   additionalProperties: false,
-  required: ["dish", "ingredients", "shots", "caption"],
+  required: ["dish", "ingredients", "shots", "on_screen"],
   properties: {
     dish: { type: "string" },
     ingredients: {
@@ -38,7 +38,7 @@ const PLAN = {
         },
       },
     },
-    caption: { type: "string", description: "One on-screen line that makes people send the reel to a friend. Under 9 words." },
+    on_screen: { type: "string", description: "One on-screen line that makes people send the reel to a friend. Under 9 words." },
   },
 };
 

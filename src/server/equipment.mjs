@@ -25,7 +25,7 @@ const TAGS = {
   blender: ["smoothie", "blender"],
   espresso: ["espresso", "coffee-machine", "barista"],
 };
-const WORDS = { fryer: /fr(y|ie)/i, plancha: /plancha|griddle|flat.?top/i, grill: /grill|barbecue|bbq/i, oven: /oven/i, wok: /wok|stir/i, pot: /pot|boil|soup|simmer/i, blender: /blend|smoothie/i, espresso: /espresso|coffee/i };
+export const WORDS = { fryer: /fr(y|ie)/i, plancha: /plancha|griddle|flat.?top/i, grill: /grill|barbecue|bbq/i, oven: /oven/i, wok: /wok|stir/i, pot: /pot|boil|soup|simmer/i, blender: /blend|smoothie/i, espresso: /espresso|coffee/i };
 
 // What each station looks like empty, as a phone photo from where a cook stands.
 const LOOKS = {
@@ -63,10 +63,13 @@ async function makeEquipment(st, menu) {
   return null;
 }
 
-export async function ensureEquipment(dir, { restaurantId } = {}) {
-  await photoScores(dir);
-  const menu = readMenu(dir), restaurant = menu.restaurant, inv = await inventory(dir), own = ownStock(dir), taken = owners();
-  const stations = [...new Set(inv.filter((d) => d.score >= 7).map((d) => d.station).filter((s) => TAGS[s]))];
+// only: the stations the owner marked at sign-up (web onboarding). Then the menu is not read: their equipment is ready
+// before any Reel is asked for, and a Reel never waits on it (Yansel, 4 Nov).
+export async function ensureEquipment(dir, { restaurantId, only } = {}) {
+  if (!only) await photoScores(dir);
+  const menu = readMenu(dir), restaurant = menu.restaurant, own = ownStock(dir), taken = owners();
+  const inv = only ? [] : await inventory(dir);
+  const stations = only ? only.filter((s) => TAGS[s]) : [...new Set(inv.filter((d) => d.score >= 7).map((d) => d.station).filter((s) => TAGS[s]))];
   const found = [], made = [];
   const free = () => JSON.parse(fs.readFileSync("data/stock.json", "utf8")).filter((c) => !taken[groupOf(c)] || taken[groupOf(c)] === restaurant);
   for (const st of stations) {

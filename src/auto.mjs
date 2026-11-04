@@ -160,7 +160,7 @@ export async function reel({ menu: menuDir, dir, pick = 0, spend = 0, pitch = `$
       stock: Object.fromEntries(stock.filter((x) => !x.own && plan.shots.some((s) => s.kind === "stock" && s.stock === x.name)).map(({ used, ...x }) => [x.name, x])),
       music: { model: "fal-ai/elevenlabs/music", license: "ElevenLabs (commercial use)", ms: 11500, prompt: plan.music, register: plan.music_register, by: "muse" },
       rhythm: plan.rhythm || concept.rhythm || "fast cut", text_style: plan.text_style, texts: plan.texts,
-      caption: plan.caption, owner_summary: plan.owner_summary,
+      owner_summary: plan.owner_summary,
     });
   }
   const script = read(S);
@@ -375,7 +375,7 @@ export async function reel({ menu: menuDir, dir, pick = 0, spend = 0, pitch = `$
   // At the cap the run stops cleanly: everything made so far is kept and a run with more money resumes from it.
   // 4 shots at a time (2 Nov, 47 hours before the deadline): half the wait, the same money.
   let broke = null;
-  await pool([payoffShot, ...shots.filter((s) => s !== payoffShot)].filter((s) => !s.draft), 4, (s) => shoot(s).catch((e) => { if (!/^budget/.test(e.message)) throw e; broke = e.message; }));
+  await pool([payoffShot, ...shots.filter((s) => s !== payoffShot)].filter((s) => !s.draft), 4, (s) => shoot(s, s.retryFrom || 0).catch((e) => { if (!/^budget/.test(e.message)) throw e; broke = e.message; }));
   if (broke) console.log(`spend cap reached while shooting (${broke}): the Reel is made from what passed`);
   // gate: an idea that is not coming out gives way to the next idea of the week instead of eating the whole budget
   // (Yansel, 2 Nov: "si esta idea no esta saliendo, debe pasar a la proxima"). Dora's fajita spent $5.62 on 46 drafts and
@@ -390,7 +390,8 @@ export async function reel({ menu: menuDir, dir, pick = 0, spend = 0, pitch = `$
 
   // Cut, score, render and Muse's final look. When Muse rejects the Reel it does not stop there: it fixes what it named,
   // with a new cut (free) or by shooting a clip again (a draft), and looks again. Four looks at most; the last fix only takes out.
-  let review, out, note = "";
+  // A fix the owner asked for on WhatsApp (lab/fix.mjs) leads the first cut and the review.
+  let review, out, note = script.owner_note ? `The owner asked for this change: ${script.owner_note}` : "";
   for (let round = 0; ; round++) {
     // sharp: every approved 360p draft tripled to 1080x1920 by a precision upscaler (no invented detail), so the Reel
     // is not soft on a phone. Muse picks its moments on the draft; the cut plays the sharp copy. Over the cap: the draft plays.
@@ -485,7 +486,7 @@ export async function reel({ menu: menuDir, dir, pick = 0, spend = 0, pitch = `$
       catch (e) { console.log(`text not burned in: ${e.message}`); fs.copyFileSync(`${dir}/final-notext.mp4`, out.file); }
     }
     // Every problem an earlier look of this run named, so a noisy look cannot wave it through.
-    const earlier = [...new Set(fs.readdirSync(dir).filter((x) => /^review-\d+\.json$/.test(x)).flatMap((x) => read(`${dir}/${x}`).problems || []))].slice(-10);
+    const earlier = [...new Set([...(script.owner_note ? [`The owner: ${script.owner_note}`] : []), ...fs.readdirSync(dir).filter((x) => /^review-\d+\.json$/.test(x)).flatMap((x) => read(`${dir}/${x}`).problems || [])])].slice(-10);
     review = await reviewReel(real, out.file, card, playbook, {
       concept: { title: concept.title, idea: concept.idea, format: concept.format }, shots: script.shots.map(({ n, kind, what, dish, stock }) => ({ n, kind, what, ...(dish ? { dish } : {}), ...(stock ? { stock } : {}) })) },
       others.filter((o) => script.shots.some((s) => s.dish === o.id)), earlier);
@@ -501,9 +502,17 @@ export async function reel({ menu: menuDir, dir, pick = 0, spend = 0, pitch = `$
     save(`${dir}/review-${round}.json`, review);
     console.log(`look ${round}: ${review.approved ? "approved" : "rejected"}, ${out.seconds.toFixed(1)} s, craving ${review.craving}, realism ${review.realism}, rhythm ${review.rhythm}, hook ${review.hook}`);
     if (review.approved && review.idea_on_screen === false) review.approved = false;
+    // Every look is kept, so when none is approved the restaurant gets the best one, not the last (Dora, 4 Nov: four
+    // looks rejected, and the last, hook 4, went out over one with craving 8, realism 8, rhythm 8).
+    const keep = `${dir}/look-${round}`;
+    fs.mkdirSync(keep, { recursive: true });
+    for (const x of ["final.mp4", "final-notext.mp4", "final-asmr.mp4"]) if (fs.existsSync(`${dir}/${x}`)) fs.copyFileSync(`${dir}/${x}`, `${keep}/${x}`);
+    save(`${keep}/script.json`, script);
+    save(`${keep}/look.json`, { out, review });
     // Three looks that can shoot again, and a fourth that only takes out what is wrong (free): what goes to the
     // restaurant is what Muse approved, or the least it rejected.
-    if (review.approved || round === 3) break;
+    // A fix the owner asked for gets two looks, not four: they are waiting for it.
+    if (review.approved || round === (process.env.FIX ? 1 : 3)) break;
 
     const locked = shots.filter((s) => Object.keys(owner).some((d) => owner[d] && d.startsWith(`draft-${s.n}-`))).map((s) => s.n);
     const fix = await fixReel(review, script.shots, pieces, cuts, locked, playbook, round === 2);
@@ -533,6 +542,20 @@ export async function reel({ menu: menuDir, dir, pick = 0, spend = 0, pitch = `$
     note = [fix.recut, ...fix.reshoot.map((r) => `Shot ${r.n} was shot again: ${r.why}`)].filter(Boolean).join("\n");
     script.edit = null;
     save(S, script);
+  }
+  if (!review.approved) {
+    const score = (r) => r.craving + r.realism + r.rhythm + r.hook + (r.idea_on_screen === false ? 0 : 2);
+    const looks = fs.readdirSync(dir).filter((x) => /^look-\d+$/.test(x) && fs.existsSync(`${dir}/${x}/look.json`) && fs.existsSync(`${dir}/${x}/final.mp4`)).map((x) => ({ x, ...read(`${dir}/${x}/look.json`) }));
+    const best = looks.sort((a, b) => score(b.review) - score(a.review))[0];
+    if (best && score(best.review) > score(review)) {
+      for (const x of ["final.mp4", "final-notext.mp4", "final-asmr.mp4"]) if (fs.existsSync(`${dir}/${best.x}/${x}`)) fs.copyFileSync(`${dir}/${best.x}/${x}`, `${dir}/${x}`);
+      const kept = read(`${dir}/${best.x}/script.json`);
+      for (const k of Object.keys(script)) delete script[k];
+      Object.assign(script, kept);
+      save(S, script);
+      ({ out, review } = best);
+      console.log(`no look approved: the best one goes out (${best.x}, ${score(review)} points), not the last`);
+    }
   }
   save(`${dir}/review.json`, review);
   // The feed's memory: this restaurant never repeats this format or cast, and other restaurants reuse it only made their own.
