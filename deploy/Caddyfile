@@ -1,5 +1,5 @@
-# The worker's only open door: Meta's WhatsApp webhook. Until domireels.com exists, sslip.io names the server's IP.
-2-29-117-228.sslip.io {
+# The worker's only open door: Meta's WhatsApp webhook. Put your own host name here.
+worker.example.com {
 	handle /whatsapp* {
 		reverse_proxy 127.0.0.1:8787
 	}

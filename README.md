@@ -1,15 +1,29 @@
 # Domi Reels
 
-Small restaurants have the food but not the Reels. Domi Reels turns the photos a restaurant already has into
-Instagram and Facebook Reels, and Meta's Muse makes every creative call: no person writes a script, picks a frame or
-chooses a cut.
+**From one menu photo to a finished Instagram Reel, with nobody writing a prompt.**
 
-Built for the Meta Global AI Developer Hackathon (Oct 26 to Nov 4, 2026).
+Restaurant owners know Reels bring customers, but agencies are expensive and AI tools take time they don't have.
+Domi Reels runs the AI for them. Meta's Muse is the director: it looks at the restaurant's real food photos, invents
+the idea, directs every shot, keeps only the seconds where the food is still the real dish, and adds the text and the
+music. The owner gets the Reel on WhatsApp, for about $5 a Reel.
 
-- Live: https://domireels.com (the gallery shows real pilot Reels and, for each one, how Muse directed it:
-  the photos it started from, what it saw, every take it kept and threw away). Sign up is by invitation; the judges'
-  code is in our submission notes.
-- WhatsApp: +1 407-439-7335 (Domi Reels' own number on the WhatsApp Cloud API).
+Built for the Meta Global AI Developer Hackathon (Oct 26 to Nov 4, 2026). Live at https://domireels.com.
+
+## How it works, in four steps
+
+1. **Connect the menu.** An ordering platform connects through our API, or the owner signs up at domireels.com,
+   marks the kitchen equipment they use (fryer, plancha, grill...) and gives their website or sends food photos on
+   WhatsApp (+1 407-439-7335).
+2. **Muse plans the week.** It searches what's working in food Reels and what's coming up in the restaurant's city,
+   reads every photo, and invents ideas that fit what the photos can really do. No two restaurants get the same Reel.
+3. **Muse directs and reviews.** It writes every shot, Muse Image and SAM 3.1 keep the real dish in each frame, and
+   Muse watches every take like an editor, keeping the good seconds and throwing away the rest. If it cannot see
+   something ("Oaxaca cheese or mozzarella?"), it asks the owner on WhatsApp.
+4. **The Reel arrives on WhatsApp**, with three songs to choose from. The owner can ask for a change in a message or a
+   voice note ("make the cheese pull last longer") and Muse adjusts only that part.
+
+The gallery at domireels.com shows real pilot Reels and, for each one, how Muse directed it: the photos it started
+from, what it saw, and every take it kept and threw away.
 
 ## What existed before, and what is new
 
@@ -86,7 +100,7 @@ No two restaurants get the same style in a week, and Muse chooses which idea eac
 
 Domi prepares, the owner publishes. Nothing here posts to anyone's account.
 
-## Models
+## Models in detail
 
 - **Muse Spark** (`muse-spark-1.3`, api.meta.ai): every decision, every judgment, every word, and the weekly web
   research (its `web_search` tool).

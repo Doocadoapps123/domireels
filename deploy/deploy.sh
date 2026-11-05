@@ -3,7 +3,7 @@
 # data/) is never overwritten: it lives there, not in git.
 # Usage: deploy/deploy.sh [first]    (first: also seeds data/, the lab's kits and the ledger)
 set -euo pipefail
-HOST=${DOMI_WORKER:-root@2.29.117.228}
+HOST=${DOMI_WORKER:?set DOMI_WORKER to your server, like root@your-server}
 cd "$(dirname "$0")/.."
 STATE="--exclude data/history.json --exclude data/playbook.json --exclude data/stock.json --exclude data/stock-claims/ --exclude data/trends/"
 [ "${1:-}" = first ] && STATE=""
