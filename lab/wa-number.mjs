@@ -47,7 +47,7 @@ if (step === "register") console.log(await meta(`${state.phone_id}/register`, "P
 if (step === "hook") {
   console.log("telnyx voice removed:", (await telnyx(`phone_numbers/${await telnyxId()}`, "PATCH", { connection_id: null })).data?.connection_id ?? null);
   // Our own app: its webhook is our server for every number of this account, no override needed.
-  const appToken = `${process.env.DR_WA_APP_ID}|${process.env.DR_WA_APP_SECRET}`, url = process.env.WA_WEBHOOK_URL || "https://2-29-117-228.sslip.io/whatsapp";
+  const appToken = `${process.env.DR_WA_APP_ID}|${process.env.DR_WA_APP_SECRET}`, url = process.env.WA_WEBHOOK_URL;
   console.log("app webhook:", await (await fetch(`${G}/${process.env.DR_WA_APP_ID}/subscriptions`, { method: "POST", headers: { Authorization: `Bearer ${appToken}`, "Content-Type": "application/json" },
     body: JSON.stringify({ object: "whatsapp_business_account", callback_url: url, verify_token: process.env.WA_VERIFY_TOKEN, fields: "messages", include_values: true }) })).json());
   console.log("app subscribed to the account:", await meta(`${WABA}/subscribed_apps`, "POST"));
