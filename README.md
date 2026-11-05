@@ -6,10 +6,27 @@ chooses a cut.
 
 Built for the Meta Global AI Developer Hackathon (Oct 26 to Nov 4, 2026).
 
-- Live: https://domi-reels.vercel.app (the gallery shows real pilot Reels and, for each one, how Muse directed it:
+- Live: https://domireels.com (the gallery shows real pilot Reels and, for each one, how Muse directed it:
   the photos it started from, what it saw, every take it kept and threw away). Sign up is by invitation; the judges'
   code is in our submission notes.
 - WhatsApp: +1 407-439-7335 (Domi Reels' own number on the WhatsApp Cloud API).
+
+## What existed before, and what is new
+
+- **Before the hackathon:** Domi (Doocado), the company's existing platform: online ordering and Instagram photo
+  content for restaurants. None of it is in this repo, and the demo video does not show it as new work.
+- **Built Oct 26 to Nov 4, 2026:** Domi Reels, all of this repository and everything shown in the demo video: the
+  director pipeline, the web app at domireels.com, the WhatsApp channel, the platform API, and the gallery.
+
+## Models and the Meta-only rule
+
+Meta's models make every decision. Muse Spark invents each idea, writes every shot for the video model and the brief
+for the music, watches every take, keeps or drops each second, edits, writes the on-screen text and reviews the final
+Reel. Muse Image draws the frames, SAM 3.1 keeps the real dish in every frame, and Muse Voice Transcribe reads the
+owner's voice notes. Meta's Model API has no video or music model, so two providers only render what Muse wrote:
+video from Gemini Omni and music from ElevenLabs, both through fal. Upscaling uses Topaz on fal.
+
+**Demo video narration (TTS):** the voice-over is text-to-speech from ElevenLabs. It is not part of the product.
 
 ## The product
 
